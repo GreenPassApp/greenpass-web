@@ -1,0 +1,20 @@
+h1{
+  font-weight: bold;
+}
+
+.store-bubble{
+  width: 130px;
+  height: 55px;
+  background-color: white;
+  border-radius: 100px;
+  margin: 20px;
+  padding-top: 16px;
+  text-align: center;
+  text-decoration: none;
+  transition: all 0.5s ease;
+
+}
+.store-bubble:hover{
+  transition: all 0.5s ease;
+  color: black;
+}
