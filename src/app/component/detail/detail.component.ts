@@ -15,7 +15,8 @@ export class DetailComponent implements OnInit {
 
   ngOnInit(): void {
     this.activatedRoute.paramMap.subscribe(async (data) => {
-      this.userService.getUser(data.get("link") || "").subscribe(user => {
+      let link = data.get("link") || ""
+      this.userService.getUser(link).subscribe(user => {
         this.user = user
       })
     })
