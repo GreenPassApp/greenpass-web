@@ -1,0 +1,15 @@
+{
+  "HOME": {
+    "TITLE": "Introducing the new GreenPass App!"
+  },
+  "HEADER": {
+  "MOTIVATION": "Motivation",
+  "CONTACT": "Contact"
+  },
+  "FOOTER": {
+    "IMPRINT": "Imprint",
+    "PRIVACY": "Privacy",
+    "TERMSANDCONDITION": "Terms and Condition",
+    "CONTACT": "Contact"
+  }
+}
