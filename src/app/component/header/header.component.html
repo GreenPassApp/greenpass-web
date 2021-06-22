@@ -9,7 +9,7 @@
 
     <div class="d-flex justify-content-center align-items-center d-lg-none">
       <div class="menu-icon">
-        <input class="menu-icon__cheeckbox" type="checkbox" />
+        <input class="menu-icon__checkbox" type="checkbox" (click)="toggleMobileMenu($event)"/>
         <div>
           <span></span>
           <span></span>
@@ -23,20 +23,37 @@
           <a class="nav-link text-dark header__nav__item p-4" routerLink="about">{{ 'HEADER.ABOUT' | translate }}</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link text-dark header__nav__item p-4" routerLink="privacy">{{ 'HEADER.PRIVACY' | translate }}</a>
+          <a class="nav-link text-dark header__nav__item p-4"
+             routerLink="privacy">{{ 'HEADER.PRIVACY' | translate }}</a>
         </li>
         <li class="position-relative header__langnav">
           <button class="p-4 header__langnav__button nav-item d-flex align-items-center link text-dark"
                   (click)="toggleLangMenu($event)">
-            <img src="assets/images/flags/austria.svg" alt="Österreich" class="header__langnav__flag pe-none">
-            <span (click)="setLang('de')" class="d-block mx-2 fw-bold pe-none">Deutsch</span>
-            <small class="pb-1 pe-none"><i class="fas fa-chevron-down small pe-none"></i></small>
+
+
+            <ng-container *ngIf="getCurLang() == 'de'">
+              <img src="assets/images/flags/austria.svg" alt="Österreich" class="header__langnav__flag pe-none">
+              <span (click)="setLang('de')" class="d-block mx-2 fw-bold pe-none">{{ 'LANG.DE' | translate }}</span>
+              <small class="pb-1 pe-none"><i class="fas fa-chevron-down small pe-none"></i></small>
+            </ng-container>
+            <ng-container *ngIf="getCurLang() == 'en'">
+              <img src="assets/images/flags/eu.svg" alt="Englisch" class="header__langnav__flag pe-none">
+              <span (click)="setLang('de')" class="d-block mx-2 fw-bold pe-none">{{ 'LANG.EN' | translate }}</span>
+              <small class="pb-1 pe-none"><i class="fas fa-chevron-down small pe-none"></i></small>
+            </ng-container>
           </button>
-          <ul class="w-100 header__langnav__langs list-unstyled position-absolute bg-white rounded shadow-sm isClosed ms-2">
+          <ul
+            class="w-100 header__langnav__langs list-unstyled position-absolute bg-white rounded shadow-sm isClosed ms-2">
             <li>
-              <a (click)="setLang('en')" class="rounded p-3 d-flex align-items-center link text-dark header__langnav__langs__item">
+              <a *ngIf="getCurLang() != 'en'" (click)="setLang('en')"
+                 class="rounded p-3 d-flex align-items-center link text-dark header__langnav__langs__item">
                 <img src="assets/images/flags/eu.svg" alt="" class="header__langnav__flag">
-                <span class="ms-3 d-block">Englisch</span>
+                <span class="ms-3 d-block">{{ 'LANG.EN' | translate }}</span>
+              </a>
+              <a *ngIf="getCurLang() != 'de'" (click)="setLang('de')"
+                 class="rounded p-3 d-flex align-items-center link text-dark header__langnav__langs__item">
+                <img src="assets/images/flags/austria.svg" alt="" class="header__langnav__flag">
+                <span class="ms-3 d-block">{{ 'LANG.DE' | translate }}</span>
               </a>
             </li>
           </ul>
@@ -47,3 +64,46 @@
 
 
 </header>
+
+<div id="mobile-nav" class="content header__nav--mobile position-fixed d-none d-lg-none">
+  <ul class="justify-content-end align-items-center list-unstyled px-3 container">
+    <li class="header__nav--mobile__item my-3 p-3 shadow-sm">
+      <a class="fw-bold link header__nav--mobile__link text-dark"
+         routerLink="about">{{ 'HEADER.ABOUT' | translate }}</a>
+    </li>
+    <li class="header__nav--mobile__item my-3 p-3 shadow-sm">
+      <a class="fw-bold link text-dark header__nav--mobile__link"
+         routerLink="privacy">{{ 'HEADER.PRIVACY' | translate }}</a>
+    </li>
+    <li class="header__nav--mobile__item my-3 p-3 shadow-sm">
+      <button class="header__langnav__button header__langnav__button--mobile nav-item d-flex align-items-center link text-dark"
+              (click)="toggleLangMenu($event)">
+        <ng-container *ngIf="getCurLang() == 'de'">
+          <img src="assets/images/flags/austria.svg" alt="Österreich" class="header__langnav__flag pe-none">
+          <span (click)="setLang('de')" class="d-block mx-2 fw-bold pe-none">{{ 'LANG.DE' | translate }}</span>
+          <small class="pb-1 pe-none"><i class="fas fa-chevron-down small pe-none"></i></small>
+        </ng-container>
+        <ng-container *ngIf="getCurLang() == 'en'">
+          <img src="assets/images/flags/eu.svg" alt="Englisch" class="header__langnav__flag pe-none">
+          <span (click)="setLang('de')" class="d-block mx-2 fw-bold pe-none">{{ 'LANG.EN' | translate }}</span>
+          <small class="pb-1 pe-none"><i class="fas fa-chevron-down small pe-none"></i></small>
+        </ng-container>
+      </button>
+
+      <ul class="w-100 header__langnav__langs header__langnav__langs--mobile list-unstyled bg-white rounded isClosed">
+        <li>
+          <a *ngIf="getCurLang() != 'en'" (click)="setLang('en')"
+             class="pt-4 rounded d-flex align-items-center link text-dark header__langnav__langs__item">
+            <img src="assets/images/flags/eu.svg" alt="" class="header__langnav__flag">
+            <span class="ms-3 d-block">{{ 'LANG.EN' | translate }}</span>
+          </a>
+          <a *ngIf="getCurLang() != 'de'" (click)="setLang('de')"
+             class="pt-4 rounded d-flex align-items-center link text-dark header__langnav__langs__item">
+            <img src="assets/images/flags/austria.svg" alt="" class="header__langnav__flag">
+            <span class="ms-3 d-block">{{ 'LANG.DE' | translate }}</span>
+          </a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</div>

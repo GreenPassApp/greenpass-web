@@ -1,4 +1,5 @@
 .header {
+  z-index: 1000;
 
   &__logo {
     width: 32px;
@@ -6,7 +7,7 @@
   }
 
   &__nav {
-
+    z-index: 100;
     &__item {
       border-bottom: 4px solid white;
       transition: all 200ms ease-in-out;
@@ -14,6 +15,24 @@
       &:hover, &:focus {
         border-bottom: 4px solid $green;
         transition: all 200ms ease-in-out;
+      }
+    }
+
+    &--mobile {
+      width: 100vw;
+      height: 100vh;
+      top: 0;
+      left: 0;
+      background: $lightgray;
+      z-index: 10;
+
+      &__item {
+        background: white;
+        border-radius: 10px;
+      }
+
+      &__link {
+
       }
     }
   }
@@ -25,6 +44,13 @@
       background: none;
       border: none;
       border-bottom: 4px solid white;
+
+      &--mobile {
+        padding: 0;
+        background: none;
+        border: none;
+        border-bottom: 4px solid white;
+      }
 
       &.isOpen i {
         transform: rotate(180deg);
@@ -45,6 +71,10 @@
       background: white;
       border: 1px solid $bg-color;
 
+      &--mobile {
+        border: none;
+      }
+
       &__item {
         &:hover, &:focus {
           background: $bg-color;
@@ -64,7 +94,7 @@
   height: 50px;
   cursor: pointer;
 
-  .menu-icon__cheeckbox {
+  .menu-icon__checkbox {
     display: block;
     width: 100%;
     height: 100%;
@@ -102,7 +132,7 @@
     }
   }
   &.active,
-  .menu-icon__cheeckbox:checked + div {
+  .menu-icon__checkbox:checked + div {
     span {
       &:first-of-type {
         transform: rotate(45deg);
@@ -117,8 +147,8 @@
 
   &.active:hover span:first-of-type,
   &.active:hover span:last-of-type,
-  &:hover .menu-icon__cheeckbox:checked + div span:first-of-type,
-  &:hover .menu-icon__cheeckbox:checked + div span:last-of-type {
+  &:hover .menu-icon__checkbox:checked + div span:first-of-type,
+  &:hover .menu-icon__checkbox:checked + div span:last-of-type {
     width: 22px;
   }
 

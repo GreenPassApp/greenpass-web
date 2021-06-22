@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 import {TranslateService} from "@ngx-translate/core";
 
 @Component({
@@ -25,9 +25,22 @@ export class HeaderComponent implements OnInit {
     return this.translate.currentLang
   }
 
+  toggleMobileMenu(event: any) {
+    let toggleBtn = event.target;
+    let mobileMenu = document.querySelector("#mobile-nav");
+
+    if (mobileMenu) {
+      if (toggleBtn.checked) {
+        mobileMenu.classList.remove("d-none");
+      } else {
+        mobileMenu.classList.add("d-none");
+      }
+    }
+  }
+
   toggleLangMenu(event: any) {
     let button = event.target;
-    let menu  = event.target.nextElementSibling;
+    let menu = event.target.nextElementSibling;
 
     button.classList.toggle('isOpen');
     menu.classList.toggle('isClosed');

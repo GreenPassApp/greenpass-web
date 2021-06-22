@@ -13,5 +13,10 @@
     "PRIVACY": "Privacy",
     "TERMSANDCONDITION": "Terms and Condition",
     "CONTACT": "Contact"
+  },
+  "LANG": {
+    "DE": "German",
+    "EN": "English",
+    "ES": "Spanish"
   }
 }

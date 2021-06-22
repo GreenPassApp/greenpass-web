@@ -13,5 +13,10 @@
     "PRIVACY": "Datenschutz",
     "TERMSANDCONDITION": "AGB",
     "CONTACT": "Kontakt"
+  },
+  "LANG": {
+    "DE": "Deutsch",
+    "EN": "Englisch",
+    "ES": "Spanisch"
   }
 }
