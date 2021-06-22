@@ -18,11 +18,22 @@ export class HeaderComponent implements OnInit {
   }
 
   setLang(lang: string){
-    this.translate.use(lang)
+    this.translate.use(lang);
   }
 
   getCurLang(): String{
     return this.translate.currentLang
+  }
+
+  closeMobileMenu() : void{
+    let button = document.querySelector("#mobile-nav-toggle");
+    // @ts-ignore
+    button.checked = false;
+
+    let mobileMenu = document.querySelector("#mobile-nav");
+    // @ts-ignore
+    mobileMenu.classList.add("d-none");
+
   }
 
   toggleMobileMenu(event: any) {
