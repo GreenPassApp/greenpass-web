@@ -1,0 +1,15 @@
+.footer {
+  /*position: absolute;*/
+  bottom: 0;
+  top: auto;
+  background: #333333;
+
+  &__link {
+    transition: all 200ms ease-in-out;
+
+    &:hover, &:focus {
+      color: lightgray;
+      transition: all 200ms ease-in-out;
+    }
+  }
+}

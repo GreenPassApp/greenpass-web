@@ -1,2 +1,30 @@
-{{user?.firstName}}
-{{user?.lastName}}
+<div class="vh-100 d-flex justify-content-center align-items-center">
+  <div class="detail p-5 my-5">
+    <section>
+      <div class="detail__icon d-flex justify-content-center align-items-center">
+        <i class="fas fa-vial p-4" *ngIf="user?.tested"></i>
+        <i class="fas fa-syringe p-4" *ngIf="user?.vaccinated"></i>
+        <i class="fas fa-child p-4" *ngIf="user?.recovered"></i>
+
+      </div>
+      <h2 class="d-block text-center fw-bold pt-4" *ngIf="user?.tested">Getestet</h2>
+      <h2 class="d-block text-center fw-bold pt-4" *ngIf="user?.vaccinated">Geimpft
+        <span class="fw-normal fs-4">
+      (<span *ngIf="user?.vaccinated?.dateOfFirst && user?.vaccinated?.dateOfLastVaccinate">2</span>
+      <span *ngIf="!user?.vaccinated?.dateOfLastVaccinate">1</span>/2)
+    </span>
+      </h2>
+      <h2 class="d-block text-center fw-bold pt-4" *ngIf="user?.recovered">Genesen</h2>
+    </section>
+
+    <section>
+      <p class="text-center mb-1 fw-bold">{{user?.firstName}} {{user?.lastName}}</p>
+      <p class="text-center">{{user?.birthday}}</p>
+
+      <p class="text-center">{{user?.tested?.dateOfSampling}}</p>
+      <p class="text-center">{{user?.vaccinated?.dateOfLastVaccinate}}</p>
+      <p class="text-center">{{user?.recovered?.validUntil}}</p>
+
+    </section>
+  </div>
+</div>

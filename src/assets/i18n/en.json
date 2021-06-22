@@ -3,8 +3,10 @@
     "TITLE": "Introducing the new GreenPass App!"
   },
   "HEADER": {
-  "MOTIVATION": "Motivation",
-  "CONTACT": "Contact"
+    "MOTIVATION": "Motivation",
+    "CONTACT": "Contact",
+    "ABOUT": "About",
+    "PRIVACY": "Data Privacy"
   },
   "FOOTER": {
     "IMPRINT": "Imprint",

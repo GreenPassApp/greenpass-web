@@ -1,72 +1,157 @@
-<div class="container-fluid">
-<app-header></app-header>
+<main class="pb-5">
+  <div class="">
 
-<main class="">
-  <div class="container">
-    <div class="row pt-5 mb-4">
-      <div class="col-sm d-flex justify-content-center">
-        <img src="favicon.ico" width="100" height="100">
-      </div>
-    </div>
-
-    <div class="row">
-      <div class="col-sm d-flex justify-content-center">
-        <h1>{{ 'HOME.TITLE' | translate }}</h1>
-      </div>
-    </div>
-
-    <div class="row mt-4">
-      <div class="col-sm d-flex justify-content-center">
-        <h5>A new way to verify the Covid status</h5>
-      </div>
-    </div>
-
-    <div class="row mt-4">
-      <div class="col-sm d-flex justify-content-center">
-        <a class="store-bubble mr-2" href="#">
-          <i class="bi bi-check-circle"></i>
-          AppStore
-        </a>
-        <a class="store-bubble" href="#">
-          <i class="bi bi-check-circle"></i>
-          PlayStore
-        </a>
-      </div>
-    </div>
-
-    <div class="row mt-5 pb-5">
-      <div class="row d-flex justify-content-center">
-        <img class="col-xl-6 col-xs-12 img-fluid screenshot" src="https://spotlight.super.so/_next/image?url=https%3A%2F%2Fsuper-static-assets.s3.amazonaws.com%2Fe55cf095-347d-4eb5-86e4-fc9acf7128c8%2Fimages%2F264dddac-c15e-4c5e-b28c-81f3ff7de133.png&w=3840&q=100">
-        <div class="col-xl-6 col-xs-12 align-self-center">
-          <h2>Datenschutz</h2>
-          <h6>Test</h6>
+    <section class="headvisual d-md-flex align-items-center justify-content-center pt-3 max-w-1000">
+      <div class="headvisual__text me-md-5 mt-5 mt-md-3">
+        <p class="small mb-1 text-center text-md-start">Der Grüne Pass jetzt digital:</p>
+        <h1 class="fw-bold headvisual__title text-center text-md-start pb-2">Deine <span class="text-green">GreenPass</span> App
+        </h1>
+        <p class="text-center text-md-start">Jetzt downloaden, QR-Code hinzufügen und in der gesamten EU deine Impf-,
+          Genesehnheits- und Testzertifikate
+          digital vorweisen.Ab sofort im App Store und Playstore verfügbar.</p>
+        <div class="col-sm d-flex justify-content-center justify-content-md-start mt-4">
+          <a class="store-bubble me-1" href="#">
+            <img src="assets/images/playstore/app-store-badge.svg" alt="Apple App Store Badge">
+          </a>
+          <a class="store-bubble" href="#">
+            <img src="assets/images/playstore/google-play-badge.svg" alt="Google Play Store Badge">
+          </a>
         </div>
       </div>
-    </div>
-
-    <div class="row pt-5 pb-5">
-      <div class="row d-flex justify-content-center">
-        <div class="col-xl-6 col-xs-12 align-self-center">
-          <h2>Datenschutz</h2>
-          <h6>Test</h6>
-        </div>
-        <img class="col-xl-6 col-xs-12 img-fluid screenshot" src="https://spotlight.super.so/_next/image?url=https%3A%2F%2Fsuper-static-assets.s3.amazonaws.com%2Fe55cf095-347d-4eb5-86e4-fc9acf7128c8%2Fimages%2F264dddac-c15e-4c5e-b28c-81f3ff7de133.png&w=3840&q=100">
+      <div class="mt-4">
+        <img src="assets/images/screenshot/screenshot%202.png" alt="" style="" class="headvisual__image w-100">
       </div>
-    </div>
+    </section>
 
-    <div class="row mt-5 pb-5">
-      <div class="row d-flex justify-content-center">
-        <img class="col-xl-6 col-xs-12 img-fluid screenshot" src="https://spotlight.super.so/_next/image?url=https%3A%2F%2Fsuper-static-assets.s3.amazonaws.com%2Fe55cf095-347d-4eb5-86e4-fc9acf7128c8%2Fimages%2F264dddac-c15e-4c5e-b28c-81f3ff7de133.png&w=3840&q=100">
-        <div class="col-xl-6 col-xs-12 align-self-center">
-          <h2>Datenschutz</h2>
-          <h6>Test</h6>
-        </div>
+    <section class="option d-md-flex align-items-center pt-3">
+      <div class="headvisual__text me-md-5 mt-5 mt-md-3">
+        <h2 class="fw-bold">Jetzt in der <span class="text-green">gesamten EU</span> dein Zertifikat vorweisen</h2>
       </div>
-    </div>
+      <div class="headvisual__image me-md-5 mt-5 mt-md-3"></div>
+    </section>
 
+    <section class="option d-md-flex align-items-center pt-3">
+      <div class="headvisual__text me-md-5 mt-5 mt-md-3">
+        <h2 class="fw-bold">Jetzt in der <span class="text-green">gesamten EU</span> dein Zertifikat vorweisen</h2>
+      </div>
+      <div class="headvisual__image me-md-5 mt-5 mt-md-3"></div>
+    </section>
+
+    <!--
+          <div class="row">
+            <div class="col-sm d-flex justify-content-center">
+              <h1>{{ 'HOME.TITLE' | translate }}</h1>
+            </div>
+          </div>
+
+          <div class="row mt-4">
+            <div class="col-sm d-flex justify-content-center">
+              <h5>A new way to verify the Covid status</h5>
+            </div>
+          </div>
+
+          <div class="row mt-4">
+            <div class="col-sm d-flex justify-content-center">
+              <a class="store-bubble me-1" href="#">
+                <img src="assets/images/playstore/app-store-badge.svg" alt="Apple App Store Badge">
+              </a>
+              <a class="store-bubble" href="#">
+                <img src="assets/images/playstore/google-play-badge.svg" alt="Google Play Store Badge">
+              </a>
+            </div>
+          </div>
+
+          <div class="row mt-5 pb-5">
+            <div class="row d-flex justify-content-center">
+              <img class="col-xl-6 col-xs-12 img-fluid screenshot"
+                   src="https://spotlight.super.so/_next/image?url=https%3A%2F%2Fsuper-static-assets.s3.amazonaws.com%2Fe55cf095-347d-4eb5-86e4-fc9acf7128c8%2Fimages%2F264dddac-c15e-4c5e-b28c-81f3ff7de133.png&w=3840&q=100">
+              <div class="col-xl-6 col-xs-12 align-self-center">
+                <h2>Datenschutz</h2>
+                <h6>Test</h6>
+              </div>
+            </div>
+          </div>
+
+          <div class="row pt-5 pb-5">
+            <div class="row d-flex justify-content-center">
+              <div class="col-xl-6 col-xs-12 align-self-center">
+                <h2>Datenschutz</h2>
+                <h6>Test</h6>
+              </div>
+              <img class="col-xl-6 col-xs-12 img-fluid screenshot"
+                   src="https://spotlight.super.so/_next/image?url=https%3A%2F%2Fsuper-static-assets.s3.amazonaws.com%2Fe55cf095-347d-4eb5-86e4-fc9acf7128c8%2Fimages%2F264dddac-c15e-4c5e-b28c-81f3ff7de133.png&w=3840&q=100">
+            </div>
+          </div>
+
+          <div class="row mt-5 pb-5">
+            <div class="row d-flex justify-content-center">
+              <img class="col-xl-6 col-xs-12 img-fluid screenshot"
+                   src="https://spotlight.super.so/_next/image?url=https%3A%2F%2Fsuper-static-assets.s3.amazonaws.com%2Fe55cf095-347d-4eb5-86e4-fc9acf7128c8%2Fimages%2F264dddac-c15e-4c5e-b28c-81f3ff7de133.png&w=3840&q=100">
+              <div class="col-xl-6 col-xs-12 align-self-center">
+                <h2>Datenschutz</h2>
+                <h6>Test</h6>
+              </div>
+            </div>
+          </div>
+
+    -->
   </div>
+
+  <!-- FAQ -->
+  <section class="my-5">
+
+    <p class="text-center small mb-2 pt-4">Du hast noch einige offene Fragen?</p>
+    <h2 class="text-center fw-bold mb-5">Die häufigsten <span class="text-green">Fragen & Antworten</span></h2>
+
+    <div class="faq">
+      <button class="faq__header shadow-sm isClosed" (click)="faqOpenClose($event)">
+        Du hast Fragen, Verbesserungsvorschläge oder Wünsche?
+        <i class="fas fa-chevron-right"></i>
+      </button>
+      <p class="faq__content isClosed">Melde dich bei uns, wir freuen uns über Feedback und Anregungen, um dieses
+        Projekt
+        laufend zu verbessern! Hier gelangst du zu unserem Kontakt: <a href="#">team@greenpassapp.eu</a></p>
+    </div>
+
+    <div class="faq">
+      <button class="faq__header shadow-sm isClosed" (click)="faqOpenClose($event)">
+        Du möchtest die App mit Freunden und Bekannten teilen?
+        <i class="fas fa-chevron-right"></i>
+      </button>
+      <p class="faq__content isClosed">
+        Teile die App mit Freunden, Bekannten und Verwandten und mache auch ihr Leben während der Pandemie ein klein
+        wenig einfacher!
+        <i class="fas fa-instagram text-dark"></i>
+        <i class="fas fa-facebook text-dark"></i>
+        <i class="fas fa-twitter text-dark"></i>
+        <i class="fas fa-linkedin text-dark"></i>
+      </p>
+    </div>
+
+    <div class="faq">
+      <button class="faq__header shadow-sm isClosed" (click)="faqOpenClose($event)">
+        Du möchtest dich am Projekt beteiligen?
+        <i class="fas fa-chevron-right"></i>
+      </button>
+      <p class="faq__content isClosed">
+        Bei der GreenPass-App handelt es sich um ein Open Source Projekt. Das bedeutet, dass sich jede:r den Code
+        einsehen kann und sich am Projekt beteiligen kann. Wir freuen uns darauf, die GreenPass-App mit möglichst
+        vielen Personen gemeinsam zu erweitern und zu verbessern! Hier gelangst du zu unserem Github-Repository:
+        <a href="#" target="_blank">ENTER LINK</a>
+      </p>
+    </div>
+
+    <div class="faq">
+      <button class="faq__header shadow-sm isClosed" (click)="faqOpenClose($event)">
+        Du hast noch eine Frage, die hier nicht beantwortet wird?
+        <i class="fas fa-chevron-right"></i>
+      </button>
+      <p class="faq__content isClosed">
+        Melde dich bei uns! Wir freuen uns darauf dir deine Fragen zu beantworten!
+        <a href="#" target="_blank">ENTER LINK</a>
+      </p>
+    </div>
+
+  </section>
 </main>
 
-  <app-footer></app-footer>
-
-</div>

@@ -3,8 +3,7 @@ import {TranslateService} from "@ngx-translate/core";
 
 @Component({
   selector: 'app-header',
-  templateUrl: './header.component.html',
-  styleUrls: ['./header.component.css']
+  templateUrl: './header.component.html'
 })
 export class HeaderComponent implements OnInit {
 
@@ -16,6 +15,15 @@ export class HeaderComponent implements OnInit {
   }
 
   ngOnInit(): void {
+  }
+
+  toggleLangMenu(event: any) {
+    let button = event.target;
+    let menu  = event.target.nextElementSibling;
+
+    button.classList.toggle('isOpen');
+    menu.classList.toggle('isClosed');
+
   }
 
 }

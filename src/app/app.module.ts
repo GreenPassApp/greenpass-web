@@ -10,6 +10,8 @@ import { DetailComponent } from './component/detail/detail.component';
 import {HttpClient, HttpClientModule} from '@angular/common/http';
 import {TranslateModule, TranslateLoader} from '@ngx-translate/core';
 import {TranslateHttpLoader} from '@ngx-translate/http-loader';
+import { AboutComponent } from './component/about/about.component';
+import { PrivacyComponent } from './component/privacy/privacy.component';
 
 // AoT requires an exported function for factories
 export function HttpLoaderFactory(httpClient: HttpClient) {
@@ -22,7 +24,9 @@ export function HttpLoaderFactory(httpClient: HttpClient) {
     HomeComponent,
     HeaderComponent,
     FooterComponent,
-    DetailComponent
+    DetailComponent,
+    AboutComponent,
+    PrivacyComponent
   ],
   imports: [
     BrowserModule,

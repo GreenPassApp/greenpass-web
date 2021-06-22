@@ -1,0 +1,18 @@
+.icon {
+  &--big {
+    margin: 0 auto;
+    font-size: 1.8rem;
+    height: 3.6rem;
+    width: 3.6rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &--green {
+    color: white;
+    background-color: $green;
+    padding: 10px;
+    border-radius: 50%;
+  }
+}

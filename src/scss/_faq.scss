@@ -1,0 +1,43 @@
+.faq {
+  margin-bottom: 1.2rem;
+
+  &__header {
+    border: 1px solid $bg-color;
+    border-radius: 10px;
+    outline: none;
+    padding: 1rem 1.2rem;
+    background-color: white;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: bold;
+    color: #333;
+    transition: all 200ms ease-in-out;
+    text-align: left;
+
+    &:hover, &:focus {
+      border: 1px solid lightgray;
+      transition: all 200ms ease-in-out;
+    }
+
+    &.isClosed > i {
+      transform: rotate(0deg);
+      transition: all 200ms ease-in-out;
+    }
+
+    > i {
+      color: lightgray;
+      transform: rotate(90deg);
+      transition: all 200ms ease-in-out;
+    }
+  }
+
+  &__content {
+    padding: 1rem 1.2rem;
+
+    &.isClosed {
+      display: none;
+    }
+  }
+}

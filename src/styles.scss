@@ -1,0 +1,88 @@
+/* You can add global styles to this file, and also import other style files */
+
+@import "node_modules/bootstrap/scss/bootstrap-grid";
+@import "scss/variables";
+@import "scss/faq";
+@import "scss/header";
+@import "scss/icon";
+@import "scss/typo.scss";
+
+#content {
+  padding-top: 77px;
+}
+
+body {
+  font-family: 'Inter', Arial, sans-serif;
+  background-color: rgba(235, 236, 237, 0.3);
+  color: #333333;
+}
+
+.text-dark {
+  color: #333333 !important;
+}
+
+.text-gray {
+  color: #989898;
+}
+
+.link {
+  text-decoration: none;
+}
+
+.container-fluid {
+  padding: 0;
+}
+
+/* colors */
+$blue: #135ACF;
+$red: #FF5048;
+$green: #50AF64;
+
+
+/* inter-regular - latin */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  src: url('./fonts/inter-v3-latin-regular.eot'); /* IE9 Compat Modes */
+  src: local(''),
+  url('./fonts/inter-v3-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url('./fonts/inter-v3-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+  url('./fonts/inter-v3-latin-regular.woff') format('woff'), /* Modern Browsers */
+  url('./fonts/inter-v3-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+  url('./fonts/inter-v3-latin-regular.svg#Inter') format('svg'); /* Legacy iOS */
+}
+
+/* inter-700 - latin */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  src: url('./fonts/inter-v3-latin-700.eot'); /* IE9 Compat Modes */
+  src: local(''),
+  url('./fonts/inter-v3-latin-700.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url('./fonts/inter-v3-latin-700.woff2') format('woff2'), /* Super Modern Browsers */
+  url('./fonts/inter-v3-latin-700.woff') format('woff'), /* Modern Browsers */
+  url('./fonts/inter-v3-latin-700.ttf') format('truetype'), /* Safari, Android, iOS */
+  url('./fonts/inter-v3-latin-700.svg#Inter') format('svg'); /* Legacy iOS */
+}
+
+.flag {
+  padding: 8px 16px;
+  outline: none;
+  background: none;
+  border: none;
+
+  &__img {
+    width: 24px;
+    height: 24px;
+    // border: 1px solid #333;
+    // border-radius: 50%;
+
+    &--big {
+      width: 36px;
+      height: 36px;
+      // border: 2px solid #333;
+    }
+  }
+}

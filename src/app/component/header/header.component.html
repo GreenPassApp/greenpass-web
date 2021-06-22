@@ -1,13 +1,49 @@
-<nav class="navbar navbar-light bg-light sticky-top">
-  <div class="navbar-brand">
-    <a href=""><i class="bi bi-files logo" style="font-size: 30px"></i></a>
+<header class="shadow-sm header position-fixed w-100 bg-white">
+  <div class="d-flex justify-content-between align-items-center container">
+    <a routerLink="" class="link text-dark">
+      <div class="d-flex align-items-center">
+        <img src="assets/images/logo-icon.svg" alt="Logo GreenPass" class="header__logo">
+        <h1 class="fw-bold py-4 fs-5 mb-0 ps-2 text-dark">GreenPass</h1>
+      </div>
+    </a>
+
+    <div class="d-flex justify-content-center align-items-center d-lg-none">
+      <div class="menu-icon">
+        <input class="menu-icon__cheeckbox" type="checkbox" />
+        <div>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+    </div>
+
+    <div class="header__nav d-none d-lg-inline">
+      <ul class="nav justify-content-end align-items-center">
+        <li class="nav-item">
+          <a class="nav-link text-dark header__nav__item p-4" routerLink="about">{{ 'HEADER.ABOUT' | translate }}</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-dark header__nav__item p-4" routerLink="privacy">{{ 'HEADER.PRIVACY' | translate }}</a>
+        </li>
+        <li class="position-relative header__langnav">
+          <button class="p-4 header__langnav__button nav-item d-flex align-items-center link text-dark"
+                  (click)="toggleLangMenu($event)">
+            <img src="assets/images/flags/austria.svg" alt="Österreich" class="header__langnav__flag pe-none">
+            <span class="d-block mx-2 fw-bold pe-none">Deutsch</span>
+            <small class="pb-1 pe-none"><i class="fas fa-chevron-down small pe-none"></i></small>
+          </button>
+          <ul class="w-100 header__langnav__langs list-unstyled position-absolute bg-white rounded shadow-sm isClosed ms-2">
+            <li>
+              <a routerLink="eu" class="rounded p-3 d-flex align-items-center link text-dark header__langnav__langs__item">
+                <img src="assets/images/flags/eu.svg" alt="" class="header__langnav__flag">
+                <span class="ms-3 d-block">Englisch</span>
+              </a>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </div>
   </div>
-  <ul class="nav justify-content-end">
-    <li class="nav-item">
-      <a class="nav-link" href="#">{{ 'HEADER.MOTIVATION' | translate }}</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" href="#">{{ 'HEADER.CONTACT' | translate }}</a>
-    </li>
-  </ul>
-</nav>
+
+
+</header>

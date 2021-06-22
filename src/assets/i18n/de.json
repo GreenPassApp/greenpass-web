@@ -4,7 +4,9 @@
   },
   "HEADER": {
     "MOTIVATION": "Motivation",
-    "CONTACT": "Kontakt"
+    "CONTACT": "Kontakt",
+    "ABOUT": "Über uns",
+    "PRIVACY": "Privatsphäre & Datenschutz"
   },
   "FOOTER": {
     "IMPRINT": "Impressum",
