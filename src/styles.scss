@@ -32,6 +32,16 @@ body {
   cursor: pointer;
 }
 
+a {
+  color: $green;
+  transition: all 200ms ease-in-out;
+
+  &:hover, &:focus {
+    color: #989898;
+    transition: all 200ms ease-in-out;
+  }
+}
+
 .container-fluid {
   padding: 0;
 }

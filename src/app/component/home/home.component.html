@@ -4,13 +4,12 @@
   <!-- HEADVISUAL -->
   <section class="headvisual d-md-flex align-items-center justify-content-center pt-3 max-w-1000">
     <div class="headvisual__text me-md-5 mt-5 mt-md-3">
-      <p class="small mb-1 text-center text-md-start">Der Grüne Pass jetzt digital:</p>
-      <h1 class="fw-bold headvisual__title text-center text-md-start pb-2">Deine <span
-        class="text-green">GreenPass</span> App
+      <p class="small mb-1 text-center text-md-start">{{ 'HOME.HEADVISUAL.PREHEADER' | translate }}</p>
+      <h1 class="fw-bold headvisual__title text-center text-md-start pb-2">{{ 'HOME.HEADVISUAL.HEADLINE1' | translate }}
+        <span
+          class="text-green">{{ 'HOME.HEADVISUAL.HEADLINE2' | translate }}</span> {{ 'HOME.HEADVISUAL.HEADLINE3' | translate }}
       </h1>
-      <p class="text-center text-md-start">Jetzt downloaden, QR-Code hinzufügen und in der gesamten EU deine Impf-,
-        Genesehnheits- und Testzertifikate
-        digital vorweisen.Ab sofort im App Store und Playstore verfügbar.</p>
+      <p class="text-center text-md-start">{{ 'HOME.HEADVISUAL.TEXT' | translate }}</p>
       <div class="col-sm d-flex justify-content-center justify-content-md-start mt-5">
         <a class="store-bubble me-3" href="#">
           <img src="assets/images/playstore/app-store-badge.svg" alt="Apple App Store Badge">
@@ -32,17 +31,19 @@
            class="headvisual__image w-100">
     </div>
     <div class="headvisual__text me-md-5 mt-5 mt-md-3">
-      <h2 class="fw-bold pb-3"><span class="text-green">Alle Zertifikate</span> gesammelt in nur einer App</h2>
-      <p class="">Füge deine eigenen Impf- oder Testzertifikate zur App dazu und validiere die deiner Freunde,
-        Verwandten und Bekannten.</p>
+      <h2 class="fw-bold pb-3 text-center text-md-start"><span
+        class="text-green">{{ 'HOME.SECTION1.HEADLINE1' | translate }}</span> {{ 'HOME.SECTION1.HEADLINE2' | translate }}
+      </h2>
+      <p class="text-center text-md-start">{{ 'HOME.SECTION1.TEXT' | translate }}</p>
     </div>
   </section>
 
   <section
     class="headvisual d-flex flex-column align-items-center justify-content-center pt-3 max-w-1000 flex-md-row">
     <div class="headvisual__text me-md-5 mt-5 mt-md-3">
-      <h2 class="fw-bold pb-3">Jetzt verfügbar in der <span class="text-green">gesamten EU</span></h2>
-      <p class="">Scanne und validiere mit der GreenPass App QR-Codes aus der gesamten Europäischen Union.</p>
+      <h2 class="fw-bold pb-3 text-center text-md-start">{{ 'HOME.SECTION2.HEADLINE1' | translate }} <span
+        class="text-green">{{ 'HOME.SECTION2.HEADLINE2' | translate }}</span></h2>
+      <p class="text-center text-md-start">{{ 'HOME.SECTION2.TEXT' | translate }}</p>
     </div>
     <div class="mt-4">
       <img src="assets/images/screenshot/screenshot%202.png" alt="" style="max-height: 65vh; object-fit: contain;"
@@ -57,10 +58,11 @@
            class="headvisual__image w-100">
     </div>
     <div class="headvisual__text me-md-5 mt-5 mt-md-3">
-      <h2 class="fw-bold pb-3">Einfach & komfortabel ins <span class="text-green">Apple Wallet</span> hinzufügen</h2>
-      <p class="">
-        Mit der GreenPass App kannst du jetzt deine Impf-, Test- und Genesenheitszertifikate ganz bequem in dein Apple
-        Wallet oder Android Wallet hinzufügen. <b>Schnell, einfach und bequem!</b>
+      <h2 class="fw-bold pb-3 text-center text-md-start">{{ 'HOME.SECTION3.HEADLINE1' | translate }} <span
+        class="text-green">{{ 'HOME.SECTION3.HEADLINE2' | translate }}</span> {{ 'HOME.SECTION3.HEADLINE3' | translate }}
+      </h2>
+      <p class="text-center text-md-start">
+        {{ 'HOME.SECTION3.TEXT1' | translate }} <b>{{ 'HOME.SECTION3.TEXT2' | translate }}</b>
       </p>
     </div>
   </section>
@@ -78,8 +80,19 @@
   <!-- FAQ -->
   <section class="my-5">
 
-    <p class="text-center small mb-2 pt-4">Du hast noch einige offene Fragen?</p>
-    <h2 class="text-center fw-bold mb-5">Die häufigsten <span class="text-green">Fragen & Antworten</span></h2>
+    <p class="text-center small mb-2 pt-4">{{ 'HOME.FAQ.PREHEADER' | translate }}</p>
+    <h2 class="text-center fw-bold mb-5">{{ 'HOME.FAQ.HEADLINE1' | translate }} <span class="text-green">{{ 'HOME.FAQ.HEADLINE2' | translate }}</span></h2>
+
+    <div class="faq">
+      <button class="faq__header shadow-sm isClosed" (click)="faqOpenClose($event)">
+        {{ 'HOME.FAQ.FAQ_DATA.QUESTION' | translate }}
+        <i class="fas fa-chevron-right"></i>
+      </button>
+      <p class="faq__content isClosed">
+        {{ 'HOME.FAQ.FAQ_DATA.ANSWER1' | translate }} <b>{{ 'HOME.FAQ.FAQ_DATA.ANSWER2' | translate }}</b>
+        {{ 'HOME.FAQ.FAQ_DATA.ANSWER3' | translate }} <a routerLink="privacy">{{ 'HOME.FAQ.FAQ_DATA.ANSWER4' | translate }}</a>.
+      </p>
+    </div>
 
     <div class="faq">
       <button class="faq__header shadow-sm isClosed" (click)="faqOpenClose($event)">
@@ -129,6 +142,14 @@
         <a href="#" target="_blank">ENTER LINK</a>
       </p>
     </div>
+
+    <!-- Datenschutz erklärung -->
+    <!-- WOZU IST WELCHE APP -->
+
+    <!-- WELCHE LÄNDER WERDEN AKTUELL UNTERSTÜTZT -->
+    <!-- WELCHE GERÄTE WERDEN UNTERSTUTÜTZ -->
+    <!-- WObei unterstützt mich die greenpass app -->
+
 
   </section>
 </main>

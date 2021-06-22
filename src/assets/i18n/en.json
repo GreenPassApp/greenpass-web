@@ -1,6 +1,61 @@
 {
   "HOME": {
-    "TITLE": "Introducing the new GreenPass App!"
+    "HEADVISUAL": {
+      "PREHEADER": "The Green Pass now digital:",
+      "HEADLINE1": "Your",
+      "HEADLINE2": "GreenPass",
+      "HEADLINE3": "App",
+      "TEXT": "Download now, add QR code and show your vaccination, health and test certificates digitally throughout the EU. Available now in the App Store and Playstore."
+    },
+    "SECTION1": {
+      "HEADLINE1": "All certificates",
+      "HEADLINE2": "collected in a one app",
+      "TEXT": "Add your own vaccination or test certificates to the app and validate those of your friends, relatives and acquaintances."
+    },
+    "SECTION2": {
+      "HEADLINE1": "Now available in the",
+      "HEADLINE2": "entire EU",
+      "TEXT": "Scan and validate QR codes from across the European Union with the GreenPass app."
+    },
+    "SECTION3": {
+      "HEADLINE1": "Add to",
+      "HEADLINE2": "Apple Wallet",
+      "HEADLINE3": "easily & conveniently",
+      "TEXT1": "With the GreenPass app, you can now conveniently add your vaccination, testing and recovery certificates to your Apple Wallet or Android Wallet.",
+      "TEXT2": "Quick, easy and convenient!"
+    },
+    "FAQ": {
+      "PREHEADER": "You still have some open questions?",
+      "HEADLINE1": "The most frequently asked",
+      "HEADLINE2": "questions & answers",
+      "FAQ_DATA": {
+        "QUESTION": "Which data is collected by the app?",
+        "ANSWER1": "All data (certificates consisting of first and last name, date of birth, and certificate-specific health data) is stored and processed exclusively",
+        "ANSWER2": "locally and offline on your device",
+        "ANSWER3": ", with the exception of the optional \"Apple Wallet\" feature. You can find all information on data protection summarized as compactly as possible in our",
+        "ANSWER4": "privacy policy"
+      },
+      "FAQ1": {
+        "QUESTION": "",
+        "ANSWER": ""
+      },
+      "FAQ2": {
+        "QUESTION": "",
+        "ANSWER": ""
+      },
+      "FAQ3": {
+        "QUESTION": "",
+        "ANSWER": ""
+      },
+      "FAQ4": {
+        "QUESTION": "",
+        "ANSWER": ""
+      },
+      "FAQ5": {
+        "QUESTION": "",
+        "ANSWER": ""
+      }
+    }
   },
   "HEADER": {
     "MOTIVATION": "Motivation",
