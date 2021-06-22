@@ -19,6 +19,16 @@ export class HeaderComponent implements OnInit {
 
   setLang(lang: string){
     this.translate.use(lang);
+
+    let langNavToggles : any = document.querySelectorAll(".langnavToggle-js");
+    console.log(langNavToggles);
+    for(let toggle of langNavToggles) {
+      toggle.classList.remove("isOpen");
+    }
+    let langNavs : any = document.querySelectorAll(".langnav-js");
+    for(let nav of langNavs) {
+      nav.classList.add("isClosed");
+    }
   }
 
   getCurLang(): String{
@@ -26,14 +36,11 @@ export class HeaderComponent implements OnInit {
   }
 
   closeMobileMenu() : void{
-    let button = document.querySelector("#mobile-nav-toggle");
-    // @ts-ignore
+    let button : any = document.querySelector("#mobile-nav-toggle");
     button.checked = false;
 
-    let mobileMenu = document.querySelector("#mobile-nav");
-    // @ts-ignore
+    let mobileMenu : any = document.querySelector("#mobile-nav");
     mobileMenu.classList.add("d-none");
-
   }
 
   toggleMobileMenu(event: any) {

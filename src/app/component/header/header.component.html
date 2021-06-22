@@ -27,7 +27,7 @@
              routerLink="privacy">{{ 'HEADER.PRIVACY' | translate }}</a>
         </li>
         <li class="position-relative header__langnav">
-          <button class="p-4 header__langnav__button nav-item d-flex align-items-center link text-dark"
+          <button class="langnavToggle-js p-4 header__langnav__button nav-item d-flex align-items-center link text-dark"
                   (click)="toggleLangMenu($event)">
             <ng-container *ngIf="getCurLang() == 'de'">
               <img src="assets/images/flags/austria.svg" alt="Österreich" class="header__langnav__flag pe-none">
@@ -41,7 +41,7 @@
             </ng-container>
           </button>
           <ul
-            class="w-100 header__langnav__langs list-unstyled position-absolute bg-white rounded shadow-sm isClosed ms-2">
+            class="langnav-js w-100 header__langnav__langs list-unstyled position-absolute bg-white rounded shadow-sm isClosed ms-2">
             <li>
               <a *ngIf="getCurLang() != 'en'" (click)="setLang('en')"
                  class="rounded p-3 d-flex align-items-center link text-dark header__langnav__langs__item">
@@ -74,7 +74,7 @@
          routerLink="privacy" (click)="closeMobileMenu()">{{ 'HEADER.PRIVACY' | translate }}</a>
     </li>
     <li class="header__nav--mobile__item my-3 p-3 shadow-sm">
-      <button class="header__langnav__button header__langnav__button--mobile nav-item d-flex align-items-center link text-dark text-dark w-100"
+      <button class="langnavToggle-js header__langnav__button header__langnav__button--mobile nav-item d-flex align-items-center link text-dark text-dark w-100"
               (click)="toggleLangMenu($event)">
         <ng-container *ngIf="getCurLang() == 'de'">
           <img src="assets/images/flags/austria.svg" alt="Österreich" class="header__langnav__flag pe-none">
@@ -88,7 +88,7 @@
         </ng-container>
       </button>
 
-      <ul class="w-100 header__langnav__langs header__langnav__langs--mobile list-unstyled bg-white rounded isClosed">
+      <ul class="langnav-js w-100 header__langnav__langs header__langnav__langs--mobile list-unstyled bg-white rounded isClosed">
         <li>
           <a *ngIf="getCurLang() != 'en'" (click)="setLang('en')"
              class="pt-4 rounded d-flex align-items-center link text-dark header__langnav__langs__item">

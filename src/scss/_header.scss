@@ -73,6 +73,14 @@
 
       &--mobile {
         border: none;
+
+        a, li {
+          cursor: pointer;
+
+          &:hover, &:focus {
+            background: none;
+          }
+        }
       }
 
       &__item {

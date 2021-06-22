@@ -4,6 +4,7 @@ import {HomeComponent} from "./component/home/home.component";
 import {DetailComponent} from "./component/detail/detail.component";
 import {AboutComponent} from "./component/about/about.component";
 import {PrivacyComponent} from "./component/privacy/privacy.component";
+import {ImprintComponent} from "./component/imprint/imprint.component";
 
 const routes: Routes = [
   {
@@ -21,6 +22,10 @@ const routes: Routes = [
   {
     path: 'privacy',
     component: PrivacyComponent,
+  },
+  {
+    path: 'imprint',
+    component: ImprintComponent,
   }
 ];
 
