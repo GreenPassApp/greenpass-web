@@ -17,6 +17,14 @@ export class HeaderComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  setLang(lang: string){
+    this.translate.use(lang)
+  }
+
+  getCurLang(): String{
+    return this.translate.currentLang
+  }
+
   toggleLangMenu(event: any) {
     let button = event.target;
     let menu  = event.target.nextElementSibling;

@@ -29,12 +29,12 @@
           <button class="p-4 header__langnav__button nav-item d-flex align-items-center link text-dark"
                   (click)="toggleLangMenu($event)">
             <img src="assets/images/flags/austria.svg" alt="Österreich" class="header__langnav__flag pe-none">
-            <span class="d-block mx-2 fw-bold pe-none">Deutsch</span>
+            <span (click)="setLang('de')" class="d-block mx-2 fw-bold pe-none">Deutsch</span>
             <small class="pb-1 pe-none"><i class="fas fa-chevron-down small pe-none"></i></small>
           </button>
           <ul class="w-100 header__langnav__langs list-unstyled position-absolute bg-white rounded shadow-sm isClosed ms-2">
             <li>
-              <a routerLink="eu" class="rounded p-3 d-flex align-items-center link text-dark header__langnav__langs__item">
+              <a (click)="setLang('en')" class="rounded p-3 d-flex align-items-center link text-dark header__langnav__langs__item">
                 <img src="assets/images/flags/eu.svg" alt="" class="header__langnav__flag">
                 <span class="ms-3 d-block">Englisch</span>
               </a>
