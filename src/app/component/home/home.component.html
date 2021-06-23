@@ -62,8 +62,27 @@
         class="text-green">{{ 'HOME.SECTION3.HEADLINE2' | translate }}</span> {{ 'HOME.SECTION3.HEADLINE3' | translate }}
       </h2>
       <p class="text-center text-md-start">
-        {{ 'HOME.SECTION3.TEXT1' | translate }} <b>{{ 'HOME.SECTION3.TEXT2' | translate }}</b>
+        {{ 'HOME.SECTION3.TEXT1' | translate }} <span class="fw-bold">{{ 'HOME.SECTION3.TEXT2' | translate }}</span>
       </p>
+    </div>
+  </section>
+
+  <section
+    class="headvisual d-flex flex-column align-items-center justify-content-center pt-3 max-w-1000 flex-md-row">
+    <div class="headvisual__text me-md-5 mt-5 mt-md-3">
+      <h2 class="fw-bold pb-3 text-center text-md-start"><span class="text-green">Datenschutz & Transparenz</span> liegen
+        uns am Herzen!</h2>
+      <p class="text-center text-md-start">Vor allem bei Gesundheitsdaten ist die Sicherheit deiner Daten besonders
+        wichtig, deshalb werden von der App grundsätzlich alle gesammelten Daten ausschließlich <span class="fw-bold">offline und lokal auf
+          deinem Gerät</span> gespeichert.</p>
+      <p class="text-center text-md-start"><span class="fw-bold">Wichtig: </span>Für das Verwenden der optionalen Funktionen "Apple Wallet" und "Teilen" werden die Daten
+        kurzfristig bis zum Zeitpunkt des Ablaufens des Zertifikats gespeichert. Bitte lies dir vor der Nutzung der App
+        allerdings unsere <a routerLink="privacy">Datenschutzerklärung</a>
+        genau durch!</p>
+    </div>
+    <div class="mt-4">
+      <img src="assets/images/screenshot/screenshot%202.png" alt="" style="max-height: 65vh; object-fit: contain;"
+           class="headvisual__image w-100">
     </div>
   </section>
 
@@ -81,7 +100,8 @@
   <section class="my-5">
 
     <p class="text-center small mb-2 pt-4">{{ 'HOME.FAQ.PREHEADER' | translate }}</p>
-    <h2 class="text-center fw-bold mb-5">{{ 'HOME.FAQ.HEADLINE1' | translate }} <span class="text-green">{{ 'HOME.FAQ.HEADLINE2' | translate }}</span></h2>
+    <h2 class="text-center fw-bold mb-5">{{ 'HOME.FAQ.HEADLINE1' | translate }} <span
+      class="text-green">{{ 'HOME.FAQ.HEADLINE2' | translate }}</span></h2>
 
     <div class="faq">
       <button class="faq__header shadow-sm isClosed" (click)="faqOpenClose($event)">
@@ -89,8 +109,9 @@
         <i class="fas fa-chevron-right"></i>
       </button>
       <p class="faq__content isClosed">
-        {{ 'HOME.FAQ.FAQ_DATA.ANSWER1' | translate }} <b>{{ 'HOME.FAQ.FAQ_DATA.ANSWER2' | translate }}</b>
-        {{ 'HOME.FAQ.FAQ_DATA.ANSWER3' | translate }} <a routerLink="privacy">{{ 'HOME.FAQ.FAQ_DATA.ANSWER4' | translate }}</a>.
+        {{ 'HOME.FAQ.FAQ_DATA.ANSWER1' | translate }} <span class="fw-bold">{{ 'HOME.FAQ.FAQ_DATA.ANSWER2' | translate }}</span>
+        {{ 'HOME.FAQ.FAQ_DATA.ANSWER3' | translate }} <a
+        routerLink="privacy">{{ 'HOME.FAQ.FAQ_DATA.ANSWER4' | translate }}</a>.
       </p>
     </div>
 

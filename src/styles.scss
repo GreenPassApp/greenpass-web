@@ -13,10 +13,16 @@
   padding-top: 77px;
 }
 
+.max-w-1000 {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
 body {
   font-family: 'Inter', Arial, sans-serif;
   background-color: rgba(235, 236, 237, 0.3);
   color: #333333;
+  font-weight: 300;
 }
 
 .text-dark {
@@ -51,6 +57,19 @@ $blue: #135ACF;
 $red: #FF5048;
 $green: #50AF64;
 
+/* inter-300 - latin */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 300;
+  src: url('./fonts/inter-v3-latin-300.eot'); /* IE9 Compat Modes */
+  src: local(''),
+  url('./fonts/inter-v3-latin-300.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url('./fonts/inter-v3-latin-300.woff2') format('woff2'), /* Super Modern Browsers */
+  url('./fonts/inter-v3-latin-300.woff') format('woff'), /* Modern Browsers */
+  url('./fonts/inter-v3-latin-300.ttf') format('truetype'), /* Safari, Android, iOS */
+  url('./fonts/inter-v3-latin-300.svg#Inter') format('svg'); /* Legacy iOS */
+}
 
 /* inter-regular - latin */
 @font-face {
