@@ -5,6 +5,7 @@ import {DetailComponent} from "./component/detail/detail.component";
 import {AboutComponent} from "./component/about/about.component";
 import {PrivacyComponent} from "./component/privacy/privacy.component";
 import {ImprintComponent} from "./component/imprint/imprint.component";
+import {NotFoundComponent} from "./component/not-found/not-found.component";
 
 const routes: Routes = [
   {
@@ -26,6 +27,12 @@ const routes: Routes = [
   {
     path: 'imprint',
     component: ImprintComponent,
+  },
+  {
+    path: '404', component: NotFoundComponent
+  },
+  {
+    path: '**', redirectTo: '/404'
   }
 ];
 

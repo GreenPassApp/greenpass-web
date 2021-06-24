@@ -1,4 +1,72 @@
 {
+  "PRIVACY": {
+    "HEADLINE": {
+      "HEADLINE1": "Weil",
+      "HEADLINE2": "Datenschutz",
+      "HEADLINE3": "uns alle etwas angeht"
+    },
+    "EXCERPT": {
+      "TEXT1": "Vor allem im Umgang mit Gesundheitsdaten spielt Datenschutz eine besonders wichtige Rolle. Da uns Datenschutz und Transparenz sehr am Herzen liegt, ist der gesamte Quellcode des Projekts",
+      "TEXT2": "auf GitHub",
+      "TEXT3": "öffentlich einsehbar",
+      "TEXT4": "Du kannst die App und diese Website nutzen, ohne dass Angaben zu deiner Person online gespeichert oder verarbeitet werden. Die erfassten Daten werden",
+      "TEXT5": "ausschließlich lokal und offline auf deinem Gerät",
+      "TEXT6": "gespeichert und verarbeitet und werden mit dem Deinstallieren der App gelöscht. Beim Verwenden bestimmter optionaler Funktionen (Apple Wallet & Teilen-Funktion) werden personenbezogene Daten erfasst und für den kürzest-möglichen Zeitraum online gespeichert und verarbeitet. Selbstverständlich wirst du vor der Nutzung dieser Funktionen in der App darüber informiert."
+    },
+    "APP": {
+      "QUESTION": "Welche Daten werden bei der Verwendung der App erfasst?",
+      "ANSWER1": "Sämtliche Daten (Zertifikate bestehend aus Vor- und Nachname, Geburtsdatum und zertifikatsspezifische Gesundheitsdaten wie z. B. Impfstoff oder Zeitpunkt der Test-Durchführung) werden lokal und offline auf deinem Gerät gespeichert und verarbeitet, mit der Ausnahme dieser optionalen Funktionen:",
+      "ANSWER2": "Apple Wallet-Funktion",
+      "ANSWER3": "und",
+      "ANSWER4": "Teilen-Funktion",
+      "ANSWER5": "Neue öffentliche Schlüssel der jeweiligen EU-Staaten sowie jegliche andere Verbindungen werden verschlüsselt per HTTPS übertragen.",
+      "ANSWER6": "Apple Wallet-Funktion",
+      "ANSWER7": "Das Zertifikat muss aus technischen Gründen kurzfristig auf unserem Server verifiziert und signiert werden und wird anschließend wieder gelöscht. Es werden keine Daten über längere Zeiträume hinweg gespeichert.",
+      "ANSWER8": "Deine Daten werden in einem PassKit File zur Nutzung im Apple Wallet gespeichert. Bitte beachte, dass diese nach dem Speichern möglicherweise über die Apple iCloud (Clouddienst) synchronisiert werden. Mehr zum Datenschutz von Apple findest du hier:",
+      "ANSWER9": "https://www.apple.com/at/legal/privacy/de-ww",
+      "ANSWER10": "Teilen-Funktion",
+      "ANSWER11": "Um anderen Personen den 3G-Zustand übermitteln zu können, müssen ein Teil der Zertifikats-Daten temporär online gespeichert werden. Dabei handelt es sich nur um die absolut notwendigen Informationen, die für einen von dir beliebig wählbaren Zeitraum persistiert werden. Alle Daten werden spätestens nach dem Ablauf des jeweiligen geteilten Zertifikats gelöscht. Die Daten werden weder verarbeitet noch an Dritte weitergegeben.",
+      "ANSWER12": "Um Transparenz zu schaffen, wie deine Daten verarbeitet und gespeichert werden, ist der gesamte Quellcode des Projektes hier öffentlich einsehbar:",
+      "ANSWER13": "https://github.com/GreenPassApp",
+      "ANSWER14": "Hier ein Überblick, welche Daten beim Verwenden der Teilen-Funktion für einen bestimmten Zeitraum online gespeichert werden:",
+      "DATA1": "Vor- und Nachname",
+      "DATA2": "Geburtsdatum",
+      "DATA3": "Selbst gewähltes Ablaufdatum oder Ablaufdatum des Zertifikats",
+      "DATA4": "Für Impfzertifikate",
+      "DATA5": "Anzahl der bereits verabreichten Impfungen",
+      "DATA6": "Anzahl der benötigten Impfungen",
+      "DATA7": "Datum der ersten und der letzten Impfung",
+      "DATA8": "Für Genesungszertifikate",
+      "DATA9": "Ablaufdatum",
+      "DATA10": "Für Testzertifikate",
+      "DATA11": "Test-Art (PCR- oder Schnelltest)",
+      "DATA12": "Zeitpunkt der Test-Durchführung"
+    },
+    "WEBSITE": {
+      "QUESTION": "Welche Daten werden bei der Verwendung dieser Website erfasst?",
+      "ANSWER1": "Der Serverbetreiber dieser Website verarbeitet Daten, die zur Auslieferung der Website notwendig sind. IP-Adressen werden mittels Masking anonymisiert. Mehr dazu in der Datenschutzerklärung des Betreibers. Es werden",
+      "ANSWER2": "keine Tracing Services",
+      "ANSWER3": "wie Google Analytics genutzt.",
+      "ANSWER4": "Webhosting",
+      "ANSWER5": "Diese Website verwendet den Hosting-Dienst Uberspace. Dieser Dienstleister erstellt Webserver‑Protokolle, die Datum und Uhrzeit, den abgerufenen URL-Pfad, ggf. den Referrer sowie den verwendeten Browser enthalten; deine IP-Adresse wird allerdings mittels IP-Masking anonymisiert, so dass keine personenbezogenen Daten vorliegen. Mehr zum Datenschutz von Uberspace gibt es hier:",
+      "ANSWER6": "https://uberspace.de/de/about/privacy"
+    },
+    "THIRDPARTIES": {
+      "QUESTION": "Werden meine Daten an Dritte weitergegeben?",
+      "ANSWER": "Nein, deine Daten werden nicht an Dritte weitergegeben."
+    },
+    "RIGHTS": {
+      "QUESTION": "Welche Rechte habe ich als Betroffene:r?",
+      "ANSWER1": "Du hast das Recht auf Auskunft über deine personenbezogenen Daten, sowie das Recht auf Richtigstellung, Löschung oder Einschränkung der Verarbeitung. Ebenso kannst du der Verarbeitung widersprechen und hast das Recht auf Übertragung deiner personenbezogenen Daten in strukturierter, maschinenlesbaren Form. Für alle genannten Rechte wende dich bitte an die Verantwortlichen dieses Projektes, die Kontaktdaten findest du im",
+      "ANSWER2": "Impressum",
+      "ANSWER3": "dieser Website. Du hast weiters das Recht, eine Beschwerde bei einer Aufsichtsbehörde einzureichen. Für Österreich ist dies die österreichische Datenschutzbehörde, Wickenburggasse 8, 1080 Wien, Telefon:",
+      "ANSWER4": "+43 1 52 152-0",
+      "ANSWER5": ", E-Mail:",
+      "ANSWER6": "dsb@dsb.gv.at",
+      "ANSWER7": ", Web:",
+      "ANSWER8": "https://www.dsb.gv.at"
+    }
+  },
   "HOME": {
     "HEADVISUAL": {
       "PREHEADER": "Der Grüne Pass jetzt digital:",
@@ -30,8 +98,8 @@
       "HEADLINE2": "Fragen & Antworten",
       "FAQ_DATA": {
         "QUESTION": "Welche Daten werden von der App erfasst?",
-        "ANSWER1": "Sämtliche Daten (Zertifikate bestehend aus Vor- und Nachname, Geburtsdatum und zertifikatsspezifische Gesundheitsdaten) werden ausschließlich",
-        "ANSWER2": "lokal und offline auf deinem Gerät",
+        "ANSWER1": "Sämtliche Daten (Zertifikate bestehend aus Vor- und Nachname, Geburtsdatum und zertifikatsspezifische Gesundheitsdaten) werden",
+        "ANSWER2": "ausschließlich lokal und offline auf deinem Gerät",
         "ANSWER3": "gespeichert und verarbeitet, mit der Ausnahme des optionalen Features \"Apple Wallet\". Alle Informationen zum Datenschutz findest du möglichst kompakt zusammengefasst in unserer",
         "ANSWER4": "Datenschutzerklärung"
       },

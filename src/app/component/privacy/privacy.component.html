@@ -1,76 +1,63 @@
 <div class="my-5 max-w-1000">
-  <h1 class="fw-bold text-center py-4">Weil <span class="text-green">Datenschutz</span> uns alle etwas angeht</h1>
-  <p class="text-start faq__content py-0">
-    Vor allem im Umgang mit Gesundheitsdaten spielt Datenschutz eine besonders wichtige Rolle. Da uns Datenschutz und
-    Transparenz sehr am Herzen liegt, ist der gesamte Quellcode des Projekts <a href="https://github.com/GreenPassApp" target="_blank">auf GitHub</a>
+  <h1 class="fw-bold text-center py-4">{{ 'PRIVACY.HEADLINE.HEADLINE1' | translate }} <span
+    class="text-green">{{ 'PRIVACY.HEADLINE.HEADLINE2' | translate }}</span> {{ 'PRIVACY.HEADLINE.HEADLINE3' | translate }}
+  </h1>
+  <p class="text-start px-3">
+    {{ 'PRIVACY.EXCERPT.TEXT1' | translate }} <a href="https://github.com/GreenPassApp"
+                                                 target="_blank">{{ 'PRIVACY.EXCERPT.TEXT2' | translate }}</a>
     <span
-      class="fw-bold"> öffentlich einsehbar</span>.</p>
+      class="fw-bold"> {{ 'PRIVACY.EXCERPT.TEXT3' | translate }}</span>.</p>
 
-  <p class="pb-4 faq__content py-0">Du kannst die App und diese Website nutzen, ohne dass Angaben zu deiner Person
-    online gespeichert oder verarbeitet
-    werden. Die erfassten Daten werden ausschließlich <span class="fw-bold">lokal und offline auf deinem Gerät</span>
-    gespeichert und verarbeitet und werden mit dem Deinstallieren der App gelöscht. Beim Verwenden bestimmter optionaler
-    Funktionen (Apple Wallet &
-    Teilen-Funktion) werden personenbezogene Daten erfasst und für den kürzest-möglichen Zeitraum online gespeichert und
-    verarbeitet. Selbstverständlich wirst du vor der Nutzung dieser Funktionen in der App darüber informiert.
+  <p class="pb-4 px-3">{{ 'PRIVACY.EXCERPT.TEXT4' | translate }} <span
+    class="fw-bold">{{ 'PRIVACY.EXCERPT.TEXT5' | translate }}</span>
+    {{ 'PRIVACY.EXCERPT.TEXT6' | translate }}
   </p>
 
   <div class="faq">
     <button class="faq__header shadow-sm isClosed" (click)="faqOpenClose($event)">
-      <span class="fw-bold fs-5 pe-none">Welche Daten werden bei der Verwendung der App erfasst?</span>
+      <span class="fw-bold fs-5 pe-none">{{ 'PRIVACY.APP.QUESTION' | translate }}</span>
       <i class="fas fa-chevron-right"></i>
     </button>
     <div class="faq__content isClosed">
-      <p>Sämtliche Daten (Zertifikate bestehend aus Vor- und Nachname, Geburtsdatum und zertifikatsspezifische
-        Gesundheitsdaten wie z.&nbsp;B. Impfstoff oder Zeitpunkt der Test-Durchführung) werden lokal und offline auf
-        deinem
-        Gerät gespeichert und verarbeitet, mit der Ausnahme dieser
-        optionalen Funktionen: <a href="#">Apple Wallet-Funktion</a> und <a href="#">Teilen-Funktion</a>.</p>
-      <p>Neue öffentliche Schlüssel der jeweiligen EU-Staaten sowie jegliche andere Verbindungen werden verschlüsselt
-        per HTTPS übertragen.</p>
+      <p>{{ 'PRIVACY.APP.ANSWER1' | translate }} <a
+        href="#">{{ 'PRIVACY.APP.ANSWER2' | translate }}</a> {{ 'PRIVACY.APP.ANSWER3' | translate }} <a
+        href="#">{{ 'PRIVACY.APP.ANSWER4' | translate }}</a>.</p>
+      <p>{{ 'PRIVACY.APP.ANSWER5' | translate }}</p>
 
-      <h3 class="fw-bold fs-6 pt-3 mt-2" id="apple-wallet">Apple Wallet-Funktion</h3>
-      <p>Das Zertifikat muss aus technischen Gründen kurzfristig auf unserem Server verifiziert und signiert werden und
-        wird anschließend wieder gelöscht. Es werden keine Daten über längere Zeiträume hinweg gespeichert.</p>
+      <h3 class="fw-bold fs-6 pt-3 mt-2" id="apple-wallet">{{ 'PRIVACY.APP.ANSWER6' | translate }}</h3>
+      <p>{{ 'PRIVACY.APP.ANSWER7' | translate }}</p>
 
-      <p>Deine Daten werden in einem PassKit File zur Nutzung im Apple Wallet gespeichert. Bitte beachte, dass diese
-        nach
-        dem Speichern möglicherweise über die Apple iCloud (Clouddienst) synchronisiert werden. Mehr zum Datenschutz von
-        Apple findest du hier:
+      <p>{{ 'PRIVACY.APP.ANSWER8' | translate }}
         <a target="_blank"
-           href="https://www.apple.com/at/legal/privacy/de-ww/">https://www.apple.com/at/legal/privacy/de-ww</a>
+           href="{{ 'PRIVACY.APP.ANSWER9' | translate }}">{{ 'PRIVACY.APP.ANSWER9' | translate }}</a>
       </p>
-      <h3 class="fw-bold fs-6 pt-3 mt-2">Teilen-Funktion</h3>
+      <h3 class="fw-bold fs-6 pt-3 mt-2">{{ 'PRIVACY.APP.ANSWER10' | translate }}</h3>
 
-      <p>Um anderen Personen den 3G-Zustand übermitteln zu können, müssen ein Teil der Zertifikats-Daten temporär online
-        gespeichert werden. Dabei handelt es sich nur um die absolut notwendigen Informationen, die für einen von dir
-        beliebig wählbaren Zeitraum persistiert werden. Alle Daten werden spätestens nach dem Ablauf des jeweiligen
-        geteilten Zertifikats gelöscht. Die Daten werden weder verarbeitet noch an Dritte weitergegeben.</p>
-      <p>Um Transparenz zu schaffen, wie deine Daten verarbeitet und gespeichert werden, ist der gesamte
-        Quellcode des Projektes hier öffentlich einsehbar: <a href="https://github.com/GreenPassApp" target="_blank">https://github.com/GreenPassApp</a>
+      <p>{{ 'PRIVACY.APP.ANSWER11' | translate }}</p>
+      <p>{{ 'PRIVACY.APP.ANSWER12' | translate }} <a href="{{ 'PRIVACY.APP.ANSWER13' | translate }}"
+                                                     target="_blank">{{ 'PRIVACY.APP.ANSWER13' | translate }}</a>
       </p>
-      <p>Hier ein Überblick, welche Daten beim Verwenden der Teilen-Funktion für einen bestimmten Zeitraum online
-        gespeichert werden:</p>
+      <p>{{ 'PRIVACY.APP.ANSWER14' | translate }}</p>
       <ul>
-        <li>Vor- und Nachname</li>
-        <li>Geburtsdatum</li>
-        <li>Selbst gewähltes Ablaufdatum oder Ablaufdatum des Zertifikats</li>
-        <li>Für Impfzertifikate
+        <li>{{ 'PRIVACY.APP.DATA1' | translate }}</li>
+        <li>{{ 'PRIVACY.APP.DATA2' | translate }}</li>
+        <li>{{ 'PRIVACY.APP.DATA3' | translate }}</li>
+        <li>{{ 'PRIVACY.APP.DATA4' | translate }}
           <ul>
-            <li>Anzahl der bereits verabreichten Impfungen</li>
-            <li>Anzahl der benötigten Impfungen</li>
-            <li>Datum der ersten und der letzten Impfung</li>
+            <li>{{ 'PRIVACY.APP.DATA5' | translate }}</li>
+            <li>{{ 'PRIVACY.APP.DATA6' | translate }}</li>
+            <li>{{ 'PRIVACY.APP.DATA7' | translate }}</li>
           </ul>
         </li>
-        <li>Für Genesungszertifikate
+        <li>{{ 'PRIVACY.APP.DATA8' | translate }}
           <ul>
-            <li>Ablaufdatum</li>
+            <li>{{ 'PRIVACY.APP.DATA9' | translate }}</li>
           </ul>
         </li>
-        <li>Für Testzertifikate
+        <li>{{ 'PRIVACY.APP.DATA10' | translate }}
           <ul>
-            <li>Test-Art (PCR- oder Schnelltest)</li>
-            <li>Zeitpunkt der Test-Durchführung</li>
+            <li>{{ 'PRIVACY.APP.DATA11' | translate }}</li>
+            <li>{{ 'PRIVACY.APP.DATA12' | translate }}</li>
           </ul>
         </li>
       </ul>
@@ -79,52 +66,45 @@
 
   <div class="faq">
     <button class="faq__header shadow-sm isClosed" (click)="faqOpenClose($event)">
-      <span class="fw-bold fs-5 pe-none">Welche Daten werden bei der Verwendung dieser Website erfasst?</span>
+      <span class="fw-bold fs-5 pe-none">{{ 'PRIVACY.WEBSITE.QUESTION' | translate }}</span>
       <i class="fas fa-chevron-right"></i>
     </button>
     <div class="faq__content isClosed">
       <p>
-        Der Serverbetreiber dieser Website verarbeitet Daten, die zur Auslieferung der Website notwendig sind.
-        IP-Adressen
-        werden mittels Masking anonymisiert. Mehr dazu in der Datenschutzerklärung des Betreibers.
-        Es werden <span class="fw-bold">keine Tracing Services</span> wie Google Analytics genutzt.
+        {{ 'PRIVACY.WEBSITE.ANSWER1' | translate }} <span
+        class="fw-bold">{{ 'PRIVACY.WEBSITE.ANSWER2' | translate }}</span> {{ 'PRIVACY.WEBSITE.ANSWER3' | translate }}
 
       </p>
-      <h3 class="fw-bold fs-6 pt-3 mt-2">Webhosting</h3>
-      <p>Diese Website verwendet den Hosting-Dienst Uberspace. Dieser Dienstleister erstellt Webserver‑Protokolle, die
-        Datum
-        und Uhrzeit, den abgerufenen URL-Pfad, ggf. den Referrer sowie den verwendeten Browser enthalten; deine
-        IP-Adresse
-        wird allerdings mittels IP-Masking anonymisiert, so dass keine personenbezogenen Daten vorliegen. Mehr zum
-        Datenschutz von Uberspace gibt es hier: <a href="https://uberspace.de/de/about/privacy/" target="_blank">https://uberspace.de/de/about/privacy</a>
+      <h3 class="fw-bold fs-6 pt-3 mt-2">{{ 'PRIVACY.WEBSITE.ANSWER4' | translate }}</h3>
+      <p>{{ 'PRIVACY.WEBSITE.ANSWER5' | translate }} <a href="{{ 'PRIVACY.WEBSITE.ANSWER6' | translate }}"
+                                                        target="_blank">{{ 'PRIVACY.WEBSITE.ANSWER6' | translate }}</a>
       </p>
     </div>
   </div>
 
   <div class="faq">
     <button class="faq__header shadow-sm isClosed" (click)="faqOpenClose($event)">
-      <span class="fw-bold fs-5 pe-none">Werden meine Daten an Dritte weitergegeben?</span>
+      <span class="fw-bold fs-5 pe-none">{{ 'PRIVACY.THIRDPARTIES.QUESTION' | translate }}</span>
       <i class="fas fa-chevron-right"></i>
     </button>
     <p class="faq__content isClosed">
-      Nein, deine Daten werden nicht an Dritte weitergegeben.
+      {{ 'PRIVACY.THIRDPARTIES.ANSWER' | translate }}
     </p>
   </div>
 
   <div class="faq">
     <button class="faq__header shadow-sm isClosed" (click)="faqOpenClose($event)">
-      <span class="fw-bold fs-5 pe-none">Welche Rechte habe ich als Betroffene:r?</span>
+      <span class="fw-bold fs-5 pe-none">{{ 'PRIVACY.RIGHTS.QUESTION' | translate }}</span>
       <i class="fas fa-chevron-right"></i>
     </button>
     <p class="faq__content isClosed">
-      Du hast das Recht auf Auskunft über deine personenbezogenen Daten, sowie das Recht auf Richtigstellung, Löschung
-      oder Einschränkung der Verarbeitung. Ebenso kannst du der Verarbeitung widersprechen und hast das Recht auf
-      Übertragung deiner personenbezogenen Daten in strukturierter, maschinenlesbaren Form. Für alle genannten Rechte
-      wende dich bitte an die Verantwortlichen dieses Projektes, die Kontaktdaten findest du im <a
-      routerLink="../imprint">Impressum</a> dieser Website. Du hast weiters das Recht, eine Beschwerde bei einer
-      Aufsichtsbehörde einzureichen. Für Österreich ist dies die österreichische Datenschutzbehörde, Wickenburggasse 8,
-      1080 Wien, Telefon: <a href="tel:+43 1 52 152-0">+43 1 52 152-0</a>, E-Mail: <a href="mailto:dsb@dsb.gv.at">dsb@dsb.gv.at</a>,
-      Web: <a href="https://www.dsb.gv.at/">https://www.dsb.gv.at</a>.
+      {{ 'PRIVACY.RIGHTS.ANSWER1' | translate }} <a
+      routerLink="../imprint">{{ 'PRIVACY.RIGHTS.ANSWER2' | translate }}</a> {{ 'PRIVACY.RIGHTS.ANSWER3' | translate }}
+      <a
+        href="tel:{{ 'PRIVACY.RIGHTS.ANSWER4' | translate }}">{{ 'PRIVACY.RIGHTS.ANSWER4' | translate }}</a>{{ 'PRIVACY.RIGHTS.ANSWER5' | translate }}
+      <a
+        href="mailto:{{ 'PRIVACY.RIGHTS.ANSWER6' | translate }}">{{ 'PRIVACY.RIGHTS.ANSWER6' | translate }}</a>{{ 'PRIVACY.RIGHTS.ANSWER7' | translate }}
+      <a href="{{ 'PRIVACY.RIGHTS.ANSWER8' | translate }}" target="_blank">{{ 'PRIVACY.RIGHTS.ANSWER8' | translate }}</a>.
     </p>
   </div>
 </div>

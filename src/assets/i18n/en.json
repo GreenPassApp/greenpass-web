@@ -1,4 +1,72 @@
 {
+  "PRIVACY": {
+    "HEADLINE": {
+      "HEADLINE1": "Because",
+      "HEADLINE2": "data protection",
+      "HEADLINE3": "concerns us all"
+    },
+    "EXCERPT": {
+      "TEXT1": "Especially when dealing with health data, data protection plays a particularly important role. Since data protection and transparency are very important to us, the entire source code of the project is publicly available",
+      "TEXT2": "on GitHub",
+      "TEXT3": "",
+      "TEXT4": "You can use the app and this website without any personal data being stored or processed online. The collected data is only stored and processed",
+      "TEXT5": "locally and offline on your device",
+      "TEXT6": "and will be deleted when you uninstall the app. When using certain optional features (Apple Wallet & Share feature), personal data is collected and stored and processed online for the shortest possible period of time. Of course, you will be informed about this in the app before using these features."
+    },
+    "APP": {
+      "QUESTION": "Which data is collected when using the app?",
+      "ANSWER1": "All data (certificates including first and last name, date of birth, and certificate-specific health data such as vaccine or time of test execution) is stored and processed locally and offline on your device, with the exception of these optional features:",
+      "ANSWER2": "Apple Wallet feature",
+      "ANSWER3": "and",
+      "ANSWER4": "Share feature",
+      "ANSWER5": "New public keys of the respective EU states and any other connections are transmitted encrypted via HTTPS.",
+      "ANSWER6": "Apple Wallet feature",
+      "ANSWER7": "For technical reasons, the certificate must be verified and signed on our server for a short time and is then deleted again. No data is stored for longer periods of time.",
+      "ANSWER8": "Your data will be stored in a PassKit file for use in Apple Wallet. Please note that once saved, it may be synced via Apple iCloud (cloud service). You can read more about Apple's privacy policy here:",
+      "ANSWER9": "https://www.apple.com/at/legal/privacy",
+      "ANSWER10": "Share feature",
+      "ANSWER11": "In order to be able to share the certificate status with other people, a part of the certificate data has to be stored temporarily online. This is only the absolutely necessary information that is persisted for a period of time that you can choose. All data will be deleted at the latest after the expiration of the particular shared certificate. The data will neither be processed nor passed on to third parties.",
+      "ANSWER12": "To provide transparency on how your data is processed and stored, the entire source code of the project is publicly available here:",
+      "ANSWER13": "https://github.com/GreenPassApp",
+      "ANSWER14": "Here is an overview of what data is stored online for a certain period of time when you use the Share feature:",
+      "DATA1": "First and last name",
+      "DATA2": "Date of birth",
+      "DATA3": "Self-selected expiration date or expiration date of the certificate",
+      "DATA4": "For vaccination certificates",
+      "DATA5": "Number of vaccinations already received",
+      "DATA6": "Number of vaccinations needed",
+      "DATA7": "Date of first and last vaccination",
+      "DATA8": "For recovery certificates",
+      "DATA9": "Expiration date",
+      "DATA10": "For test certificates",
+      "DATA11": "Test type (PCR or rapid test)",
+      "DATA12": "Time of the test execution"
+    },
+    "WEBSITE": {
+      "QUESTION": "Which data is collected when using this website?",
+      "ANSWER1": "The server operator of this website processes data that is necessary for the delivery of the website. IP addresses are anonymized by means of masking. More about this in the privacy policy of the operator.",
+      "ANSWER2": "No tracing services",
+      "ANSWER3": "such as Google Analytics are used.",
+      "ANSWER4": "Web hosting",
+      "ANSWER5": "This website uses the hosting service Uberspace. This service provider creates web server logs that contain the date and time, the URL path accessed, the referrer if applicable, and the browser used; however, your IP address is anonymized using IP masking so that no personal data is available. More about the privacy policy of Uberspace can be found here:",
+      "ANSWER6": "https://uberspace.de/en/about/privacy"
+    },
+    "THIRDPARTIES": {
+      "QUESTION": "Will my data be passed on to third parties?",
+      "ANSWER": "No, your data will not be passed on to third parties."
+    },
+    "RIGHTS": {
+      "QUESTION": "What rights do I have as a person affected?",
+      "ANSWER1": "You have the right to information about your personal data, as well as the right to rectification, erasure or restriction of processing. You can also object to the processing and have the right to have your personal data transferred in a structured, machine-readable form. For all the aforementioned rights, please contact the responsible persons of this project, the contact details can be found in the",
+      "ANSWER2": "imprint",
+      "ANSWER3": "of this website. You also have the right to file a complaint with a supervisory authority. For Austria, this is the Austrian Data Protection Authority, Wickenburggasse 8, 1080 Vienna, phone:",
+      "ANSWER4": "+43 1 52 152-0",
+      "ANSWER5": ", e-mail:",
+      "ANSWER6": "dsb@dsb.gv.at",
+      "ANSWER7": ", web:",
+      "ANSWER8": "https://www.dsb.gv.at"
+    }
+  },
   "HOME": {
     "HEADVISUAL": {
       "PREHEADER": "The Green Pass now digital:",

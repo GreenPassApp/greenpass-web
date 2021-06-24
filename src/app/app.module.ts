@@ -13,6 +13,7 @@ import {TranslateHttpLoader} from '@ngx-translate/http-loader';
 import { AboutComponent } from './component/about/about.component';
 import { PrivacyComponent } from './component/privacy/privacy.component';
 import { ImprintComponent } from './component/imprint/imprint.component';
+import { NotFoundComponent } from './component/not-found/not-found.component';
 
 // AoT requires an exported function for factories
 export function createTranslateLoader(http: HttpClient) {
@@ -28,7 +29,8 @@ export function createTranslateLoader(http: HttpClient) {
     DetailComponent,
     AboutComponent,
     PrivacyComponent,
-    ImprintComponent
+    ImprintComponent,
+    NotFoundComponent
   ],
   imports: [
     BrowserModule,

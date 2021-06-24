@@ -24,10 +24,11 @@
     </div>
   </section>
 
+  <!-- ALL CERTIFICATES -->
   <section
     class="headvisual d-flex flex-column-reverse align-items-center justify-content-center pt-3 max-w-1000 flex-md-row">
-    <div class="mt-4">
-      <img src="assets/images/screenshot/screenshot%202.png" alt="" style="max-height: 65vh; object-fit: contain;"
+    <div class="mt-4 me-4">
+      <img src="assets/images/home/certificates-check.png" alt="" style="max-height: 65vh; object-fit: contain;"
            class="headvisual__image w-100">
     </div>
     <div class="headvisual__text me-md-5 mt-5 mt-md-3">
@@ -38,6 +39,7 @@
     </div>
   </section>
 
+  <!-- ENTIRE EU -->
   <section
     class="headvisual d-flex flex-column align-items-center justify-content-center pt-3 max-w-1000 flex-md-row">
     <div class="headvisual__text me-md-5 mt-5 mt-md-3">
@@ -46,11 +48,12 @@
       <p class="text-center text-md-start">{{ 'HOME.SECTION2.TEXT' | translate }}</p>
     </div>
     <div class="mt-4">
-      <img src="assets/images/screenshot/screenshot%202.png" alt="" style="max-height: 65vh; object-fit: contain;"
+      <img src="assets/images/home/europe-phone.png" alt="" style="max-height: 65vh; object-fit: contain;"
            class="headvisual__image w-100">
     </div>
   </section>
 
+  <!-- APPLE WALLET -->
   <section
     class="headvisual d-flex flex-column-reverse align-items-center justify-content-center pt-3 max-w-1000 flex-md-row">
     <div class="mt-4">
@@ -67,18 +70,18 @@
     </div>
   </section>
 
+  <!-- DATA PRIVACY -->
   <section
     class="headvisual d-flex flex-column align-items-center justify-content-center pt-3 max-w-1000 flex-md-row">
     <div class="headvisual__text me-md-5 mt-5 mt-md-3">
-      <h2 class="fw-bold pb-3 text-center text-md-start"><span class="text-green">Datenschutz & Transparenz</span> liegen
+      <h2 class="fw-bold pb-3 text-center text-md-start"><span class="text-green">Datenschutz & Transparenz</span>
+        liegen
         uns am Herzen!</h2>
-      <p class="text-center text-md-start">Vor allem bei Gesundheitsdaten ist die Sicherheit deiner Daten besonders
-        wichtig, deshalb werden von der App grundsätzlich alle gesammelten Daten ausschließlich <span class="fw-bold">offline und lokal auf
-          deinem Gerät</span> gespeichert.</p>
-      <p class="text-center text-md-start"><span class="fw-bold">Wichtig: </span>Für das Verwenden der optionalen Funktionen "Apple Wallet" und "Teilen" werden die Daten
-        kurzfristig bis zum Zeitpunkt des Ablaufens des Zertifikats gespeichert. Bitte lies dir vor der Nutzung der App
-        allerdings unsere <a routerLink="privacy">Datenschutzerklärung</a>
-        genau durch!</p>
+      <p class="text-center text-md-start">Du kannst die App nutzen, ohne dass Daten online
+        gespeichert werden. Alle deine Daten werden <span class="fw-bold">nur lokal und offline
+        auf deinem Gerät</span> gespeichert und verarbeitet. Es werden nur beim Verwenden optionaler Funktionen (Apple Wallet &
+        Teilen-Funktion) personenbezogene Daten erfasst und für den kürzest-notwendigen Zeitraum online gespeichert.</p>
+      <p>Wir bitten dich vor der Nutzung der App unsere kurze <a routerLink="privacy">Datenschutzerklärung</a> zu lesen!</p>
     </div>
     <div class="mt-4">
       <img src="assets/images/screenshot/screenshot%202.png" alt="" style="max-height: 65vh; object-fit: contain;"
@@ -86,15 +89,6 @@
     </div>
   </section>
 
-  <!--
-
-  - datenschutz  LOKAL AM GERÄT (Anmerkung: Solange das Sharefeature nicht genutzt wird)
-
-  - GANZ EU  nicht länder gebunden, scannen/qr code vorweisen
-
-  - ALLE zertifikate (impf/test&genesenehits)
-
-  -->
 
   <!-- FAQ -->
   <section class="my-5">
@@ -109,7 +103,8 @@
         <i class="fas fa-chevron-right"></i>
       </button>
       <p class="faq__content isClosed">
-        {{ 'HOME.FAQ.FAQ_DATA.ANSWER1' | translate }} <span class="fw-bold">{{ 'HOME.FAQ.FAQ_DATA.ANSWER2' | translate }}</span>
+        {{ 'HOME.FAQ.FAQ_DATA.ANSWER1' | translate }} <span
+        class="fw-bold">{{ 'HOME.FAQ.FAQ_DATA.ANSWER2' | translate }}</span>
         {{ 'HOME.FAQ.FAQ_DATA.ANSWER3' | translate }} <a
         routerLink="privacy">{{ 'HOME.FAQ.FAQ_DATA.ANSWER4' | translate }}</a>.
       </p>
