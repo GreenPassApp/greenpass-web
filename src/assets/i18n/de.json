@@ -121,6 +121,42 @@
       }
     }
   },
+  "ABOUT": {
+    "HEADLINE1": "Was hinter der",
+    "HEADLINE2": "GreenPass",
+    "HEADLINE3": "App steckt",
+    "EXCERPT": "Ein kleines Team aus Hagenberger Studierenden und das Ziel, während der Pandemie einen Beitrag leisten zu können.\n\n",
+    "ALLINONE": {
+      "HEADLINE1": "Deine",
+      "HEADLINE2": "All-in-One",
+      "HEADLINE3": "Lösung",
+      "TEXT1": "Die GreenPass App ist die bisher einzige Lösung, die",
+      "TEXT2": "einerseits das Vorweisen und andererseits auch das Validieren",
+      "TEXT3": "von Impf-, Test- und Genesungszertifikaten ermöglicht. Dabei wird selbstverständlich großer Wert auf",
+      "TEXT4": "Datenschutz und Transparenz",
+      "TEXT5": "gelegt, denn alle deine Daten werden lokal verschlüsselt und offline auf deinem Gerät gespeichert.",
+      "TEXT6": "Bei der GreenPass App handelt es sich zusätzlich um eine",
+      "TEXT7": "EU-weit funktionierende Lösung",
+      "TEXT8": "und validiert die Zertifikate nach den spezifischen Vorgaben des jeweiligen EU-Staates, den du als Nutzer:in selbst auswählen kannst. Ebenso hast du die Möglichkeit, dein aktuelles Zertifikat mit Freunden oder Familie für einen selbst-gewählten Zeitraum zu teilen.",
+      "TEXT9": "Klingt gut? Dann ab in den App Store deines Vertrauens und verwende auch du ab jetzt den",
+      "TEXT10": "neuen, digitalen Grünen Pass."
+    },
+    "TEAM": {
+      "HEADLINE1": "Das",
+      "HEADLINE2": "Team",
+      "HEADLINE3": "hinter den Kulissen",
+      "TEXT1": "Stell dir folgendes Szenario vor: Drei Studierende, die spät abends zusammen sitzen und sich den Kopf darüber zerbrechen, warum es eigentlich keine EU-weite Lösung für den digitalen Grünen Pass gibt. Plötzlich meint einer der drei:",
+      "TEXT2": "\"Ja, dann machen wir halt eine App dafür!\"",
+      "TEXT3": "Gesagt, getan. Zahlreiche schlaflose Nächte und unzählige koffeinhaltige Getränke später, dürfen wir euch das Endergebnis präsentieren:",
+      "TEXT4": "Unsere",
+      "TEXT5": "GreenPass",
+      "TEXT6": "App",
+      "TEXT7": "Als interdisziplinäres und internationales (2 Österreicher und 1 Deutscher \uD83D\uDE09) Team haben wir - Jakob Stadlhuber (Mobile Computing Student), Kevin Händel (Software Engineering Student) und Lisa-Maria Schedlberger (Kommunikation, Wissen, Medien Studentin) von der FH Hagenberg - in kürzester Zeit ein Projekt auf die Beine gestellt, mit dem Ziel für die gesamte Europäische Union",
+      "TEXT8": "einen wertvollen Beitrag leisten",
+      "TEXT9": "zu können. Wir hoffen, dass wir das Leben einiger Personen in der aktuell ohnehin sehr schwierigen Zeit zumindest ein kleines bisschen vereinfachen können!\n\n",
+      "TEXT10": "Du hast Fragen zu uns als Team? Melde dich gerne bei uns:"
+    }
+  },
   "HEADER": {
     "MOTIVATION": "Motivation",
     "CONTACT": "Kontakt",

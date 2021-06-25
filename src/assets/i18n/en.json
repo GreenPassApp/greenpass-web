@@ -1,4 +1,40 @@
 {
+  "ABOUT": {
+    "HEADLINE1": "What's behind the",
+    "HEADLINE2": "GreenPass",
+    "HEADLINE3": "app",
+    "EXCERPT": "A small team of Hagenberg students and the goal of being able to do their bit during the pandemic.",
+    "ALLINONE": {
+      "HEADLINE1": "Your",
+      "HEADLINE2": "all-in-one",
+      "HEADLINE3": "solution",
+      "TEXT1": "The GreenPass app is the only solution to date that enables",
+      "TEXT2": "the presentation and validation",
+      "TEXT3": "of vaccination, test and recovery certificates. Of course, great importance is attached to",
+      "TEXT4": "data protection and transparency",
+      "TEXT5": ", since all your data is encrypted locally and stored offline on your device.",
+      "TEXT6": "The GreenPass app is also an",
+      "TEXT7": "EU-wide solution",
+      "TEXT8": "and validates the certificates according to the specific requirements of the respective EU country, which you can select yourself as a user. You also have the option to share your current certificate with friends or family for a self-selected period of time.",
+      "TEXT9": "Sounds good? Then hit the App Store of your choice and start using the",
+      "TEXT10": "new, digital GreenPass."
+    },
+    "TEAM": {
+      "HEADLINE1": "The",
+      "HEADLINE2": "team",
+      "HEADLINE3": "behind the scenes",
+      "TEXT1": "Imagine the following scenario: Three students sitting together late at night, racking their brains about why there is actually no EU-wide solution for the digital green passport. Suddenly, one of the three says,",
+      "TEXT2": "\"Yeah, let's make an app for that!\"",
+      "TEXT3": "No sooner said than done. Numerous sleepless nights and countless caffeinated drinks later, we are proud to present you the final result:",
+      "TEXT4": "Our",
+      "TEXT5": "GreenPass",
+      "TEXT6": "app",
+      "TEXT7": "As an interdisciplinary and international (2 Austrians and 1 German \uD83D\uDE09) team we - Jakob Stadlhuber (Mobile Computing Student), Kevin Händel (Software Engineering Student) and Lisa-Maria Schedlberger (Communication, Knowledge, Media Student) from the University of Applied Sciences Hagenberg - have created a project in a very short time, with the goal to",
+      "TEXT8": "provide a valuable input",
+      "TEXT9": "for the whole European Union. We hope that we can simplify the lives of some people at least a little bit in the currently very difficult time!",
+      "TEXT10": "You have questions to us as a team? Feel free to contact us:"
+    }
+  },
   "PRIVACY": {
     "HEADLINE": {
       "HEADLINE1": "Because",
