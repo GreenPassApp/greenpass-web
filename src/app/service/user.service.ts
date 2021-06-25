@@ -7,7 +7,7 @@ import {User} from "../models/User";
   providedIn: 'root'
 })
 export class UserService {
-  private url:string = `http://localhost:8081/api/user`;
+  private url:string = `https://api.greenpassapp.eu/user`;
 
   constructor(private http:HttpClient) { }
 
