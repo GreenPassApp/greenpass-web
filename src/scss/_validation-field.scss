@@ -1,0 +1,21 @@
+.validation-field {
+  background: $blue;
+  color: white;
+
+  &--valid {
+    background: $green;
+  }
+
+  &--invalid {
+    background: $red;
+  }
+
+  &__icon {
+    border: 3px solid white;
+    height: 80px;
+    width: 80px;
+    margin: 0 auto;
+    font-size: 2rem;
+    border-radius: 50%;
+  }
+}
