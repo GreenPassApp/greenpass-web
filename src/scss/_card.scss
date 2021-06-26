@@ -1,0 +1,41 @@
+.cards {
+
+  &__body {
+    border-radius: 20px;
+    border: 2px solid white;
+
+    &:hover {
+      border: 2px solid $green;
+      transition: all 200ms ease-in-out;
+    }
+  }
+
+  &__number {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: white;
+    background: $green;
+    width: 85px;
+    height: 85px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    left: 40px;
+    top: -5px;
+    transition: all 300ms ease-in-out;
+    pointer-events: none;
+  }
+
+  &:hover {
+    .cards__number {
+      font-size: 2.6rem;
+      top: -10px;
+      width: 90px;
+      height: 90px;
+      transition: all 300ms ease-in-out;
+      transform: rotate(-10deg);
+    }
+  }
+
+}

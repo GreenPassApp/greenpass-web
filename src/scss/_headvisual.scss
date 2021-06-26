@@ -7,4 +7,17 @@
     margin-top: -1.5rem;
     height: calc(100vh - 77px);
   }
+
+  &--header {
+    @include media-breakpoint-up(lg) {
+      img {
+        position: relative;
+        margin: 15.5rem 0 !important;
+      }
+    }
+  }
+
+  &--small  {
+    height: 60vh;
+  }
 }
