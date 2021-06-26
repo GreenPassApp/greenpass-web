@@ -14,6 +14,8 @@ import { AboutComponent } from './component/about/about.component';
 import { PrivacyComponent } from './component/privacy/privacy.component';
 import { ImprintComponent } from './component/imprint/imprint.component';
 import { NotFoundComponent } from './component/not-found/not-found.component';
+import { PresskitComponent } from './component/presskit/presskit.component';
+import { OpensourceComponent } from './component/opensource/opensource.component';
 
 // AoT requires an exported function for factories
 export function createTranslateLoader(http: HttpClient) {
@@ -30,7 +32,9 @@ export function createTranslateLoader(http: HttpClient) {
     AboutComponent,
     PrivacyComponent,
     ImprintComponent,
-    NotFoundComponent
+    NotFoundComponent,
+    PresskitComponent,
+    OpensourceComponent
   ],
   imports: [
     BrowserModule,

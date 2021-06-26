@@ -6,6 +6,8 @@ import {AboutComponent} from "./component/about/about.component";
 import {PrivacyComponent} from "./component/privacy/privacy.component";
 import {ImprintComponent} from "./component/imprint/imprint.component";
 import {NotFoundComponent} from "./component/not-found/not-found.component";
+import {OpensourceComponent} from "./component/opensource/opensource.component";
+import {PresskitComponent} from "./component/presskit/presskit.component";
 
 const routes: Routes = [
   {
@@ -27,6 +29,14 @@ const routes: Routes = [
   {
     path: 'imprint',
     component: ImprintComponent,
+  },
+  {
+    path: 'legal/opensource',
+    component: OpensourceComponent,
+  },
+  {
+    path: 'presskit',
+    component: PresskitComponent,
   },
   {
     path: '404', component: NotFoundComponent

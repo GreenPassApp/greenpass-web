@@ -1,0 +1,27 @@
+.download {
+  margin-bottom: 1.2rem;
+  border: 1px solid $bg-color;
+  border-radius: 10px;
+  outline: none;
+  padding: 1rem 1.2rem;
+  background-color: white;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: bold;
+  color: #333;
+  transition: all 200ms ease-in-out;
+  text-align: left;
+
+  &:hover, &:focus {
+    border: 1px solid $green;
+    transition: all 200ms ease-in-out;
+    color: #333;
+  }
+
+  &.isClosed > i {
+    transform: rotate(0deg);
+    transition: all 200ms ease-in-out;
+  }
+}
