@@ -7,11 +7,7 @@ import {TranslateService} from "@ngx-translate/core";
 })
 export class HomeComponent implements OnInit {
 
-  constructor(public translate: TranslateService) {
-    translate.addLangs(['en', 'de']);
-    translate.setDefaultLang('en');
-    const browserLang = translate.getBrowserLang();
-    translate.use(browserLang.match(/en|de/) ? browserLang : 'en');
+  constructor() {
   }
 
   ngOnInit(): void {
