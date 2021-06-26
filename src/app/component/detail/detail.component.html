@@ -1,5 +1,5 @@
 <div class="vh-100 d-flex justify-content-center align-items-center">
-  <div class="validation-field p-5 my-5 shadow">
+  <div class="validation-field p-5 my-5 shadow" [ngClass]="validationState">
     <section>
       <div class="validation-field__icon d-flex justify-content-center align-items-center">
         <i class="fas fa-vial p-4" *ngIf="user?.tested"></i>

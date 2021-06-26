@@ -1,4 +1,10 @@
 export class CovidRecover {
-  id: string | undefined;
-  validUntil: Date | undefined;
+  id: string;
+  validUntil: Date;
+
+
+  constructor(id: string, validUntil: Date) {
+    this.id = id;
+    this.validUntil = validUntil;
+  }
 }

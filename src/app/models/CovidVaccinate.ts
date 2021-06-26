@@ -1,7 +1,16 @@
 export class CovidVaccinate {
-  id: string | undefined;
-  highestCurrDose: number | undefined;
-  dosesNeeded: number | undefined;
-  dateOfLastVaccinate: Date | undefined;
-  dateOfFirst: Date | undefined;
+  id: string;
+  highestCurrDose: number;
+  dosesNeeded: number;
+  dateOfLastVaccinate: Date;
+  dateOfFirst: Date;
+
+
+  constructor(id: string, highestCurrDose: number, dosesNeeded: number, dateOfLastVaccinate: Date, dateOfFirst: Date) {
+    this.id = id;
+    this.highestCurrDose = highestCurrDose;
+    this.dosesNeeded = dosesNeeded;
+    this.dateOfLastVaccinate = dateOfLastVaccinate;
+    this.dateOfFirst = dateOfFirst;
+  }
 }

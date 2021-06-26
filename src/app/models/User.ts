@@ -4,11 +4,22 @@ import {CovidRecover} from "./CovidRecover";
 
 
 export class User{
-  link: string | undefined;
-  firstName: string | undefined;
-  lastName: string | undefined;
-  birthday: Date | undefined;
-  vaccinated: CovidVaccinate | undefined;
-  tested: CovidTest | undefined;
-  recovered: CovidRecover | undefined;
+  link: string;
+  firstName: string;
+  lastName: string;
+  birthday: Date;
+  vaccinated: CovidVaccinate;
+  tested: CovidTest;
+  recovered: CovidRecover;
+
+
+  constructor(link: string, firstName: string, lastName: string, birthday: Date, vaccinated: CovidVaccinate, tested: CovidTest, recovered: CovidRecover) {
+    this.link = link;
+    this.firstName = firstName;
+    this.lastName = lastName;
+    this.birthday = birthday;
+    this.vaccinated = vaccinated;
+    this.tested = tested;
+    this.recovered = recovered;
+  }
 }

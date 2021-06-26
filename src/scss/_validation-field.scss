@@ -1,13 +1,18 @@
 .validation-field {
-  background: $blue;
+  //background: $blue;
   color: white;
+  border-radius: 20px;
 
-  &--valid {
+  &.valid {
     background: $green;
   }
 
-  &--invalid {
+  &.invalid {
     background: $red;
+  }
+
+  &.default {
+    background: $blue;
   }
 
   &__icon {

@@ -1,5 +1,12 @@
 export class CovidTest {
-  id: string | undefined;
-  type: string | undefined;
-  dateOfSampling: Date | undefined;
+  id: string;
+  type: string;
+  dateOfSampling: Date;
+
+
+  constructor(id: string, type: string, dateOfSampling: Date) {
+    this.id = id;
+    this.type = type;
+    this.dateOfSampling = dateOfSampling;
+  }
 }
