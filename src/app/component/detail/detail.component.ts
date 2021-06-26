@@ -45,6 +45,11 @@ export class DetailComponent implements OnInit {
       // @ts-ignore
       let regulations = validationsByCountry[this.countryCode]
 
+      if (regulations == null) {
+        this.validationState = "default";
+        return
+      }
+
       let currentDate = new Date();
       let newestRegulation: Regulation = regulations[0];
 
@@ -61,21 +66,47 @@ export class DetailComponent implements OnInit {
   }
 
   private validate(newestRegulation: Regulation) {
-    console.log(newestRegulation)
-    if (this.user?.recovered && new Date(this.user.recovered.validUntil) < new Date()) {
-      this.validationState = "valid"
+    if (this.user?.recovered) {
+      if (new Date(this.user.recovered.validUntil) > new Date()) {
+        this.validationState = "invalid"
+        return
+      }
+    } else if (this.user?.tested) {
+      let durationPCR
+      if (this.user.tested.type == "pcr") {
+        durationPCR = moment.duration(newestRegulation.PCRTestDuration)
+      } else {
+        durationPCR = moment.duration(newestRegulation.rapidTestDuration)
+      }
+      if (moment(this.user?.tested.dateOfSampling).isBefore(moment(Date()).subtract(durationPCR))) {
+        this.validationState = "invalid"
+        return
+      }
+    } else if (this.user?.vaccinated) {
+      if (this.user.vaccinated.dosesNeeded == this.user.vaccinated.highestCurrDose) {
+        if (newestRegulation.validFromFullVac && moment(this.user.vaccinated.dateOfLastVaccinate).isAfter(moment(Date()).subtract(newestRegulation.validFromFullVac))) {
+          this.validationState = "invalid"
+          return
+        }
+        if (newestRegulation.validUntilFullVac && moment(this.user.vaccinated.dateOfLastVaccinate).isBefore(moment(Date()).subtract(newestRegulation.validUntilFullVac))) {
+          this.validationState = "invalid"
+          return
+        }
+      } else {
+        if (newestRegulation.validFromPartialVac && moment(this.user.vaccinated.dateOfFirst).isAfter(moment(Date()).subtract(newestRegulation.validFromPartialVac))) {
+          this.validationState = "invalid"
+          return
+        }
+        if (newestRegulation.validUntilPartialVac && moment(this.user.vaccinated.dateOfFirst).isBefore(moment(Date()).subtract(newestRegulation.validUntilPartialVac))) {
+          this.validationState = "invalid"
+          return
+        }
+        if (!newestRegulation.validFromPartialVac && !newestRegulation.validUntilPartialVac) {
+          this.validationState = "invalid"
+          return
+        }
+      }
     }
-    if (this.user?.tested) {
-      this.validationState = "valid";
-    } else if (!this.user?.tested) {
-      this.validationState = "invalid";
-    } else {
-      this.validationState = "default";
-    }
-
-    //TODO
-
+    this.validationState = "valid"
   }
-
-
 }
