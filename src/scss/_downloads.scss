@@ -1,6 +1,6 @@
 .download {
   margin-bottom: 1.2rem;
-  border: 1px solid $bg-color;
+  border: 2px solid $bg-color;
   border-radius: 10px;
   outline: none;
   padding: 1rem 1.2rem;
@@ -9,13 +9,13 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  font-weight: bold;
+  // font-weight: bold;
   color: #333;
   transition: all 200ms ease-in-out;
   text-align: left;
 
   &:hover, &:focus {
-    border: 1px solid $green;
+    border: 2px solid $green;
     transition: all 200ms ease-in-out;
     color: #333;
   }

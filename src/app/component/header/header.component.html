@@ -24,11 +24,11 @@
         </li>
         <li class="nav-item">
           <a class="nav-link text-dark header__nav__item p-4"
-             routerLink="presskit">Presskit</a>
+             routerLink="privacy">{{ 'HEADER.PRIVACY' | translate }}</a>
         </li>
         <li class="nav-item">
           <a class="nav-link text-dark header__nav__item p-4"
-             routerLink="privacy">{{ 'HEADER.PRIVACY' | translate }}</a>
+             routerLink="presskit">Press Kit</a>
         </li>
         <li class="position-relative header__langnav">
           <button class="langnavToggle-js p-4 header__langnav__button nav-item d-flex align-items-center link text-dark"
@@ -75,11 +75,11 @@
     </li>
     <li class="header__nav--mobile__item my-3 p-3 shadow-sm">
       <a class="d-block w-100 fw-bold link text-dark header__nav--mobile__link"
-         routerLink="presskit" (click)="closeMobileMenu()">Presskit</a>
+         routerLink="privacy" (click)="closeMobileMenu()">{{ 'HEADER.PRIVACY' | translate }}</a>
     </li>
     <li class="header__nav--mobile__item my-3 p-3 shadow-sm">
       <a class="d-block w-100 fw-bold link text-dark header__nav--mobile__link"
-         routerLink="privacy" (click)="closeMobileMenu()">{{ 'HEADER.PRIVACY' | translate }}</a>
+         routerLink="presskit" (click)="closeMobileMenu()">Press Kit</a>
     </li>
 
     <li class="header__nav--mobile__item my-3 p-3 shadow-sm">
