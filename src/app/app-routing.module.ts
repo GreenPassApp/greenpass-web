@@ -6,6 +6,7 @@ import {AboutComponent} from "./component/about/about.component";
 import {PrivacyComponent} from "./component/privacy/privacy.component";
 import {ImprintComponent} from "./component/imprint/imprint.component";
 import {NotFoundComponent} from "./component/not-found/not-found.component";
+import {NotValidComponent} from "./component/not-valid/not-valid.component";
 import {OpensourceComponent} from "./component/opensource/opensource.component";
 import {PresskitComponent} from "./component/presskit/presskit.component";
 
@@ -39,11 +40,18 @@ const routes: Routes = [
     component: PresskitComponent,
   },
   {
+    path: 'notvalid', component: NotValidComponent
+  },
+  {
+    path: 'r/:**', redirectTo: '/notvalid'
+  },
+  {
     path: '404', component: NotFoundComponent
   },
   {
     path: '**', redirectTo: '/404'
   }
+
 ];
 
 @NgModule({

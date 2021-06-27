@@ -5,7 +5,7 @@
     align-items: center;
     margin: 0 auto;
     margin-top: -1.5rem;
-    height: calc(100vh - 77px);
+    height: 85vh;
   }
 
   &--header {
@@ -17,7 +17,25 @@
     }
   }
 
+  &__image {
+    @include media-breakpoint-up(lg) {
+      left: 2rem;
+      width: 90%;
+      position: relative;
+    }
+
+    &--right {
+      @include media-breakpoint-up(lg) {
+        right: 2rem;
+        left: auto;
+        width: 90%;
+        position: relative;
+      }
+    }
+
+  }
+
   &--small  {
-    height: 60vh;
+   // height: 60vh;
   }
 }

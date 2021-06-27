@@ -22,6 +22,7 @@
     "@ngx-translate/core": "^13.0.0",
     "@ngx-translate/http-loader": "^6.0.0",
     "@popperjs/core": "^2.9.2",
+    "@splidejs/splide": "^2.4.21",
     "ajv": "^6.12.6",
     "bootstrap": "^5.0.2",
     "bootstrap-icons": "^1.5.0",

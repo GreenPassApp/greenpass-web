@@ -1,4 +1,5 @@
 .cards {
+  user-select: none;
 
   &__body {
     border-radius: 20px;
@@ -7,6 +8,19 @@
     &:hover {
       border: 2px solid $green;
       transition: all 200ms ease-in-out;
+    }
+  }
+
+  &--first {
+    @include media-breakpoint-up(lg) {
+      top: -6rem;
+    }
+
+  }
+
+  &--third {
+    @include media-breakpoint-up(lg) {
+      top: 6rem;
     }
   }
 
@@ -21,7 +35,8 @@
     justify-content: center;
     align-items: center;
     border-radius: 50%;
-    left: 40px;
+    right: 40px;
+    left: auto;
     top: -5px;
     transition: all 300ms ease-in-out;
     pointer-events: none;
@@ -34,7 +49,7 @@
       width: 90px;
       height: 90px;
       transition: all 300ms ease-in-out;
-      transform: rotate(-10deg);
+     // transform: rotate(-10deg);
     }
   }
 

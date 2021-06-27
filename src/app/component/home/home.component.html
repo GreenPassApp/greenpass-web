@@ -1,27 +1,26 @@
 <main class="pb-5">
 
-
   <!-- HEADVISUAL -->
-  <section class="py-5 headvisual headvisual--header d-md-flex align-items-center justify-content-center pt-3">
-    <div class="headvisual__text me-md-5 mt-5 mt-md-3">
-      <p class="small mb-1 text-center text-md-start">{{ 'HOME.HEADVISUAL.PREHEADER' | translate }}</p>
-      <h1 class="fw-bold headvisual__title text-center text-md-start pb-2">{{ 'HOME.HEADVISUAL.HEADLINE1' | translate }}
+  <section class="headvisual row pt-3 pt-md-5 pt-lg-0">
+    <div class="headvisual__text mt-5 mt-md-3 col-12 col-lg-7">
+      <p class="small mb-1 text-center text-lg-start">{{ 'HOME.HEADVISUAL.PREHEADER' | translate }}</p>
+      <h1 class="fw-bold headvisual__title text-center text-lg-start pb-2">{{ 'HOME.HEADVISUAL.HEADLINE1' | translate }}
         <span
           class="text-green">{{ 'HOME.HEADVISUAL.HEADLINE2' | translate }}</span> {{ 'HOME.HEADVISUAL.HEADLINE3' | translate }}
       </h1>
-      <p class="text-center text-md-start">{{ 'HOME.HEADVISUAL.TEXT' | translate }}</p>
-      <!--<div class="col-sm d-flex justify-content-center justify-content-md-start mt-5">
+      <p class="text-center text-lg-start">{{ 'HOME.HEADVISUAL.TEXT' | translate }}</p>
+      <div class="col-sm d-flex justify-content-center justify-content-lg-start mt-3 pt-2 mb-5 mb-lg-0">
         <a class="store-bubble me-3" href="#">
           <img src="assets/images/playstore/app-store-badge.svg" alt="Apple App Store Badge">
         </a>
         <a class="store-bubble" href="#">
           <img src="assets/images/playstore/google-play-badge.svg" alt="Google Play Store Badge" style="height: 40px;">
         </a>
-      </div>-->
-      <span>Coming soon in App Store and Playstore</span>
+      </div>
     </div>
-    <div class="mt-4">
-      <img src="assets/images/screenshot/vaccination-start-en.png" alt="" style="" class="headvisual__image w-100">
+    <div class="col-12 col-lg-5 d-flex justify-content-center justify-content-lg-start pt-lg-5">
+      <img src="assets/images/home/headvisual.png" alt="" class="headvisual__image d-none d-lg-block pt-lg-5">
+      <img src="assets/images/home/headvisual-sm.png" alt="" class="headvisual__image w-75 d-block d-lg-none pb-5">
     </div>
   </section>
 
@@ -29,27 +28,28 @@
   <section class="py-5">
 
     <ul class="row list-unstyled d-flex justify-content-center">
-      <li class="cards col-12 col-md-6 col-lg-4 py-4 mt-2 position-relative">
+      <li class="cards cards--first col-12 col-md-6 col-lg-4 py-4 mt-2 position-relative">
         <span class="cards__number position-absolute shadow-sm">1.</span>
         <div class="cards__body p-4 bg-white d-flex flex-column align-items-center border-2 my-2 h-100 shadow-sm">
-          <img src="assets/images/screenshot/scann-code-en.png" alt=""
+          <img src="assets/images/tutorial/tutorial-2-scan.png" alt="" class="p-3 pt-4"
                style="width: 100%; max-height: 300px; object-fit: contain;">
           <h2 class="text-center fs-5 fw-bold pt-3">QR Codes hinzufügen</h2>
           <p class="text-center px-3">Scanne ganz einfach den QR Code deiner Impf-, Test- und Genesungszertifikate</p>
         </div>
       </li>
-      <li class="cards col-12 col-md-6 col-lg-4 py-4 mt-2 position-relative">
+      <li class="cards cards--second col-12 col-md-6 col-lg-4 py-4 mt-2 position-relative">
         <span class="cards__number position-absolute shadow-sm">2.</span>
         <div class="cards__body p-4 bg-white d-flex flex-column align-items-center border-2 my-2 h-100 shadow-sm">
-          <img src="assets/images/screenshot/vaccination-en.png" alt=""
+          <img src="assets/images/tutorial/tutorial-3-show.png" alt="" class="p-3 pt-4"
                style="width: 100%; max-height: 300px; object-fit: contain;">
           <h2 class="text-center fs-5 fw-bold pt-3">Alle Zertifikate in einer App</h2>
-          <p class="text-center px-3">Sammle alle Zertifikate deiner Familie und Freunde in deiner GreenPass App</p></div>
+          <p class="text-center px-3">Sammle alle Zertifikate deiner Familie und Freunde in deiner GreenPass App</p>
+        </div>
       </li>
-      <li class="cards col-12 col-md-6 col-lg-4 py-4 mt-2 position-relative">
+      <li class="cards cards--third col-12 col-md-6 col-lg-4 py-4 mt-2 position-relative">
         <span class="cards__number position-absolute shadow-sm">3.</span>
         <div class="cards__body p-4 bg-white d-flex flex-column align-items-center border-2 my-2 h-100 shadow-sm">
-          <img src="assets/images/screenshot/validate-en.png" alt=""
+          <img src="assets/images/tutorial/tutorial-5-validate.png" alt="" class="p-3 pt-4"
                style="width: 100%; max-height: 300px; object-fit: contain;">
           <h2 class="text-center fs-5 fw-bold pt-3">GreenPass vorweisen & validieren</h2>
           <p class="text-center px-3">Vorweisen und validieren in einer App? GreenPass macht es möglich: Eine App für
@@ -59,7 +59,7 @@
   </section>
 
   <!-- ALL CERTIFICATES -->
-  <section
+  <!--<section
     class="py-5 headvisual headvisual--small d-flex flex-column-reverse align-items-center justify-content-center pt-3 max-w-1000 flex-md-row">
     <div class="mt-4 me-4">
       <img src="assets/images/home/certificates-check.png" alt="" style="max-height: 65vh; object-fit: contain;"
@@ -71,10 +71,10 @@
       </h2>
       <p class="text-center text-md-start">{{ 'HOME.SECTION1.TEXT' | translate }}</p>
     </div>
-  </section>
+  </section>-->
 
   <!-- ENTIRE EU -->
-  <section
+  <!--<section
     class="py-5 headvisual headvisual--small d-flex flex-column align-items-center justify-content-center pt-3 max-w-1000 flex-md-row">
     <div class="headvisual__text me-md-5 mt-5 mt-md-3">
       <h2 class="fw-bold pb-3 text-center text-md-start">{{ 'HOME.SECTION2.HEADLINE1' | translate }} <span
@@ -85,10 +85,10 @@
       <img src="assets/images/home/europe-phone.png" alt="" style="max-height: 65vh; object-fit: contain;"
            class="headvisual__image w-100">
     </div>
-  </section>
+  </section>-->
 
   <!-- APPLE WALLET -->
-  <section
+  <!--<section
     class="py-5 headvisual headvisual--small d-flex flex-column-reverse align-items-center justify-content-center pt-3 max-w-1000 flex-md-row">
     <div class="mt-4">
       <img src="assets/images/screenshot/wallet-process-en.png" alt="" style="max-height: 65vh; object-fit: contain;"
@@ -102,17 +102,73 @@
         {{ 'HOME.SECTION3.TEXT1' | translate }} <span class="fw-bold">{{ 'HOME.SECTION3.TEXT2' | translate }}</span>
       </p>
     </div>
+  </section>-->
+
+  <!-- SHOW & VALIDATE -->
+  <section
+    class="py-5 headvisual--small row d-flex flex-column align-items-center justify-content-center pt-3 max-w-1000 flex-md-row">
+    <div class="headvisual__text mt-md-3 col-lg-7">
+      <p class="small mb-1 text-center text-lg-start">Die App, die alles kann:</p>
+      <h2 class="fw-bold pb-3 text-center text-lg-start">Zertifikate <span
+        class="text-green">vorweisen & validieren</span>
+        in einer App</h2>
+      <p class="text-center text-lg-start">Mit der GreenPass App ist es möglich, in der ganzen Europäischen Union sowohl
+        seine eigenen Zertifikate vorzuweisen, als auch jene von anderen zu validieren. Dadurch ist GreenPass die ideale
+        Lösung für Restaurand-Besitzer:innen und Vereins-Obleute!</p>
+    </div>
+    <div class="col-lg-5 d-flex justify-content-center pt-lg-3">
+      <img src="assets/images/home/functions.png" alt="" class="headvisual__image d-none d-lg-block pt-lg-5">
+      <img src="assets/images/home/functions-sm.png" alt="" class="headvisual__image w-75 d-block d-lg-none pb-5">
+    </div>
   </section>
+
+  <!-- ALL CERTS -->
+  <section
+    class="py-5 headvisual--small row d-flex flex-column-reverse align-items-center justify-content-center pt-3 max-w-1000 flex-lg-row">
+    <div class="col-lg-5 d-flex justify-content-center">
+      <img src="assets/images/home/certs.png" alt=""
+           class="headvisual__image headvisual__image--right d-none d-lg-block">
+      <img src="assets/images/home/certs-sm.png" alt="" class="headvisual__image w-75 d-block d-lg-none pb-5">
+    </div>
+    <div class="headvisual__text mt-md-3 col-lg-7">
+      <p class="small mb-1 text-center text-lg-start">Das Sammeln von Dokumenten hat ein Ende:</p>
+      <h2 class="fw-bold pb-3 text-center text-lg-start">Alle Zertifikate gesammelt in <span class="text-green">GreenPass</span>
+      </h2>
+      <p class="text-center text-lg-start">Mit GreenPass ist es möglich mehrere Zertifikate in einer App mit sich zu
+        führen. So können Eltern beispielsweise auch die Zertifikate ihrer Kinder in der GreenPass App speichern und
+        sparen sich das Sammeln mehrerer Dokumente.
+      </p>
+    </div>
+  </section>
+
+  <!-- COUNTRY VALIDATION -->
+  <!--<section
+    class="py-5 headvisual--small row d-flex flex-column align-items-center justify-content-center pt-3 max-w-1000 flex-md-row">
+    <div class="headvisual__text mt-md-3 col-lg-7">
+      <p class="small mb-1 text-center text-lg-start">Die Lösung für Restaurant-Besitzer:innen und Vereins-Obleute:</p>
+      <h2 class="fw-bold pb-3 text-center text-lg-start"><span
+        class="text-green">Länderbezogenes</span> Validieren von Zertifikaten</h2>
+      <p class="text-center text-lg-start">Die Regelungen, ab wann und wielange Impf-, Test-, Genesungszertifikate in
+        einzelnen EU-Staaten gültig sind, sind von Land zu Land unterschiedlich und ändern sich regelmäßig. Mit
+        GreenPass hast du die Möglichkeit, die Zertifikate anderer Personen nach den jeweiligen Regulierungen
+        deines Landes zu validieren.</p>
+      <small class="text-gray small">Aktuell werden ausschließlich Österreich und Deutschland unterstützt, wir arbeiten gerade in Hochtouren
+        daran die aktuellen Regulierungen aller EU Staaten zu implementieren.</small>
+    </div>
+    <div class="col-lg-5 d-flex justify-content-center pt-lg-3">
+      foto
+    </div>
+  </section>-->
 
   <!-- DATA PRIVACY -->
   <section
-    class="py-5 headvisual headvisual--small d-flex flex-column align-items-center justify-content-center pt-3 max-w-1000 flex-md-row">
-    <div class="headvisual__text me-md-5 mt-5 mt-md-3">
+    class="py-5 headvisual--small d-flex flex-column align-items-center justify-content-center pt-3 max-w-1000 flex-md-row">
+    <div class="headvisual__text mt-md-3">
       <h2 class="fw-bold pb-3 text-center"><span class="text-green">Datenschutz & Transparenz</span>
         liegen
         uns am Herzen!</h2>
       <p class="text-center">Du kannst die App nutzen, ohne dass Daten online
-        gespeichert werden. Alle deine Daten werden <span class="fw-bold">nur lokal und offline
+        gespeichert werden. Alle deine Daten werden <span class="fw-bold">nur lokal verschlüsselt und offline
         auf deinem Gerät</span> gespeichert und verarbeitet. Es werden nur beim Verwenden optionaler Funktionen (Apple
         Wallet &
         Teilen-Funktion) personenbezogene Daten erfasst und für den kürzest-notwendigen Zeitraum online gespeichert.</p>
@@ -123,7 +179,7 @@
   </section>
 
   <!-- SHARE FEATURE -->
-  <section
+  <!--<section
     class="py-5 headvisual headvisual--small d-flex flex-column-reverse align-items-center justify-content-center pt-3 max-w-1000 flex-md-row">
     <div class="mt-4">
       <img src="assets/images/screenshot/screenshot%202.png" alt="" style="max-height: 65vh; object-fit: contain;"
@@ -139,10 +195,10 @@
         oder Fotos von Testergebnissen mehr in deiner Gallerie sammeln.
       </p>
     </div>
-  </section>
+  </section>-->
 
   <!-- VALIDATION -->
-  <section
+  <!--<section
     class="py-5 headvisual headvisual--small d-flex flex-column align-items-center justify-content-center pt-3 max-w-1000 flex-md-row">
     <div class="headvisual__text me-md-5 mt-5 mt-md-3">
       <h2 class="fw-bold pb-3 text-center text-md-start"><span class="text-green">Datenschutz & Transparenz</span>
@@ -160,7 +216,7 @@
       <img src="assets/images/screenshot/screenshot%202.png" alt="" style="max-height: 65vh; object-fit: contain;"
            class="headvisual__image w-100">
     </div>
-  </section>
+  </section>-->
 
   <!-- FAQ -->
   <section class="my-5">
