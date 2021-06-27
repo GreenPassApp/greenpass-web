@@ -22,6 +22,29 @@ video::-webkit-media-controls-panel {
   // background-color: #333 !important;
 }
 
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+.wrapper {
+  @include media-breakpoint-up(lg) {
+    min-height: 100%;
+
+    /* Equal to height of footer */
+    /* But also accounting for potential margin-bottom of last child */
+    margin-bottom: -48px;
+  }
+
+}
+
+.footer,
+.push {
+  @include media-breakpoint-up(lg) {
+    height: 48px;
+  }
+}
+
 .max-w-1000 {
   max-width: 1000px;
   margin: 0 auto;
