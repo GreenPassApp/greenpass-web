@@ -16,7 +16,7 @@ const routes: Routes = [
     component: HomeComponent,
   },
   {
-    path: 'r/:link',
+    path: 's/:link',
     component: DetailComponent,
   },
   {
@@ -43,7 +43,7 @@ const routes: Routes = [
     path: 'notvalid', component: NotValidComponent
   },
   {
-    path: 'r/:**', redirectTo: '/notvalid'
+    path: 's/:**', redirectTo: '/notvalid'
   },
   {
     path: '404', component: NotFoundComponent

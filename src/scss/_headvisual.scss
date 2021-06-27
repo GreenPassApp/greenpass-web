@@ -18,6 +18,9 @@
   }
 
   &__image {
+    max-height: 100%;
+    object-fit: contain;
+
     @include media-breakpoint-up(lg) {
       left: 2rem;
       width: 90%;
