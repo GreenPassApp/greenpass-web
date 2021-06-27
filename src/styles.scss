@@ -16,6 +16,12 @@
   padding-top: 77px;
 }
 
+video::-webkit-media-controls-panel {
+  // Your styling here
+  background-image: linear-gradient(transparent, transparent) !important; //Transparent for your case
+  // background-color: #333 !important;
+}
+
 .max-w-1000 {
   max-width: 1000px;
   margin: 0 auto;
