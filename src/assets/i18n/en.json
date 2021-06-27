@@ -177,5 +177,14 @@
     "DE": "German",
     "EN": "English",
     "ES": "Spanish"
+  },
+  "PRESSKIT": {
+    "SUBLINE1": "What drives us, what can our app do and much more - collected here at a glance",
+    "SUBLINE2": "Questions gladly at any time to",
+    "PRESSTEXTS": "Press texts",
+    "TEXT_FUNKTIONEN": "Press text: The functions of the app (German)",
+    "TEXT_TEAM": "Press text: The features of the app (German)",
+    "FOTO": "Photos",
+    "TEAMFOTO": "Team photo"
   }
 }

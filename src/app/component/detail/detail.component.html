@@ -1,5 +1,5 @@
-<div class="vh-100 d-flex justify-content-center align-items-center">
-  <div class="validation-field p-5 my-5 shadow" [ngClass]="validationState">
+<div class="validation-field__container d-flex justify-content-center align-items-center flex-column">
+  <div class="validation-field p-4 pt-5 py-lg-5 my-5 shadow mx-3" [ngClass]="validationState">
     <section>
       <div class="validation-field__icon d-flex justify-content-center align-items-center">
         <i class="fas fa-vial p-4" *ngIf="user?.tested"></i>
@@ -7,23 +7,27 @@
         <i class="fas fa-child p-4" *ngIf="user?.recovered"></i>
 
       </div>
-      <h2 class="d-block text-center fw-bold pt-4" *ngIf="user?.tested">Getestet</h2>
-      <h2 class="d-block text-center fw-bold pt-4" *ngIf="user?.vaccinated">Geimpft
+      <h2 class="d-block text-center fw-bold pt-4 mb-0" *ngIf="user?.tested">Getestet</h2>
+      <h2 class="d-block text-center fw-bold pt-4 mb-0" *ngIf="user?.vaccinated">Geimpft
         <span class="fw-normal fs-4">
           <span *ngIf="user?.vaccinated">({{user?.vaccinated?.highestCurrDose}}/{{user?.vaccinated?.dosesNeeded}})</span>
     </span>
       </h2>
-      <h2 class="d-block text-center fw-bold pt-4" *ngIf="user?.recovered">Genesen</h2>
+      <h2 class="d-block text-center fw-bold pt-4 mb-0" *ngIf="user?.recovered">Genesen</h2>
     </section>
 
     <section>
-      <p class="text-center mb-1 fw-bold">{{user?.firstName}} {{user?.lastName}}</p>
-      <p class="text-center">{{user?.birthday | date:'dd.MM.yyyy'}}</p>
 
-      <p class="text-center">{{user?.tested?.dateOfSampling | date:'dd.MM.yyyy'}}</p>
-      <p class="text-center">{{user?.vaccinated?.dateOfLastVaccinate | date:'dd.MM.yyyy'}}</p>
-      <p class="text-center">{{user?.recovered?.validUntil | date:'dd.MM.yyyy'}}</p>
+      <p class="text-center" *ngIf="user?.tested">{{user?.tested?.dateOfSampling | date:'dd.MM.yyyy'}}</p>
+      <p class="text-center" *ngIf="user?.vaccinated">{{user?.vaccinated?.dateOfLastVaccinate | date:'dd.MM.yyyy'}}</p>
+      <p class="text-center" *ngIf="user?.recovered">{{user?.recovered?.validUntil | date:'dd.MM.yyyy'}}</p>
 
+      <p class="fw-bold pt-3 text-center" *ngIf="user?.tested">{{daysBetween}} days ago</p>
+      <p class="fw-bold pt-3 text-center" *ngIf="user?.vaccinated">{{daysBetween}} days ago</p>
+      <p class="fw-bold pt-3 text-center" *ngIf="user?.recovered">{{daysBetween}} left</p>
     </section>
   </div>
+
+  <p class="text-center mb-1 fw-bold">{{user?.firstName}} {{user?.lastName}}</p>
+  <p class="text-center">{{user?.birthday | date:'dd.MM.yyyy'}}</p>
 </div>

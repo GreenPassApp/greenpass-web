@@ -173,5 +173,14 @@
     "DE": "Deutsch",
     "EN": "Englisch",
     "ES": "Spanisch"
+  },
+  "PRESSKIT": {
+    "SUBLINE1": "Was treibt uns an, was kann unsere App und vieles mehr - hier auf einem Blick gesammelt",
+    "SUBLINE2": "Fragen gerne jederzeit an",
+    "PRESSTEXTS": "Pressetexte",
+    "TEXT_FUNKTIONEN": "Pressetext: Die Funktionen der App (Deutsch)",
+    "TEXT_TEAM": "Pressetext: Die Funktionen der App (Deutsch)",
+    "FOTO": "Fotos",
+    "TEAMFOTO": ""
   }
 }

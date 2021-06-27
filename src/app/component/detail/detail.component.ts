@@ -16,6 +16,7 @@ export class DetailComponent implements OnInit {
   public user: User | undefined
   public countryCode: string | undefined
   validationState: string = "";
+  daysBetween: any | undefined;
 
   constructor(
     private userService: UserService,
@@ -36,8 +37,27 @@ export class DetailComponent implements OnInit {
         this.user = userWithCountryCode.user
         this.countryCode = userWithCountryCode.requestCountryCode
         this.getNewestRegulation()
+
+        if(this.user?.vaccinated) {
+          this.daysBetween = Math.floor(
+            (new Date().getTime() - new Date(this.user?.vaccinated?.dateOfLastVaccinate).getTime())
+            / (1000 * 3600 * 24)
+          );
+        } else if(this.user?.tested) {
+          this.daysBetween = Math.floor(
+            (new Date().getTime() - new Date(this.user?.tested?.dateOfSampling).getTime())
+            / (1000 * 3600 * 24)
+          );
+        } else if(this.user?.recovered) {
+          this.daysBetween = Math.floor(
+            (new Date().getTime() - new Date(this.user?.recovered?.validUntil).getTime())
+            / (1000 * 3600 * 24)
+          );
+        }
       })
     })
+
+
   }
 
   private getNewestRegulation() {

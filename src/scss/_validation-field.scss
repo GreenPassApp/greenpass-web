@@ -2,7 +2,12 @@
   //background: $blue;
   color: white;
   border-radius: 20px;
-  min-width: 400px;
+  width: 100%;
+ @include media-breakpoint-up(md) {
+   min-width: 400px;
+   max-width: 500px;
+ }
+
 
   &.valid {
     background: $green;
@@ -23,5 +28,9 @@
     margin: 0 auto;
     font-size: 2rem;
     border-radius: 50%;
+  }
+
+  &__container {
+    max-height: 90vh;
   }
 }
