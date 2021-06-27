@@ -7,7 +7,7 @@ import {TranslateService} from "@ngx-translate/core";
 })
 export class HomeComponent implements OnInit {
 
-  constructor() {
+  constructor(public translate: TranslateService) {
   }
 
   ngOnInit(): void {
@@ -19,6 +19,10 @@ export class HomeComponent implements OnInit {
 
     header.classList.toggle("isClosed");
     content.classList.toggle("isClosed");
+  }
+
+  getCurLang(): String{
+    return this.translate.currentLang
   }
 
 }
