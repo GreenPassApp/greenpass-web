@@ -10,8 +10,7 @@
       <h2 class="d-block text-center fw-bold pt-4" *ngIf="user?.tested">Getestet</h2>
       <h2 class="d-block text-center fw-bold pt-4" *ngIf="user?.vaccinated">Geimpft
         <span class="fw-normal fs-4">
-      (<span *ngIf="user?.vaccinated?.dateOfFirst && user?.vaccinated?.dateOfLastVaccinate">2</span>
-      <span *ngIf="!user?.vaccinated?.dateOfLastVaccinate">1</span>/2)
+          <span *ngIf="user?.vaccinated">({{user?.vaccinated?.highestCurrDose}}/{{user?.vaccinated?.dosesNeeded}})</span>
     </span>
       </h2>
       <h2 class="d-block text-center fw-bold pt-4" *ngIf="user?.recovered">Genesen</h2>
@@ -19,11 +18,11 @@
 
     <section>
       <p class="text-center mb-1 fw-bold">{{user?.firstName}} {{user?.lastName}}</p>
-      <p class="text-center">{{user?.birthday}}</p>
+      <p class="text-center">{{user?.birthday | date:'dd.MM.yyyy'}}</p>
 
-      <p class="text-center">{{user?.tested?.dateOfSampling}}</p>
-      <p class="text-center">{{user?.vaccinated?.dateOfLastVaccinate}}</p>
-      <p class="text-center">{{user?.recovered?.validUntil}}</p>
+      <p class="text-center">{{user?.tested?.dateOfSampling | date:'dd.MM.yyyy'}}</p>
+      <p class="text-center">{{user?.vaccinated?.dateOfLastVaccinate | date:'dd.MM.yyyy'}}</p>
+      <p class="text-center">{{user?.recovered?.validUntil | date:'dd.MM.yyyy'}}</p>
 
     </section>
   </div>
