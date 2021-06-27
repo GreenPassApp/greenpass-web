@@ -184,25 +184,17 @@
         "ANSWER3": ", with the exception of the optional \"Apple Wallet\" feature. You can find all information on data protection summarized as compactly as possible in our",
         "ANSWER4": "privacy policy"
       },
-      "FAQ1": {
-        "QUESTION": "",
-        "ANSWER": ""
+      "FAQ_FEEDBACK": {
+        "QUESTION": "You have questions, suggestions or wishes?",
+        "ANSWER": "Contact us, we welcome feedback and suggestions to continuously improve this project! Here you can get to our contact:"
       },
-      "FAQ2": {
-        "QUESTION": "",
-        "ANSWER": ""
+      "FAQ_CONTRIBUTE": {
+        "QUESTION": "You want to participate in the project?",
+        "ANSWER": "The GreenPass app is an open source project. This means that anyone can view the code and participate in the project. We look forward to expanding and improving the GreenPass app with as many people as possible! You can access our Github repository here:"
       },
-      "FAQ3": {
-        "QUESTION": "",
-        "ANSWER": ""
-      },
-      "FAQ4": {
-        "QUESTION": "",
-        "ANSWER": ""
-      },
-      "FAQ5": {
-        "QUESTION": "",
-        "ANSWER": ""
+      "FAQ_ANYMORE": {
+        "QUESTION": "You have another question that is not answered here?",
+        "ANSWER": "Contact us! We are looking forward to answering your questions:"
       }
     }
   },

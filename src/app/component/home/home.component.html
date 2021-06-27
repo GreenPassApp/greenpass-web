@@ -196,49 +196,40 @@
 
     <div class="faq">
       <button class="faq__header shadow-sm isClosed" (click)="faqOpenClose($event)">
-        Du hast Fragen, Verbesserungsvorschläge oder Wünsche?
+        {{ 'HOME.FAQ.FAQ_FEEDBACK.QUESTION' | translate }}
         <i class="fas fa-chevron-right"></i>
       </button>
-      <p class="faq__content isClosed">Melde dich bei uns, wir freuen uns über Feedback und Anregungen, um dieses
-        Projekt
-        laufend zu verbessern! Hier gelangst du zu unserem Kontakt: <a href="#">team@greenpassapp.eu</a></p>
+      <p class="faq__content isClosed">{{ 'HOME.FAQ.FAQ_FEEDBACK.ANSWER' | translate }} <a href="#">team@greenpassapp.eu</a></p>
     </div>
 
-    <div class="faq">
+    <!--<div class="faq">
       <button class="faq__header shadow-sm isClosed" (click)="faqOpenClose($event)">
-        Du möchtest die App mit Freunden und Bekannten teilen?
+        {{ 'HOME.FAQ.FAQ_SHARE.QUESTION' | translate }}
         <i class="fas fa-chevron-right"></i>
       </button>
       <p class="faq__content isClosed">
-        Teile die App mit Freunden, Bekannten und Verwandten und mache auch ihr Leben während der Pandemie ein klein
-        wenig einfacher!
-        <i class="fas fa-instagram text-dark"></i>
-        <i class="fas fa-facebook text-dark"></i>
-        <i class="fas fa-twitter text-dark"></i>
-        <i class="fas fa-linkedin text-dark"></i>
+        {{ 'HOME.FAQ.FAQ_SHARE.QUESTION' | translate }}
+      </p>
+    </div>-->
+
+    <div class="faq">
+      <button class="faq__header shadow-sm isClosed" (click)="faqOpenClose($event)">
+        {{ 'HOME.FAQ.FAQ_CONTRIBUTE.QUESTION' | translate }}
+        <i class="fas fa-chevron-right"></i>
+      </button>
+      <p class="faq__content isClosed">
+        {{ 'HOME.FAQ.FAQ_CONTRIBUTE.ANSWER' | translate }}
+        <a href="https://github.com/GreenPassApp" target="_blank">https://github.com/GreenPassApp</a>
       </p>
     </div>
 
     <div class="faq">
       <button class="faq__header shadow-sm isClosed" (click)="faqOpenClose($event)">
-        Du möchtest dich am Projekt beteiligen?
+        {{ 'HOME.FAQ.FAQ_ANYMORE.QUESTION' | translate }}
         <i class="fas fa-chevron-right"></i>
       </button>
       <p class="faq__content isClosed">
-        Bei der GreenPass-App handelt es sich um ein Open Source Projekt. Das bedeutet, dass sich jede:r den Code
-        einsehen kann und sich am Projekt beteiligen kann. Wir freuen uns darauf, die GreenPass-App mit möglichst
-        vielen Personen gemeinsam zu erweitern und zu verbessern! Hier gelangst du zu unserem Github-Repository:
-        <a href="https://github.com/GreenPassApp" target="_blank">GitHub</a>
-      </p>
-    </div>
-
-    <div class="faq">
-      <button class="faq__header shadow-sm isClosed" (click)="faqOpenClose($event)">
-        Du hast noch eine Frage, die hier nicht beantwortet wird?
-        <i class="fas fa-chevron-right"></i>
-      </button>
-      <p class="faq__content isClosed">
-        Melde dich bei uns! Wir freuen uns darauf dir deine Fragen zu beantworten:
+        {{ 'HOME.FAQ.FAQ_ANYMORE.ANSWER' | translate }}
         <a href="mailto:team@greenpassapp.eu">team@greenpassapp.eu</a>
       </p>
     </div>

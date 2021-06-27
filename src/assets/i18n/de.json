@@ -145,24 +145,24 @@
         "QUESTION": "Welche Daten werden von der App erfasst?",
         "ANSWER1": "Sämtliche Daten (Zertifikate bestehend aus Vor- und Nachname, Geburtsdatum und zertifikatsspezifische Gesundheitsdaten) werden",
         "ANSWER2": "ausschließlich lokal und offline auf deinem Gerät",
-        "ANSWER3": "gespeichert und verarbeitet, mit der Ausnahme des optionalen Features \"Apple Wallet\". Alle Informationen zum Datenschutz findest du möglichst kompakt zusammengefasst in unserer",
+        "ANSWER3": "gespeichert und verarbeitet, mit der Ausnahme der optionalen Features \"Apple Wallet\" und der \"Teilen-Funktion\". Alle Informationen zum Datenschutz findest du möglichst kompakt zusammengefasst in unserer",
         "ANSWER4": "Datenschutzerklärung"
       },
-      "FAQ2": {
-        "QUESTION": "",
-        "ANSWER": ""
+      "FAQ_FEEDBACK": {
+        "QUESTION": "Du hast Fragen, Verbesserungsvorschläge oder Wünsche?",
+        "ANSWER": "Melde dich bei uns, wir freuen uns über Feedback und Anregungen, um dieses Projekt laufend zu verbessern! Hier gelangst du zu unserem Kontakt:"
       },
-      "FAQ3": {
-        "QUESTION": "",
-        "ANSWER": ""
+      "FAQ_SHARE": {
+        "QUESTION": "Du möchtest die App mit Freunden und Bekannten teilen?",
+        "ANSWER": "Teile die App mit Freunden, Bekannten und Verwandten und mache auch ihr Leben während der Pandemie ein klein wenig einfacher!"
       },
-      "FAQ4": {
-        "QUESTION": "",
-        "ANSWER": ""
+      "FAQ_CONTRIBUTE": {
+        "QUESTION": "Du möchtest dich am Projekt beteiligen?",
+        "ANSWER": "Bei der GreenPass-App handelt es sich um ein Open Source Projekt. Das bedeutet, dass sich jede:r den Code einsehen kann und sich am Projekt beteiligen kann. Wir freuen uns darauf, die GreenPass-App mit möglichst vielen Personen gemeinsam zu erweitern und zu verbessern! Hier gelangst du zu unserem Github-Repository:"
       },
-      "FAQ5": {
-        "QUESTION": "",
-        "ANSWER": ""
+      "FAQ_ANYMORE": {
+        "QUESTION": "Du hast noch eine Frage, die hier nicht beantwortet wird?",
+        "ANSWER": "Melde dich bei uns! Wir freuen uns darauf dir deine Fragen zu beantworten:"
       }
     }
   },
