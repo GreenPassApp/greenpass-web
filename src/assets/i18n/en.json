@@ -35,6 +35,12 @@
       "TEXT10": "You have questions to us as a team? Feel free to contact us:"
     }
   },
+  "IMPRINT": {
+    "HEADLINE": "Imprint",
+    "TEXT1": "This project is an open source project and can therefore be further developed and maintained by the community. The entire source code of the app and this website can be viewed in this GitHub repository:",
+    "TEXT2": "The project was initiated by the following persons in cooperation with the FH Upper Austria. Responsible for the existing concept, the design as well as the content of the app and this website are:",
+    "AUSTRIA": "Austria"
+  },
   "PRIVACY": {
     "HEADLINE": {
       "HEADLINE1": "Because",
@@ -111,22 +117,61 @@
       "HEADLINE3": "App",
       "TEXT": "Download now, add QR code and show your vaccination, health and test certificates digitally throughout the EU. Available now in the App Store and Playstore."
     },
+    "STEPS": {
+      "STEP1": {
+        "HEADLINE": "Add your QR Codes",
+        "TEXT": "Simply scan the QR code of your vaccination, test and recovery certificates"
+      },
+      "STEP2": {
+        "HEADLINE": "All certificates in one app",
+        "TEXT": "Collect all certificates of your family and friends in your GreenPass app"
+      },
+      "STEP3": {
+        "HEADLINE": "Show & validate GreenPass",
+        "TEXT": "Present and validate in one app? GreenPass makes it possible: One app for everything!"
+      }
+    },
     "SECTION1": {
-      "HEADLINE1": "All certificates",
-      "HEADLINE2": "collected in a one app",
-      "TEXT": "Add your own vaccination or test certificates to the app and validate those of your friends, relatives and acquaintances."
+      "PREHEADER": "The app that can do it all:",
+      "HEADLINE1": "Present & validate certificates",
+      "HEADLINE2": "in one app",
+      "HEADLINE3": "",
+      "TEXT": "With the GreenPass App it is possible to show your own certificates as well as to validate those of others in the whole European Union. This makes GreenPass the ideal solution for restaurant owners and club leaders!"
     },
     "SECTION2": {
-      "HEADLINE1": "Now available in the",
-      "HEADLINE2": "entire EU",
-      "TEXT": "Scan and validate QR codes from across the European Union with the GreenPass app."
+      "PREHEADER": "Collecting documents has come to an end:",
+      "HEADLINE1": "All certificates collected in",
+      "HEADLINE2": "GreenPass",
+      "TEXT": "With GreenPass, it is possible to carry multiple certificates in one app. For example, parents can also store their children's certificates in the GreenPass app and save collecting multiple documents."
     },
     "SECTION3": {
-      "HEADLINE1": "Add to",
+      "PREHEADER": "The solution for restaurant owners and club leaders:",
+      "HEADLINE1": "Country-specific",
+      "HEADLINE2": "validation of certificates",
+      "TEXT": "The regulations from when and for how long vaccination, test, recovery certificates are valid in individual EU countries vary from country to country and change regularly. With GreenPass you have the possibility to validate other people's certificates according to the regulations of your country*.",
+      "SUBTEXT": "*Currently only an international version for the EU, Austria and Germany are supported, we are currently working in full speed to implement the current regulations of all EU countries."
+    },
+    "SECTION4": {
+      "PREHEADER": "Never again screenshots and photos of test results:",
+      "HEADLINE1": "Share your certificates",
+      "HEADLINE2": "with friends & family",
+      "TEXT": "At soccer practice, the singing rehearsal or the neighbor's barbecue party: 3G proof often needs to be presented ahead of time. With GreenPass it is possible to share your certificate with other people via a link."
+    },
+    "SECTION5": {
+      "PREHEADER": "Fast, easy & convenient:",
+      "HEADLINE1": "Your GreenPass in",
       "HEADLINE2": "Apple Wallet",
-      "HEADLINE3": "easily & conveniently",
-      "TEXT1": "With the GreenPass app, you can now conveniently add your vaccination, testing and recovery certificates to your Apple Wallet or Android Wallet.",
-      "TEXT2": "Quick, easy and convenient!"
+      "TEXT": "With just one click, it is possible to add your own certificate to the Apple Wallet and thus also present it with the Apple Wallet and the Apple Watch."
+    },
+    "SECTION6": {
+      "HEADLINE1": "Privacy & transparency",
+      "HEADLINE2": "are important to us",
+      "TEXT1": "You can use the app without any data being stored online. All your data is stored and processed",
+      "TEXT2": "locally and encrypted on your device only.",
+      "TEXT3": "Personal data will only be collected when using optional features (Apple Wallet & Share feature) and stored online for the shortest necessary period of time.",
+      "TEXT4": "We ask you to read our short",
+      "TEXT5": "privacy policy",
+      "TEXT6": "before using the app!"
     },
     "FAQ": {
       "PREHEADER": "You still have some open questions?",

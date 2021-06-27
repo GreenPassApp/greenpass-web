@@ -67,6 +67,12 @@
       "ANSWER8": "https://www.dsb.gv.at"
     }
   },
+  "IMPRINT": {
+    "HEADLINE": "Impressum",
+    "TEXT1": "Bei diesem Projekt handelt es sich um ein Open Source Projekt und kann somit von der Community weiterentwickelt und gewartet werden. Der gesamte Source Code der App sowie dieser Website kann in diesem GitHub Repository eingesehen werden:",
+    "TEXT2": "Das Projekt wurde von folgenden Personen in Kooperation mit der FH Oberösterreich ins Leben gerufen. Für das bestehende Konzept, das Design sowie den Inhalt der App und dieser Website verantwortlich sind:",
+    "AUSTRIA": "Österreich"
+  },
   "HOME": {
     "HEADVISUAL": {
       "PREHEADER": "Der Grüne Pass jetzt digital:",
@@ -75,22 +81,61 @@
       "HEADLINE3": "App",
       "TEXT": "Jetzt downloaden, QR-Code hinzufügen und in der gesamten EU deine Impf-, Genesungs- und Testzertifikate digital vorweisen. Ab sofort im App Store und Playstore verfügbar."
     },
+    "STEPS": {
+      "STEP1": {
+        "HEADLINE": "QR Codes hinzufügen",
+        "TEXT": "Scanne ganz einfach den QR Code deiner Impf-, Test- und Genesungszertifikate"
+      },
+      "STEP2": {
+        "HEADLINE": "Alle Zertifikate in einer App",
+        "TEXT": "Sammle alle Zertifikate deiner Familie und Freunde in deiner GreenPass App"
+      },
+      "STEP3": {
+        "HEADLINE": "GreenPass vorweisen & validieren",
+        "TEXT": "Vorweisen und validieren in einer App? GreenPass macht es möglich: Eine App für alles!"
+      }
+    },
     "SECTION1": {
-      "HEADLINE1": "Alle Zertifikate",
-      "HEADLINE2": "gesammelt in einer einzigen App",
-      "TEXT": "Mit GreenPass kannst du alle deine Impf-, Test- und Genesungszertifikate in nur einer App hinzufügen und vorweisen!"
+      "PREHEADER": "Die App, die alles kann:",
+      "HEADLINE1": "Zertifikate",
+      "HEADLINE2": "vorweisen & validieren",
+      "HEADLINE3": "in einer App",
+      "TEXT": "Mit der GreenPass App ist es möglich, in der ganzen Europäischen Union sowohl seine eigenen Zertifikate vorzuweisen, als auch jene von anderen zu validieren. Dadurch ist GreenPass die ideale Lösung für Restaurant-Besitzer:innen und Vereins-Obleute!"
     },
     "SECTION2": {
-      "HEADLINE1": "Jetzt verfügbar in der",
-      "HEADLINE2": "gesamten EU",
-      "TEXT": "Scanne und validiere mit der GreenPass App QR-Codes aus der gesamten Europäischen Union."
+      "PREHEADER": "Das Sammeln von Dokumenten hat ein Ende:",
+      "HEADLINE1": "Alle Zertifikate gesammelt in",
+      "HEADLINE2": "GreenPass",
+      "TEXT": "Mit GreenPass ist es möglich mehrere Zertifikate in einer App mit sich zu führen. So können Eltern beispielsweise auch die Zertifikate ihrer Kinder in der GreenPass App speichern und sparen sich das Sammeln mehrerer Dokumente."
     },
     "SECTION3": {
-      "HEADLINE1": "Einfach & komfortabel ins",
+      "PREHEADER": "Die Lösung für Restaurant-Besitzer:innen und Vereins-Obleute:",
+      "HEADLINE1": "Länderbezogenes",
+      "HEADLINE2": "Validieren von Zertifikaten",
+      "TEXT": "Die Regelungen, ab wann und wielange Impf-, Test-, Genesungszertifikate in einzelnen EU-Staaten gültig sind, sind von Land zu Land unterschiedlich und ändern sich regelmäßig. Mit GreenPass hast du die Möglichkeit, die Zertifikate anderer Personen nach den jeweiligen Regulierungen deines Landes* zu validieren.",
+      "SUBTEXT": "*Aktuell werden nur eine internationale Version für die EU, Österreich und Deutschland unterstützt, wir arbeiten gerade in Hochtouren daran, die aktuellen Regulierungen aller EU Staaten zu implementieren."
+    },
+    "SECTION4": {
+      "PREHEADER": "Niewieder Screenshots und Fotos von Testergebnissen:",
+      "HEADLINE1": "Teile deine Zertifikate",
+      "HEADLINE2": "mit Freunden & Familie",
+      "TEXT": "Beim Fußballtraining, bei der Gesangsprobe oder der Grillfeier des Nachbars: Der 3G-Nachweis muss häufig schon im Vorhinein vorgelegt werden. Mit GreenPass ist es möglich, dein Zertifikat mit anderen Personen über einen Link zu teilen."
+    },
+    "SECTION5": {
+      "PREHEADER": "Schnell, einfach & komfortabel:",
+      "HEADLINE1": "Dein GreenPass im",
       "HEADLINE2": "Apple Wallet",
-      "HEADLINE3": "hinzufügen",
-      "TEXT1": "Mit der GreenPass App kannst du jetzt deine Impf-, Test- und Genesungszertifikat ganz bequem in dein Apple Wallet oder Android Wallet hinzufügen.",
-      "TEXT2": "Schnell, einfach und bequem!"
+      "TEXT": "Mit nur einem Klick ist es möglich, das eigene Zertifikat zum Apple Wallet hinzuzufügen und somit auch mit dem Apple Wallet und der Apple Watch vorzuweisen."
+    },
+    "SECTION6": {
+      "HEADLINE1": "Datenschutz & Transparenz",
+      "HEADLINE2": "liegen uns am Herzen!",
+      "TEXT1": "Du kannst die App nutzen, ohne dass Daten online gespeichert werden. Alle deine Daten werden",
+      "TEXT2": "ausschließlich lokal und verschlüsselt auf deinem Gerät",
+      "TEXT3": "gespeichert und verarbeitet. Es werden nur beim Verwenden optionaler Funktionen (Apple Wallet & Teilen-Funktion) personenbezogene Daten erfasst und für den kürzest-notwendigen Zeitraum online gespeichert.",
+      "TEXT4": "Wir bitten dich vor der Nutzung der App unsere kurze",
+      "TEXT5": "Datenschutzerklärung",
+      "TEXT6": "zu lesen!"
     },
     "FAQ": {
       "PREHEADER": "Du hast noch offene Fragen?",
@@ -131,12 +176,12 @@
       "HEADLINE2": "All-in-One",
       "HEADLINE3": "Lösung",
       "TEXT1": "Die GreenPass App ist die bisher einzige Lösung, die",
-      "TEXT2": "einerseits das Vorweisen und andererseits auch das Validieren",
-      "TEXT3": "von Impf-, Test- und Genesungszertifikaten ermöglicht. Dabei wird selbstverständlich großer Wert auf",
+      "TEXT2": "das Archivieren, das Vorweisen und auch das Validieren",
+      "TEXT3": "von Impf-, Test- und Genesungszertifikaten in einer App ermöglicht. Dabei wird selbstverständlich großer Wert auf",
       "TEXT4": "Datenschutz und Transparenz",
-      "TEXT5": "gelegt, denn alle deine Daten werden lokal verschlüsselt und offline auf deinem Gerät gespeichert.",
-      "TEXT6": "Bei der GreenPass App handelt es sich zusätzlich um eine",
-      "TEXT7": "EU-weit funktionierende Lösung",
+      "TEXT5": "gelegt, denn alle deine Daten werden ausschließlich lokal und verschlüsselt auf deinem Gerät gespeichert.",
+      "TEXT6": "Die GreenPass App funktioniert",
+      "TEXT7": "EU-weit",
       "TEXT8": "und validiert die Zertifikate nach den spezifischen Vorgaben des jeweiligen EU-Staates, den du als Nutzer:in selbst auswählen kannst. Ebenso hast du die Möglichkeit, dein aktuelles Zertifikat mit Freunden oder Familie für einen selbst-gewählten Zeitraum zu teilen.",
       "TEXT9": "Klingt gut? Dann ab in den App Store deines Vertrauens und verwende auch du ab jetzt den",
       "TEXT10": "neuen, digitalen Grünen Pass."
