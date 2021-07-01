@@ -222,6 +222,10 @@
     "TEXT_FUNKTIONEN": "Press text: The features of the app (German)",
     "TEXT_TEAM": "Press text: The team behind (German)",
     "FOTO": "Photos",
-    "TEAMFOTO": "Team photo"
+    "TEAMFOTO": "Team photo",
+    "DESCRIPTION": "with description",
+    "NODESCRIPTION": "without Beschreibung",
+    "DEUTSCH": "German",
+    "ENGLISCH": "English"
   }
 }

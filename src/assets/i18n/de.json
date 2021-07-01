@@ -226,6 +226,10 @@
     "TEXT_FUNKTIONEN": "Pressetext: Die Funktionen der App (Deutsch)",
     "TEXT_TEAM": "Pressetext: Das Team hinter der App (Deutsch)",
     "FOTO": "Fotos",
-    "TEAMFOTO": ""
+    "TEAMFOTO": "",
+    "DESCRIPTION": "mit Beschreibung",
+    "NODESCRIPTION": "ohne Beschreibung",
+    "DEUTSCH": "Deutsch",
+    "ENGLISCH": "Englisch"
   }
 }

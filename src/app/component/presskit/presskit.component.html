@@ -29,13 +29,43 @@
 
   <h2 class="fw-bold px-3 pb-2 pt-4">Screenshots</h2>
 
-  <a download href="assets/presskit/logos/GreenPass_Logo.svg" target="_blank" class="link download d-flex justify-content-between shadow-sm">
-    <span>Screenshots iOS</span>
+  <a *ngIf="getCurLang() == 'de'" download href="assets/presskit/screenshots/GreenPass_Screenshots_iOS_Text_German.zip" target="_blank" class="link download d-flex justify-content-between shadow-sm">
+    <span>Screenshots iOS ({{ 'PRESSKIT.DESCRIPTION' | translate }}, {{ 'PRESSKIT.DEUTSCH' | translate }})</span>
     <i class="fas fa-download"></i>
   </a>
 
-  <a download href="assets/presskit/logos/GreenPass_Logo.svg" target="_blank" class="link download d-flex justify-content-between shadow-sm">
-    <span>Screenshots Android</span>
+  <a *ngIf="getCurLang() == 'de' && false" download href="assets/presskit/screenshots/GreenPass_Screenshots_iOS_Text_German.zip" target="_blank" class="link download d-flex justify-content-between shadow-sm">
+    <span>Screenshots iOS ({{ 'PRESSKIT.NODESCRIPTION' | translate }}, {{ 'PRESSKIT.DEUTSCH' | translate }})</span>
+    <i class="fas fa-download"></i>
+  </a>
+
+  <a *ngIf="getCurLang() == 'en'" download href="assets/presskit/screenshots/GreenPass_Screenshots_iOS_Text_English.zip" target="_blank" class="link download d-flex justify-content-between shadow-sm">
+    <span>Screenshots iOS ({{ 'PRESSKIT.DESCRIPTION' | translate }}, {{ 'PRESSKIT.ENGLISCH' | translate }})</span>
+    <i class="fas fa-download"></i>
+  </a>
+
+  <a *ngIf="getCurLang() == 'en' && false" download href="assets/presskit/screenshots/GreenPass_Screenshots_iOS_Text_English.zip" target="_blank" class="link download d-flex justify-content-between shadow-sm">
+    <span>Screenshots iOS ({{ 'PRESSKIT.NODESCRIPTION' | translate }}, {{ 'PRESSKIT.ENGLISCH' | translate }})</span>
+    <i class="fas fa-download"></i>
+  </a>
+
+  <a *ngIf="getCurLang() == 'de'" download href="assets/presskit/screenshots/GreenPass_Screenshots_Android_Text_German.zip" target="_blank" class="link download d-flex justify-content-between shadow-sm">
+    <span>Screenshots Android ({{ 'PRESSKIT.DESCRIPTION' | translate }}, {{ 'PRESSKIT.DEUTSCH' | translate }})</span>
+    <i class="fas fa-download"></i>
+  </a>
+
+  <a *ngIf="getCurLang() == 'de'" download href="assets/presskit/screenshots/GreenPass_Screenshots_Android_German.zip" target="_blank" class="link download d-flex justify-content-between shadow-sm">
+    <span>Screenshots Android ({{ 'PRESSKIT.NODESCRIPTION' | translate }}, {{ 'PRESSKIT.DEUTSCH' | translate }})</span>
+    <i class="fas fa-download"></i>
+  </a>
+
+  <a *ngIf="getCurLang() == 'en'" download href="assets/presskit/screenshots/GreenPass_Screenshots_Android_Text_English.zip" target="_blank" class="link download d-flex justify-content-between shadow-sm">
+    <span>Screenshots Android ({{ 'PRESSKIT.DESCRIPTION' | translate }}, {{ 'PRESSKIT.ENGLISCH' | translate }})</span>
+    <i class="fas fa-download"></i>
+  </a>
+
+  <a *ngIf="getCurLang() == 'en'" download href="assets/presskit/screenshots/GreenPass_Screenshots_Android_English.zip" target="_blank" class="link download d-flex justify-content-between shadow-sm">
+    <span>Screenshots Android ({{ 'PRESSKIT.NODESCRIPTION' | translate }}, {{ 'PRESSKIT.ENGLISCH' | translate }})</span>
     <i class="fas fa-download"></i>
   </a>
 
