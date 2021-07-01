@@ -43,6 +43,10 @@ const routes: Routes = [
     path: 'notvalid', component: NotValidComponent
   },
   {
+    path: 'beta',
+    loadChildren: () => new Promise( () => { if(window.location.href.match(/beta/) ) window.location.href = 'https://testflight.apple.com/join/YQX5aBqu'; } )
+  },
+  {
     path: 's/:**', redirectTo: '/notvalid'
   },
   {
