@@ -50,6 +50,10 @@ html, body {
   margin: 0 auto;
 }
 
+.max-h-100 {
+  max-height: 100vh;
+}
+
 body {
   font-family: 'Inter', Arial, sans-serif;
   background-color: rgba(235, 236, 237, 0.3);
