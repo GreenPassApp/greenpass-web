@@ -12,4 +12,26 @@
     color: white;
     transition: all 200ms ease-in-out;
   }
+
+  &--filled {
+    border: 2px solid $green;
+    background: $green;
+    color: white;
+
+    &:hover {
+      background: transparent;
+      color: $green;
+    }
+  }
+
+  &--red {
+    border: 2px solid $red;
+    background: $red;
+    color: white;
+
+    &:hover {
+      background: transparent;
+      color: $red;
+    }
+  }
 }

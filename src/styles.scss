@@ -12,6 +12,7 @@
 @import "scss/card";
 @import "scss/typo.scss";
 @import "scss/button";
+@import "scss/loading";
 
 #content, .content {
   padding-top: 77px;
@@ -29,7 +30,7 @@ html, body {
 }
 
 .wrapper {
-  @include media-breakpoint-up(lg) {
+  @include media-breakpoint-up(md) {
     min-height: 100%;
 
     /* Equal to height of footer */
@@ -41,7 +42,7 @@ html, body {
 
 .footer,
 .push {
-  @include media-breakpoint-up(lg) {
+  @include media-breakpoint-up(md) {
     height: 48px;
   }
 }

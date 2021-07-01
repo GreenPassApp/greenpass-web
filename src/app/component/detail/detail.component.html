@@ -1,19 +1,33 @@
-<div class="validation-field__container d-flex justify-content-center align-items-center flex-column">
-  <div class="validation-field p-4 pt-5 py-lg-5 my-5 shadow mx-3" [ngClass]="validationState">
+
+<div *ngIf="!user" class="validation-field__container d-flex justify-content-center align-items-center flex-column">
+  <div *ngIf="notFound" class="validation-field validation-field--empty shadow bg-white p-4 pt-5 py-lg-5 my-5 mx-3 px-5">
+
+    <p class="text-center pt-4 fs-2 fw-bold pt-md-5 text-dark">Ooops...</p>
+    <p class="text-center text-dark">{{ 'DETAIL.NOTFOUND' | translate }}</p>
+    <div class="w-100 d-flex justify-content-center pb-4">
+      <button class="button text-center mt-3" routerLink="">{{ 'DETAIL.TOSTARTPAGE' | translate }}</button>
+    </div>
+  </div>
+  <div *ngIf="!notFound" class="loading"></div>
+</div>
+<div *ngIf="user && validationState"
+     class="validation-field__container d-flex justify-content-center align-items-center flex-column">
+  <div class="validation-field p-4 pt-5 p-lg-5 mt-5 mb-3 shadow mx-3" [ngClass]="validationState">
     <section>
-      <div class="validation-field__icon d-flex justify-content-center align-items-center">
+      <div class="validation-field__icon d-flex justify-content-center align-items-center mb-3">
         <i class="fas fa-vial p-4" *ngIf="user?.tested"></i>
         <i class="fas fa-syringe p-4" *ngIf="user?.vaccinated"></i>
         <i class="fas fa-child p-4" *ngIf="user?.recovered"></i>
 
       </div>
-      <h2 class="d-block text-center fw-bold pt-4 mb-0" *ngIf="user?.tested">Getestet</h2>
-      <h2 class="d-block text-center fw-bold pt-4 mb-0" *ngIf="user?.vaccinated">Geimpft
+      <h2 class="d-block text-center fw-bold pt-4 mb-0" *ngIf="user?.tested"><i class="fas fa-check-circle pe-2"></i>{{ 'DETAIL.TESTED' | translate }}</h2>
+      <h2 class="d-block text-center fw-bold pt-4 mb-0" *ngIf="user?.vaccinated"><i class="fas fa-check-circle pe-2"></i>{{ 'DETAIL.VACC' | translate }}
         <span class="fw-normal fs-4">
           <span *ngIf="user?.vaccinated">({{user?.vaccinated?.highestCurrDose}}/{{user?.vaccinated?.dosesNeeded}})</span>
     </span>
       </h2>
-      <h2 class="d-block text-center fw-bold pt-4 mb-0" *ngIf="user?.recovered">Genesen</h2>
+      <h2 class="d-block text-center fw-bold pt-4 mb-0"
+          *ngIf="user?.recovered"><i class="fas fa-check-circle pe-2"></i>{{ 'DETAIL.RECOVERED' | translate }}</h2>
     </section>
 
     <section>
@@ -25,9 +39,19 @@
       <p class="fw-bold pt-3 text-center" *ngIf="user?.tested">{{daysBetween}} days ago</p>
       <p class="fw-bold pt-3 text-center" *ngIf="user?.vaccinated">{{daysBetween}} days ago</p>
       <p class="fw-bold pt-3 text-center" *ngIf="user?.recovered">{{daysBetween}} left</p>
+      <!-- TODO: ÜBERSETZEN -->
     </section>
+
+
   </div>
 
-  <p class="text-center mb-1 fw-bold">{{user?.firstName}} {{user?.lastName}}</p>
-  <p class="text-center">{{user?.birthday | date:'dd.MM.yyyy'}}</p>
+  <div class="d-flex align-items-center justify-content-center validation-field p-4">
+    <i class="fas fa-user fs-1 pe-3 text-dark"></i>
+    <div>
+      <p class="mb-0 fw-bold text-dark">{{user?.firstName}} {{user?.lastName}}</p>
+      <p class="small mb-0 lh-1 text-gray">{{user?.birthday | date:'dd.MM.yyyy'}}</p>
+    </div>
+
+  </div>
+
 </div>

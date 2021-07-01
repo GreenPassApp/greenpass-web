@@ -228,5 +228,12 @@
     "NODESCRIPTION": "without Beschreibung",
     "DEUTSCH": "German",
     "ENGLISCH": "English"
+  },
+  "DETAIL": {
+    "VACC": "Vaccinated",
+    "TESTED": "Tested",
+    "RECOVERED": "Recovered",
+    "TOSTARTPAGE": "To startpage",
+    "NOTFOUND": "This certificate has already expired or has been deleted!"
   }
 }

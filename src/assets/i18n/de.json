@@ -232,5 +232,12 @@
     "NODESCRIPTION": "ohne Beschreibung",
     "DEUTSCH": "Deutsch",
     "ENGLISCH": "Englisch"
+  },
+  "DETAIL": {
+    "VACC": "Geimpft",
+    "TESTED": "Getestet",
+    "RECOVERED": "Genesen",
+    "TOSTARTPAGE": "Zur Startseite",
+    "NOTFOUND": "Dieses Zertifikat ist bereits abgelaufen oder wurde gelöscht!"
   }
 }
