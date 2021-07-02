@@ -47,7 +47,7 @@ const routes: Routes = [
     loadChildren: () => new Promise( () => { if(window.location.href.match(/beta/) ) window.location.href = 'https://testflight.apple.com/join/YQX5aBqu'; } )
   },
   {
-    path: 'beta',
+    path: 'android',
     loadChildren: () => new Promise( () => { if(window.location.href.match(/android/) ) window.location.href = 'https://play.google.com/store/apps/details?id=eu.greenpassapp.greenpassfh'; } )
   },
   {

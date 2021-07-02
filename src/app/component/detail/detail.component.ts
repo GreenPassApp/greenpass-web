@@ -52,7 +52,7 @@ export class DetailComponent implements OnInit {
           );
         } else if (this.user?.recovered) {
           this.daysBetween = Math.floor(
-            (new Date().getTime() - new Date(this.user?.recovered?.validUntil).getTime())
+            (new Date(this.user?.recovered?.validUntil).getTime() - new Date().getTime())
             / (1000 * 3600 * 24)
           );
         }
@@ -93,7 +93,7 @@ export class DetailComponent implements OnInit {
 
   private validate(newestRegulation: Regulation) {
     if (this.user?.recovered) {
-      if (new Date(this.user.recovered.validUntil) > new Date()) {
+      if (moment(this.user.recovered.validUntil).isBefore(moment(Date()))) {
         this.validationState = "invalid"
         return
       }
