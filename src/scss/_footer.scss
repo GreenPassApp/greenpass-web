@@ -9,4 +9,16 @@
       transition: all 200ms ease-in-out;
     }
   }
+
+  &__logo {
+    max-width: 180px;
+
+    @include media-breakpoint-up(md) {
+      max-width: 260px;
+    }
+
+    @include media-breakpoint-up(lg) {
+      max-width: 300px;
+    }
+  }
 }
