@@ -9,6 +9,7 @@ import {NotFoundComponent} from "./component/not-found/not-found.component";
 import {NotValidComponent} from "./component/not-valid/not-valid.component";
 import {OpensourceComponent} from "./component/opensource/opensource.component";
 import {PresskitComponent} from "./component/presskit/presskit.component";
+import {DownloadComponent} from "./component/download/download.component";
 
 const routes: Routes = [
   {
@@ -51,7 +52,7 @@ const routes: Routes = [
     loadChildren: () => new Promise( () => { if(window.location.href.match(/android/) ) window.location.href = 'https://play.google.com/store/apps/details?id=eu.greenpassapp.greenpassfh'; } )
   },
   {
-    path: 's/:**', redirectTo: '/notvalid'
+    path: 'download', component: DownloadComponent
   },
   {
     path: '404', component: NotFoundComponent

@@ -17,6 +17,7 @@ import { NotFoundComponent } from './component/not-found/not-found.component';
 import { PresskitComponent } from './component/presskit/presskit.component';
 import { OpensourceComponent } from './component/opensource/opensource.component';
 import { NotValidComponent } from './component/not-valid/not-valid.component';
+import { DownloadComponent } from './component/download/download.component';
 
 // AoT requires an exported function for factories
 export function createTranslateLoader(http: HttpClient) {
@@ -36,7 +37,8 @@ export function createTranslateLoader(http: HttpClient) {
     NotFoundComponent,
     PresskitComponent,
     OpensourceComponent,
-    NotValidComponent
+    NotValidComponent,
+    DownloadComponent
   ],
   imports: [
     BrowserModule,
