@@ -88,7 +88,9 @@
       "DATA9": "Expiration date",
       "DATA10": "For test certificates",
       "DATA11": "Test type (PCR or rapid test)",
-      "DATA12": "Time of the test execution"
+      "DATA12": "Time of the test execution",
+      "ML_KIT_HEADER": "QR code scanning",
+      "ML_KIT_BODY": "To ensure fast and reliable scanning of QR codes, Google's ML Kit package is used. When using this package, diagnostic data is provided to Google to improve the scanning function; it is important here that no personal data or certificate data is provided. All detailed information about ML Kit is summarized here:"
     },
     "WEBSITE": {
       "QUESTION": "Which data is collected when using this website?",

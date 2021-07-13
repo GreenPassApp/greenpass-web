@@ -40,7 +40,9 @@
       "DATA9": "Ablaufdatum",
       "DATA10": "Für Testzertifikate",
       "DATA11": "Test-Art (PCR- oder Schnelltest)",
-      "DATA12": "Zeitpunkt der Test-Durchführung"
+      "DATA12": "Zeitpunkt der Test-Durchführung",
+      "ML_KIT_HEADER": "Scannen von QR-Codes",
+      "ML_KIT_BODY": "Zur Gewährleistung eines schnellen und zuverlässigen Scans von QR-Codes wird das Package ML Kit von Google verwendet. Beim Nutzen dieses Packages werden Diagnosedaten zur Verbesserung der Scan-Funktion für Google bereitgestellt, wichtig ist hierbei, dass keine personenbezogenen Daten oder Zertifikatsdaten bereitgestellt werden. Alle genauen Informationen zu ML Kit sind hier zusammengefasst:"
     },
     "WEBSITE": {
       "QUESTION": "Welche Daten werden bei der Verwendung dieser Website erfasst?",
