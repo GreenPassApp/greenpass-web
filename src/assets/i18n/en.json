@@ -15,7 +15,7 @@
       "TEXT5": ", since all your data is encrypted locally and stored offline on your device.",
       "TEXT6": "The GreenPass app is also an",
       "TEXT7": "EU-wide solution",
-      "TEXT8": "and validates the certificates according to the specific requirements of the respective EU country, which you can select yourself as a user. You also have the option to share your current certificate with friends or family for a self-selected period of time.",
+      "TEXT8": "and validates the certificates according to the specific requirements of the respective EU country, which you can select yourself as a user.",
       "TEXT9": "Sounds good? Then hit the App Store of your choice and start using the",
       "TEXT10": "new, digital GreenPass."
     },
@@ -59,7 +59,7 @@
       "TEXT3": "",
       "TEXT4": "You can use the app and this website without any personal data being stored or processed online. The collected data is only stored and processed",
       "TEXT5": "locally and offline on your device",
-      "TEXT6": "and will be deleted when you uninstall the app. When using certain optional features (Apple Wallet & Share feature), personal data is collected and stored and processed online for the shortest possible period of time. Of course, you will be informed about this in the app before using these features."
+      "TEXT6": "and will be deleted when you uninstall the app. When using certain optional Apple Wallet features, personal data is collected and stored and processed online for the shortest possible period of time. Of course, you will be informed about this in the app before using these features."
     },
     "APP": {
       "QUESTION": "Which data is collected when using the app?",
@@ -178,7 +178,7 @@
       "HEADLINE2": "are important to us",
       "TEXT1": "You can use the app without any data being stored online. All your data is stored and processed",
       "TEXT2": "locally and encrypted on your device only.",
-      "TEXT3": "Personal data will only be collected when using optional features (Apple Wallet & Share feature) and stored online for the shortest necessary period of time.",
+      "TEXT3": "Personal data will only be collected when using optional Apple Wallet feature and stored online for the shortest necessary period of time.",
       "TEXT4": "We ask you to read our short",
       "TEXT5": "privacy policy",
       "TEXT6": "before using the app!"
