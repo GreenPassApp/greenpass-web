@@ -9,8 +9,6 @@
           class="text-green">{{ 'HOME.HEADVISUAL.HEADLINE2' | translate }}</span> {{ 'HOME.HEADVISUAL.HEADLINE3' | translate }}
       </h1>
       <p class="text-center text-lg-start">{{ 'HOME.HEADVISUAL.TEXT' | translate }}</p>
-      <p class="text-center text-lg-start">Anmerkung: Die aktuelle App Version (iOS, Android und APK) validiert NUR gemäß den Eintrittstests und berücksichtigt keine Änderungen der Regelungen in der Nachtgastronomie (Stand: 18.07.2021). Updates folgen in Kürze!</p>
-
       <div>
         <!--<div class="col-sm d-flex justify-content-center justify-content-lg-start mt-3 pt-2 mb-5 mb-lg-0">
           <a class="store-bubble me-3" href="#" style="pointer-events: none;">
@@ -35,10 +33,14 @@
                  style="height: 40px;">
           </a>-->
         </div>
-        <!--<div class="d-flex d-lg-block flex-column align-items-center">
-          <p class="text-center text-lg-start pt-3">{{ 'HOME.HEADVISUAL.BETA' | translate }}</p>
 
-        </div>-->
+        <small class="text-muted text-center text-lg-start d-block py-3 pt-4">Anmerkung: Die aktuelle App Version (iOS, Android und APK) validiert NUR gemäß den Eintrittstests und berücksichtigt keine Änderungen der Regelungen in der Nachtgastronomie (Stand: 18.07.2021). Updates folgen in Kürze!</small>
+        <small class="text-muted text-center text-lg-start d-block pb-3">Die App verlässt in sehr naher Zukunft den Beta Status und wird dann nur mehr ausschließlich über den Apple AppStore und Google PlayStore erreichbar sein.</small>
+
+          <!--<div class="d-flex d-lg-block flex-column align-items-center">
+            <p class="text-center text-lg-start pt-3">{{ 'HOME.HEADVISUAL.BETA' | translate }}</p>
+
+          </div>-->
       </div>
     </div>
     <div class="col-12 col-lg-5 d-flex justify-content-center justify-content-lg-start pt-lg-5">
@@ -138,7 +140,7 @@
   </section>
 
   <!-- SHARING -->
-  <section
+  <!--<section
     class="py-5 headvisual--small row d-flex flex-column-reverse align-items-center justify-content-center pt-3 max-w-1000 flex-lg-row">
     <div class="col-lg-5 d-flex justify-content-center">
       <img src="assets/images/home/share.png" alt=""
@@ -156,11 +158,16 @@
         {{ 'HOME.SECTION4.TEXT' | translate }}
       </p>
     </div>
-  </section>
+  </section>-->
 
   <!-- COUNTRY VALIDATION -->
   <section
-    class="py-5 headvisual--small row d-flex flex-column align-items-center justify-content-center pt-3 max-w-1000 flex-md-row">
+    class="py-5 headvisual--small row d-flex flex-column-reverse align-items-center justify-content-center pt-3 max-w-1000 flex-lg-row">
+    <div class="col-lg-5 d-flex justify-content-center pt-lg-3">
+      <img src="assets/images/home/wallet.png" alt="" class="headvisual__image headvisual__image--right max-h-60 d-none d-lg-block pt-lg-5">
+      <img src="assets/images/home/wallet-sm.png" alt=""
+           class="headvisual__image max-h-600px w-75 d-block d-lg-none pb-5">
+    </div>
     <div class="headvisual__text mt-md-3 col-lg-7">
       <p class="small mb-1 text-center text-lg-start">{{ 'HOME.SECTION5.PREHEADER' | translate }}</p>
       <h2 class="fw-bold pb-3 text-center text-lg-start">{{ 'HOME.SECTION5.HEADLINE1' | translate }} <span
@@ -170,11 +177,7 @@
         {{ 'HOME.SECTION5.TEXT' | translate }}
       </p>
     </div>
-    <div class="col-lg-5 d-flex justify-content-center pt-lg-3">
-      <img src="assets/images/home/wallet.png" alt="" class="headvisual__image max-h-60 d-none d-lg-block pt-lg-5">
-      <img src="assets/images/home/wallet-sm.png" alt=""
-           class="headvisual__image max-h-600px w-75 d-block d-lg-none pb-5">
-    </div>
+
   </section>
 
   <!-- DATA PRIVACY -->
@@ -276,12 +279,15 @@
   </section>
 </main>
 
-<section class="d-flex flex-column align-items-center py-5">
-  <span class="fw-bold">{{ 'FOOTER.FH' | translate }}</span>
-  <a href="https://fh-ooe.at" target="_blank">
-    <img src="assets/fh-ooe.svg" alt="FH OÖ Logo" class="footer__logo pt-3">
-  </a>
-  <a href="https://ooerk.at" target="_blank">
-    <img src="assets/logo-rk-lp-ooe.svg" alt="OÖRK Logo" class="footer__logo pt-3">
-  </a>
+<section class="d-flex flex-column align-items-center py-5 mb-5">
+  <span class="fw-bold">{{ 'FOOTER.FH' | translate }} & dem Roten Kreuz OÖ</span>
+  <div class="d-md-flex align-items-center">
+    <a href="https://fh-ooe.at" target="_blank">
+      <img src="assets/fh-ooe.svg" alt="FH OÖ Logo" class="footer__logo pt-3 px-3">
+    </a>
+    <a href="https://www.roteskreuz.at/oberoesterreich/home" target="_blank">
+      <img src="assets/logo-rk-lp-ooe.svg" alt="OÖRK Logo" class="footer__logo pt-3 px-3" style="width:100%;">
+    </a>
+  </div>
+
 </section>
