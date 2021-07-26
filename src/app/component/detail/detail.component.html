@@ -1,5 +1,13 @@
+<div class=" d-flex justify-content-center align-items-center flex-column">
+  <div class="validation-field validation-field--empty shadow bg-white p-4 py-5 py-lg-5 my-5 mx-3 px-5">
 
-<div *ngIf="!user" class="validation-field__container d-flex justify-content-center align-items-center flex-column">
+    <h2 class="text-center pb-3">👋</h2>
+    <p class="text-center pb-0 fs-2 fw-bold text-dark">Tschüss, Teilen-Feature...</p>
+    <small class="text-muted d-block text-center">Wir haben uns dazu entschlossen, die Teilen-Funktion ab 31.&nbsp;Juli aus der App zu nehmen. Ab diesem Zeitpunkt werden deine Daten automatisch vom Server geslöscht.<br><br> Falls du die Funktion vermisst, schreib uns eine Email an
+      <a href="mailto:team@greenpassapp.eu">team@greenpassapp.eu</a>, bei großer Anfrage werden wir das Feature vielleicht wieder integrieren!</small>
+  </div>
+</div>
+<div *ngIf="!user" class="d-flex justify-content-center align-items-center flex-column">
   <div *ngIf="notFound" class="validation-field validation-field--empty shadow bg-white p-4 pt-5 py-lg-5 my-5 mx-3 px-5">
 
     <p class="text-center pt-4 fs-2 fw-bold pt-md-5 text-dark">Ooops...</p>
@@ -11,8 +19,8 @@
   <div *ngIf="!notFound" class="loading"></div>
 </div>
 <div *ngIf="user && validationState"
-     class="validation-field__container d-flex justify-content-center align-items-center flex-column">
-  <div class="validation-field p-4 pt-5 p-lg-5 mt-5 mb-3 shadow mx-3" [ngClass]="validationState">
+     class="d-flex justify-content-center align-items-center flex-column">
+  <div class="validation-field p-4 pt-5 p-lg-5 mb-3 shadow mx-3" [ngClass]="validationState">
     <section>
       <div class="validation-field__icon d-flex justify-content-center align-items-center mb-3">
         <i class="fas fa-vial p-4" *ngIf="user?.tested"></i>
@@ -39,13 +47,12 @@
       <p class="fw-bold pt-3 text-center" *ngIf="user?.tested">{{daysBetween}} days ago</p>
       <p class="fw-bold pt-3 text-center" *ngIf="user?.vaccinated">{{daysBetween}} days ago</p>
       <p class="fw-bold pt-3 text-center" *ngIf="user?.recovered">{{daysBetween}} left</p>
-      <!-- TODO: ÜBERSETZEN -->
     </section>
 
 
   </div>
 
-  <div class="d-flex align-items-center justify-content-center validation-field p-4">
+  <div class="d-flex align-items-center justify-content-center validation-field p-4 mb-5 pb-5">
     <i class="fas fa-user fs-1 pe-3 text-dark"></i>
     <div>
       <p class="mb-0 fw-bold text-dark fs-5">{{user?.firstName}} {{user?.lastName}}</p>
@@ -53,5 +60,6 @@
     </div>
 
   </div>
+
 
 </div>
