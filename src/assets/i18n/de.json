@@ -136,7 +136,7 @@
       "HEADLINE2": "liegen uns am Herzen!",
       "TEXT1": "Du kannst die App nutzen, ohne dass Daten online gespeichert werden. Alle deine Daten werden",
       "TEXT2": "ausschließlich lokal und verschlüsselt auf deinem Gerät",
-      "TEXT3": "gespeichert und verarbeitet. Es werden nur beim Verwenden optionaler Funktionen (Apple Wallet & Teilen-Funktion) personenbezogene Daten erfasst und für den kürzest-notwendigen Zeitraum online gespeichert.",
+      "TEXT3": "gespeichert und verarbeitet. Es werden nur beim Verwenden der optionalen Apple Wallet Funktionen personenbezogene Daten erfasst und für den kürzest-notwendigen Zeitraum online gespeichert.",
       "TEXT4": "Wir bitten dich vor der Nutzung der App unsere kurze",
       "TEXT5": "Datenschutzerklärung",
       "TEXT6": "zu lesen!"
@@ -149,7 +149,7 @@
         "QUESTION": "Welche Daten werden von der App erfasst?",
         "ANSWER1": "Sämtliche Daten (Zertifikate bestehend aus Vor- und Nachname, Geburtsdatum und zertifikatsspezifische Gesundheitsdaten) werden",
         "ANSWER2": "ausschließlich lokal und offline auf deinem Gerät",
-        "ANSWER3": "gespeichert und verarbeitet, mit der Ausnahme der optionalen Features \"Apple Wallet\" und der \"Teilen-Funktion\". Alle Informationen zum Datenschutz findest du möglichst kompakt zusammengefasst in unserer",
+        "ANSWER3": "gespeichert und verarbeitet, mit der Ausnahme der optionalen Funktion \"Apple Wallet\". Alle Informationen zum Datenschutz findest du möglichst kompakt zusammengefasst in unserer",
         "ANSWER4": "Datenschutzerklärung"
       },
       "FAQ_FEEDBACK": {
@@ -186,7 +186,7 @@
       "TEXT5": "gelegt, denn alle deine Daten werden ausschließlich lokal und verschlüsselt auf deinem Gerät gespeichert.",
       "TEXT6": "Die GreenPass App funktioniert",
       "TEXT7": "EU-weit",
-      "TEXT8": "und validiert die Zertifikate nach den spezifischen Vorgaben des jeweiligen EU-Staates, den du als Nutzer:in selbst auswählen kannst. Ebenso hast du die Möglichkeit, dein aktuelles Zertifikat mit Freunden oder Familie für einen selbst-gewählten Zeitraum zu teilen.",
+      "TEXT8": "und validiert die Zertifikate nach den spezifischen Vorgaben des jeweiligen EU-Staates, den du als Nutzer:in selbst auswählen kannst.",
       "TEXT9": "Klingt gut? Dann ab in den App Store deines Vertrauens und verwende auch du ab jetzt den",
       "TEXT10": "neuen, digitalen Grünen Pass."
     },
