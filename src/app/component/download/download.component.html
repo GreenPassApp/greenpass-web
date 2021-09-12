@@ -10,11 +10,12 @@
 
   <h2 class="fw-bold px-3 pb-2 pt-4">Android APK</h2>
 
-  <a download href="https://github.com/GreenPassApp/greenpass-app/releases/download/1.0.2/GreenPass_v1.0.2.apk"
+  <a download href="{{appVersion?.android?.download?.url}}"
      class="link download d-flex justify-content-between shadow-sm">
-    <span class="align-items-center">GreenPass Android (Version 1.0.2)<br class="d-block d-md-none"> <small
-      class="text-gray ps-md-4">Stand: 16.07.2021</small></span>
+    <span class="align-items-center">GreenPass Android (Version {{appVersion?.android?.version}})<br class="d-block d-md-none">
+      <small class="text-gray ps-md-4">Stand: {{appVersion?.android?.updated_at}}</small>
+      <!--<small class="text-gray ps-md-4">SHA: {{appVersionService?.android?.download?.sha256}}</small> -->
+    </span>
     <i class="fas fa-download"></i>
   </a>
-
 </div>
