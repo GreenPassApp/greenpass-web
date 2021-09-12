@@ -1,21 +1,24 @@
 <div class="my-5 max-w-1000">
   <h1 class="fw-bold text-center pt-0 p-3 py-md-4"><span class="text-green">GreenPass</span> Download</h1>
   <p class="text-start text-md-center px-3">
-    Da es uns Stand jetzt (09.07.2021) bei Google nicht möglich ist, mit dem Account der Foschung &
-    Entwicklung der FH Oberösterreich die App für alle zur Verfügung zu stellen, haben wir uns dazu entschlossen, dass wir die APK der
-    GreenPass App hier auf unserer Website zum Download anbieten. Wichtig ist hierbei, dass alle Updates manuell
-    nachgezogen werden müssen. Weiters funktioniert die APK aus technischen Gründen nur auf jenen Geräten, welche Google Play Services
-    installiert haben. Bei Fragen dazu kannst du dich jederzeit an uns wenden: <a href="mailto:team@greenpassapp.eu">team@greenpassapp.eu</a>
+    Hier kannst du die App für Android direkt herunterladen. Die App inkludiert bereits einen Updater, was bedeutet, dass du
+    bei bestehender Internetverbindung in der App über neue Updates und zusätzliche Features informiert wirst. Alles was
+    du somit tun musst, ist die App herunterzuladen und auf deinem Android Gerät zu installieren.
   </p>
 
-  <h2 class="fw-bold px-3 pb-2 pt-4">Android APK</h2>
+  <h2 class="fw-bold px-3 pb-2 pt-4">Download APK</h2>
 
   <a download href="{{appVersion?.android?.download?.url}}"
      class="link download d-flex justify-content-between shadow-sm">
-    <span class="align-items-center">GreenPass Android (Version {{appVersion?.android?.version}})<br class="d-block d-md-none">
-      <small class="text-gray ps-md-4">Stand: {{appVersion?.android?.updated_at}}</small>
+    <span class="align-items-center">Download GreenPass Android (Version {{appVersion?.android?.version}})<br
+      class="d-block d-md-none">
+      <small class="text-gray ps-md-4">Stand: {{appVersion?.android?.updated_at | date: 'dd.MM.yyyy'}}</small>
       <!--<small class="text-gray ps-md-4">SHA: {{appVersionService?.android?.download?.sha256}}</small> -->
     </span>
     <i class="fas fa-download"></i>
   </a>
+  <div class="ps-md-3 px-3">
+    <h4 class="fs-5 fw-bold pt-3">Änderungen & Verbesserungen der Version {{appVersion?.android?.version}}</h4>
+    <small class="formatted">{{appVersion?.android?.changelog?.de}}</small>
+  </div>
 </div>
