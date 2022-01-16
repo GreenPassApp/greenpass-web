@@ -15,6 +15,7 @@
     },
     "APP": {
       "QUESTION": "Welche Daten werden bei der Verwendung der App erfasst?",
+      "ANSWER0": "Für das Hinzufügen von Zertifikaten ist es erforderlich, der App Zugriff zu deiner Kamera oder zu deinen Bilder zu geben. Der Zugriff auf die Kamera wird außerdem zum scannen anderer Zertifikate benötigt. ",
       "ANSWER1": "Sämtliche Daten (Zertifikate bestehend aus Vor- und Nachname, Geburtsdatum und zertifikatsspezifische Gesundheitsdaten wie z. B. Impfstoff oder Zeitpunkt der Test-Durchführung) werden lokal und offline auf deinem Gerät gespeichert und verarbeitet, mit der Ausnahme dieser optionalen Funktion:",
       "ANSWER2": "Apple Wallet-Funktion",
       "ANSWER3": "",

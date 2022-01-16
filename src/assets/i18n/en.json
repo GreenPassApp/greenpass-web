@@ -63,6 +63,7 @@
     },
     "APP": {
       "QUESTION": "Which data is collected when using the app?",
+      "ANSWER0": "To add certificates, it is necessary to give the app access to your camera or pictures. Camera access is also required for scanning other certificates.",
       "ANSWER1": "All data (certificates including first and last name, date of birth, and certificate-specific health data such as vaccine or time of test execution) is stored and processed locally and offline on your device, with the exception of these optional features:",
       "ANSWER2": "Apple Wallet feature",
       "ANSWER3": "and",
