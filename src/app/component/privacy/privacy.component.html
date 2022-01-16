@@ -3,54 +3,46 @@
     class="text-green">{{ 'PRIVACY.HEADLINE.HEADLINE2' | translate }}</span> {{ 'PRIVACY.HEADLINE.HEADLINE3' | translate }}
   </h1>
   <p class="text-start px-3">
-    Vor allem im Umgang mit Gesundheitsdaten spielt Datenschutz eine besonders wichtige Rolle. Da uns Datenschutz und
-    Transparenz sehr am Herzen liegt, ist der gesamte Quellcode des Projekts
+    {{ 'PRIVACY.EXCERPT.TEXT1' | translate }}
     <a href="https://github.com/GreenPassApp" target="_blank">{{ 'PRIVACY.EXCERPT.TEXT2' | translate }}</a>
-    öffentlich einsehbar.
-  <p class="pb-4 px-3">Du kannst die App und diese Website nutzen, ohne dass Angaben zu deiner Person online gespeichert
-    oder verarbeitet werden. Die erfassten Daten werden ausschließlich lokal und offline auf deinem Gerät gespeichert
-    und verarbeitet und werden mit dem Deinstallieren der App gelöscht. Beim Verwenden bestimmter optionaler Funktionen
-    (Apple Wallet) werden personenbezogene Daten erfasst und für den kürzest-möglichen Zeitraum online gespeichert und
-    verarbeitet. Selbstverständlich wirst du vor der Nutzung dieser Funktionen in der App darüber informiert.
+    {{ 'PRIVACY.EXCERPT.TEXT3' | translate }}.
+  <p class="pb-4 px-3">{{ 'PRIVACY.EXCERPT.TEXT4' | translate }}
   </p>
 
   <div class="faq">
     <button class="faq__header shadow-sm isClosed" (click)="faqOpenClose($event)">
-      <span class="fw-bold fs-6 pe-none">Welchen Zweck verfolgen wir mit der App?</span>
+      <span class="fw-bold fs-6 pe-none">{{ 'PRIVACY.APPPURPOSE.QUESTION' | translate }}</span>
       <i class="fas fa-chevron-right"></i>
     </button>
     <div class="faq__content isClosed">
-      <p>Digitaler Nachweis der Covid Impf-, Genesungs- und Testzertifikate sowie länderspezifische Validierung
-        innerhalb der EU.</p>
+      <p>{{ 'PRIVACY.APPPURPOSE.ANSWER' | translate }}</p>
     </div>
   </div>
 
   <div class="faq">
     <button class="faq__header shadow-sm isClosed" (click)="faqOpenClose($event)">
-      <span class="fw-bold fs-6 pe-none">Wer stellt den Dienst zur Verfügung und ist Verantwortlicher?</span>
+      <span class="fw-bold fs-6 pe-none">{{ 'PRIVACY.RESPONSIBLEPARTY.QUESTION' | translate }}</span>
       <i class="fas fa-chevron-right"></i>
     </button>
     <div class="faq__content isClosed">
-      <p>Es handelt sich um eine Kooperation zwischen den Entwickler:innen (Kevin Händel, Jakob Stadlhuber, Lisa-Maria
-        Schedlberger) und dem Österreichischen Roten Kreuz, Landesverband Oberösterreich.</p>
+      <p>{{ 'PRIVACY.RESPONSIBLEPARTY.ANSWER' | translate }}</p>
     </div>
   </div>
 
   <div class="faq">
     <button class="faq__header shadow-sm isClosed" (click)="faqOpenClose($event)">
-      <span class="fw-bold fs-6 pe-none">Welche Daten werden beim Download der App verarbeitet?</span>
+      <span class="fw-bold fs-6 pe-none">{{ 'PRIVACY.DATA.QUESTION' | translate }}</span>
       <i class="fas fa-chevron-right"></i>
     </button>
     <div class="faq__content isClosed">
-      <p>Wenn du die App im App Store (z.B. Google Play Store, Apple App) herunterlädst, wirst du dort Daten (zB
-        Benutzername, E-Mail Adresse) angeben müssen. Diese werden zusammen mit anderen Infos wie z.B. der Kundennummer
-        es Accounts, dem Zeitpunkt des Downloads sowie die individuellen Gerätekennziffer an den App Store übermittelt
-        und verarbeitet. Die Verarbeitung dieser Daten erfolgt ausschließlich durch den jeweiligen App Store und liegt
-        außerhalb unseres Einflussbereiches und wir sind somit für diese Verarbeitung nicht die verantwortliche Stelle.
-        Datenschutzinformationen sind direkt bei Google, Apple zu finden:
-        <a href="https://policies.google.com/privacy">https://policies.google.com/privacy</a> bzw.
-        <a href="https://support.apple.com/de-at/HT210584">https://support.apple.com/de-at/HT210584</a>
-      </p>
+      <p>{{ 'PRIVACY.DATA.ANSWER' | translate }}</p>
+      <ul>
+        <li><a href="https://policies.google.com/privacy">https://policies.google.com/privacy</a>
+        </li>
+        <li><a href="https://support.apple.com/de-at/HT210584">https://support.apple.com/de-at/HT210584</a>
+        </li>
+      </ul>
+
     </div>
   </div>
 
@@ -154,9 +146,13 @@
       <i class="fas fa-chevron-right"></i>
     </button>
     <div class="faq__content isClosed">
-      <p>Wir sind für die Erbringung unseres Dienstes auf externe Dienstleister angewiesen, die nach der DSGVO als Auftragsverarbeiter bezeichnet werden.</p>
-      <p>Wir wählen unsere externen Dienstleister im Rahmen der DSGVO sorgfältig aus und verpflichten diese, sämtliche Daten ausschließlich entsprechend unserer Weisungen zu verarbeiten, technische und organisatorische Maßnahmen für die Datensicherheit zu setzen sich an die DSGVO zu halten und auch die Mitarbeiter dazu zu verpflichten.</p>
-      <p>Wir setzen Auftragsverarbeiter für folgende Dienste ein: IT-Dienstleister für die Apple-Wallet-Funktion, Web-Hosting (es erfolgt keine Weitergabe von personenbezogenen Daten).</p>
+      <p>Wir sind für die Erbringung unseres Dienstes auf externe Dienstleister angewiesen, die nach der DSGVO als
+        Auftragsverarbeiter bezeichnet werden.</p>
+      <p>Wir wählen unsere externen Dienstleister im Rahmen der DSGVO sorgfältig aus und verpflichten diese, sämtliche
+        Daten ausschließlich entsprechend unserer Weisungen zu verarbeiten, technische und organisatorische Maßnahmen
+        für die Datensicherheit zu setzen sich an die DSGVO zu halten und auch die Mitarbeiter dazu zu verpflichten.</p>
+      <p>Wir setzen Auftragsverarbeiter für folgende Dienste ein: IT-Dienstleister für die Apple-Wallet-Funktion,
+        Web-Hosting (es erfolgt keine Weitergabe von personenbezogenen Daten).</p>
     </div>
   </div>
 
@@ -166,7 +162,8 @@
       <i class="fas fa-chevron-right"></i>
     </button>
     <p class="faq__content isClosed">
-      {{ 'PRIVACY.RIGHTS.ANSWER1' | translate }} <a href="mailto:team@greenpassapp.eu">team@greenpassapp.eu</a> {{ 'PRIVACY.RIGHTS.ANSWER3' | translate }}
+      {{ 'PRIVACY.RIGHTS.ANSWER1' | translate }} <a
+      href="mailto:team@greenpassapp.eu">team@greenpassapp.eu</a> {{ 'PRIVACY.RIGHTS.ANSWER3' | translate }}
       <a
         href="tel:{{ 'PRIVACY.RIGHTS.ANSWER4' | translate }}">{{ 'PRIVACY.RIGHTS.ANSWER4' | translate }}</a>{{ 'PRIVACY.RIGHTS.ANSWER5' | translate }}
       <a

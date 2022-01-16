@@ -57,9 +57,19 @@
       "TEXT1": "Especially when dealing with health data, data protection plays a particularly important role. Since data protection and transparency are very important to us, the entire source code of the project is publicly available",
       "TEXT2": "on GitHub",
       "TEXT3": "",
-      "TEXT4": "You can use the app and this website without any personal data being stored or processed online. The collected data is only stored and processed",
-      "TEXT5": "locally and offline on your device",
-      "TEXT6": "and will be deleted when you uninstall the app. When using certain optional Apple Wallet features, personal data is collected and stored and processed online for the shortest possible period of time. Of course, you will be informed about this in the app before using these features."
+      "TEXT4": "You can use the app and this website without any personal data being stored or processed online. The collected data is only stored and processed locally and offline on your device and will be deleted when you uninstall the app. When using certain optional features (Apple Wallet), personal data is collected and stored and processed online for the shortest possible period of time. Of course, you will be informed about this in the app before using these features."
+    },
+    "APPPURPOSE": {
+      "QUESTION": "What is the purpose of the app?",
+      "ANSWER": "Digital proof of Covid vaccination, recovery and testing certificates and country-specific validation within the EU."
+    },
+    "RESPONSIBLEPARTY": {
+      "QUESTION": "Who provides the service and is responsible?",
+      "ANSWER": "It is a cooperation between the developers (Kevin Händel, Jakob Stadlhuber, Lisa-Maria Schedlberger) and the Austrian Red Cross, Upper Austria."
+    },
+    "DATA": {
+      "QUESTION": "What data is processed when I download the app?",
+      "ANSWER": "If you download the app from the App Store (e.g. Google Play Store, Apple App), you will have to provide data (e.g. username, email address). These will be transmitted to the App Store together with other information such as the customer number of the account, the time of the download and the individual device identification number and processed. The processing of this data is carried out exclusively by the respective App Store and is outside our sphere of influence and we are therefore not the responsible party for this processing. Privacy information can be found directly at Google, Apple:"
     },
     "APP": {
       "QUESTION": "Which data is collected when using the app?",
@@ -73,7 +83,7 @@
       "ANSWER8": "Your data will be stored in a PassKit file for use in Apple Wallet. Please note that once saved, it may be synced via Apple iCloud (cloud service). You can read more about Apple's privacy policy here:",
       "ANSWER9": "https://www.apple.com/at/legal/privacy",
       "ANSWER10": "Share feature",
-      "ANSWER11": "In order to be able to share the certificate status with other people, a part of the certificate data has to be stored temporarily online. This is only the absolutely necessary information that is persisted for a period of time that you can choose. All data will be deleted at the latest after the expiration of the particular shared certificate. The data will neither be processed nor passed on to third parties.",
+      "ANSWER11": "This functionality is no longer available; links already created will lose their validity on July 31, 2021. The associated data will be deleted from our systems.\n",
       "ANSWER12": "To provide transparency on how your data is processed and stored, the entire source code of the project is publicly available here:",
       "ANSWER13": "https://github.com/GreenPassApp",
       "ANSWER14": "Here is an overview of what data is stored online for a certain period of time when you use the Share feature:",

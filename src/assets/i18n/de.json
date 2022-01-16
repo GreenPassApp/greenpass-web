@@ -9,9 +9,19 @@
       "TEXT1": "Vor allem im Umgang mit Gesundheitsdaten spielt Datenschutz eine besonders wichtige Rolle. Da uns Datenschutz und Transparenz sehr am Herzen liegt, ist der gesamte Quellcode des Projekts",
       "TEXT2": "auf GitHub",
       "TEXT3": "öffentlich einsehbar",
-      "TEXT4": "Du kannst die App und diese Website nutzen, ohne dass Angaben zu deiner Person online gespeichert oder verarbeitet werden. Die erfassten Daten werden",
-      "TEXT5": "ausschließlich lokal und offline auf deinem Gerät",
-      "TEXT6": "gespeichert und verarbeitet und werden mit dem Deinstallieren der App gelöscht. Beim Verwenden bestimmter optionaler Funktionen (Apple Wallet & Teilen-Funktion) werden personenbezogene Daten erfasst und für den kürzest-möglichen Zeitraum online gespeichert und verarbeitet. Selbstverständlich wirst du vor der Nutzung dieser Funktionen in der App darüber informiert."
+      "TEXT4": "Du kannst die App und diese Website nutzen, ohne dass Angaben zu deiner Person online gespeichert oder verarbeitet werden. Die erfassten Daten werden ausschließlich lokal und offline auf deinem Gerät gespeichert und verarbeitet und werden mit dem Deinstallieren der App gelöscht. Beim Verwenden bestimmter optionaler Funktionen (Apple Wallet) werden personenbezogene Daten erfasst und für den kürzest-möglichen Zeitraum online gespeichert und verarbeitet. Selbstverständlich wirst du vor der Nutzung dieser Funktionen in der App darüber informiert."
+    },
+    "APPPURPOSE": {
+      "QUESTION": "Welchen Zweck verfolgen wir mit der App?",
+      "ANSWER": "Digitaler Nachweis der Covid Impf-, Genesungs- und Testzertifikate sowie länderspezifische Validierung innerhalb der EU."
+    },
+    "RESPONSIBLEPARTY": {
+      "QUESTION": "Wer stellt den Dienst zur Verfügung und ist Verantwortlicher?",
+      "ANSWER": "Es handelt sich um eine Kooperation zwischen den Entwickler:innen (Kevin Händel, Jakob Stadlhuber, Lisa-Maria Schedlberger) und dem Österreichischen Roten Kreuz, Landesverband Oberösterreich."
+    },
+    "DATA": {
+      "QUESTION": "Welche Daten werden beim Download der App verarbeitet?",
+      "ANSWER": "Wenn du die App im App Store (z.B. Google Play Store, Apple App) herunterlädst, wirst du dort Daten (zB Benutzername, E-Mail Adresse) angeben müssen. Diese werden zusammen mit anderen Infos wie z.B. der Kundennummer es Accounts, dem Zeitpunkt des Downloads sowie die individuellen Gerätekennziffer an den App Store übermittelt und verarbeitet. Die Verarbeitung dieser Daten erfolgt ausschließlich durch den jeweiligen App Store und liegt außerhalb unseres Einflussbereiches und wir sind somit für diese Verarbeitung nicht die verantwortliche Stelle. Datenschutzinformationen sind direkt bei Google, Apple zu finden:"
     },
     "APP": {
       "QUESTION": "Welche Daten werden bei der Verwendung der App erfasst?",
