@@ -103,6 +103,11 @@
       "ML_KIT_HEADER": "QR code scanning",
       "ML_KIT_BODY": "To ensure fast and reliable scanning of QR codes, Google's ML Kit package is used. When using this package, diagnostic data is provided to Google to improve the scanning function; it is important here that no personal data or certificate data is provided. All detailed information about ML Kit is summarized here:"
     },
+    "HELPDESK": {
+      "QUESTION": "What data is processed when contacting our helpdesk?",
+      "ANSWER1": "If you contact our helpdesk, we process the data you provide there exclusively for contacting you and for processing inquiries and are stored as long as they are required for the fulfillment of the respective purpose.",
+      "ANSWER2": "Storage period: We will store the personal data processed via our website for as long as it is necessary for the fulfillment of the respective purpose. If the processing is based on your consent, we will store this data as long as you do not revoke your consent. Beyond that, we will only store your data insofar as we are legally obligated to retain it or as long as claims can be asserted against us."
+    },
     "WEBSITE": {
       "QUESTION": "Which data is collected when using this website?",
       "ANSWER1": "The server operator of this website processes data that is necessary for the delivery of the website. IP addresses are anonymized by means of masking. More about this in the privacy policy of the operator.",
@@ -114,7 +119,9 @@
     },
     "THIRDPARTIES": {
       "QUESTION": "Will my data be passed on to third parties?",
-      "ANSWER": "No, your data will not be passed on to third parties."
+      "ANSWER1": "We rely on external service providers to provide our service, which are referred to as processors under the GDPR.",
+      "ANSWER2": "We carefully select our external service providers within the framework of the GDPR and oblige them to process all data exclusively in accordance with our instructions, to set technical and organizational measures for data security to comply with the GDPR and also to oblige employees to do so.",
+      "ANSWER3": "We use order processors for the following services: IT service provider for the Apple Wallet function, web hosting (there is no transfer of personal data)."
     },
     "RIGHTS": {
       "QUESTION": "What rights do I have as a person affected?",

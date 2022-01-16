@@ -55,6 +55,11 @@
       "ML_KIT_HEADER": "Scannen von QR-Codes",
       "ML_KIT_BODY": "Zur Gewährleistung eines schnellen und zuverlässigen Scans von QR-Codes wird das Package ML Kit von Google verwendet. Beim Nutzen dieses Packages werden Diagnosedaten zur Verbesserung der Scan-Funktion für Google bereitgestellt, wichtig ist hierbei, dass keine personenbezogenen Daten oder Zertifikatsdaten bereitgestellt werden. Alle genauen Informationen zu ML Kit sind hier zusammengefasst:"
     },
+    "HELPDESK": {
+      "QUESTION": "Welche Daten werden bei der Kontaktaufnahme mit unserem Helpdesk verarbeitet?",
+      "ANSWER1": "Wenn du mit unserem Helpdesk Kontakt aufnimmst, verarbeiten wir jene Daten, die du uns dort bekannt gibst ausschließlich zur Kontaktaufnahme und zur Bearbeitung von Anfragen und werden so lange gespeichert, als sie für die Erfüllung des jeweiligen Zwecks erforderlich sind.",
+      "ANSWER2": "Speicherdauer: Die über unsere Website verarbeiteten personenbezogenen Daten werden wir so lange speichern, als sie für die Erfüllung des jeweiligen Zwecks erforderlich sind. Wenn die Verarbeitung auf Ihrer Einwilligung beruht, speichern wir diese Daten solange Sie Ihre Einwilligung nicht widerrufen. Darüber hinaus speichern wir Ihre Daten nur sofern wir gesetzlich zu einer Aufbewahrung verpflichtet sind oder solange Ansprüche gegen uns geltend gemacht werden können."
+    },
     "WEBSITE": {
       "QUESTION": "Welche Daten werden bei der Verwendung dieser Website erfasst?",
       "ANSWER1": "Der Serverbetreiber dieser Website verarbeitet Daten, die zur Auslieferung der Website notwendig sind. IP-Adressen werden mittels Masking anonymisiert. Mehr dazu in der Datenschutzerklärung des Betreibers. Es werden",
@@ -66,7 +71,9 @@
     },
     "THIRDPARTIES": {
       "QUESTION": "Werden meine Daten an Dritte weitergegeben?",
-      "ANSWER": "Nein, deine Daten werden nicht an Dritte weitergegeben."
+      "ANSWER1": "Wir sind für die Erbringung unseres Dienstes auf externe Dienstleister angewiesen, die nach der DSGVO als Auftragsverarbeiter bezeichnet werden.",
+      "ANSWER2": "Wir wählen unsere externen Dienstleister im Rahmen der DSGVO sorgfältig aus und verpflichten diese, sämtliche Daten ausschließlich entsprechend unserer Weisungen zu verarbeiten, technische und organisatorische Maßnahmen für die Datensicherheit zu setzen sich an die DSGVO zu halten und auch die Mitarbeiter dazu zu verpflichten.",
+      "ANSWER3": "Wir setzen Auftragsverarbeiter für folgende Dienste ein: IT-Dienstleister für die Apple-Wallet-Funktion, Web-Hosting (es erfolgt keine Weitergabe von personenbezogenen Daten)."
     },
     "RIGHTS": {
       "QUESTION": "Welche Rechte habe ich als Betroffene:r?",

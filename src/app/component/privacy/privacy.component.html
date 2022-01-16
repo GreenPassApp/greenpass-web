@@ -107,19 +107,13 @@
   <div class="faq">
     <button class="faq__header shadow-sm isClosed" (click)="faqOpenClose($event)">
       <span
-        class="fw-bold fs-6 pe-none">Welche Daten werden bei der Kontaktaufnahme mit unserem Helpdesk verarbeitet?</span>
+        class="fw-bold fs-6 pe-none">{{ 'PRIVACY.HELPDESK.QUESTION' | translate }}</span>
       <i class="fas fa-chevron-right"></i>
     </button>
     <div class="faq__content isClosed">
-      <p>Wenn du mit unserem Helpdesk Kontakt aufnimmst, verarbeiten wir jene Daten, die du uns dort bekannt gibst
-        ausschließlich zur Kontaktaufnahme und zur Bearbeitung von Anfragen und werden so lange gespeichert, als sie für
-        die Erfüllung des jeweiligen Zwecks erforderlich sind.
+      <p>{{ 'PRIVACY.HELPDESK.ANSWER1' | translate }}
       </p>
-      <p>Speicherdauer: Die über unsere Website verarbeiteten personenbezogenen Daten werden wir so lange speichern, als
-        sie für die Erfüllung des jeweiligen Zwecks erforderlich sind. Wenn die Verarbeitung auf Ihrer Einwilligung
-        beruht, speichern wir diese Daten solange Sie Ihre Einwilligung nicht widerrufen. Darüber hinaus speichern wir
-        Ihre Daten nur sofern wir gesetzlich zu einer Aufbewahrung verpflichtet sind oder solange Ansprüche gegen uns
-        geltend gemacht werden können.</p>
+      <p>{{ 'PRIVACY.HELPDESK.ANSWER2' | translate }}</p>
     </div>
   </div>
 
@@ -147,13 +141,9 @@
       <i class="fas fa-chevron-right"></i>
     </button>
     <div class="faq__content isClosed">
-      <p>Wir sind für die Erbringung unseres Dienstes auf externe Dienstleister angewiesen, die nach der DSGVO als
-        Auftragsverarbeiter bezeichnet werden.</p>
-      <p>Wir wählen unsere externen Dienstleister im Rahmen der DSGVO sorgfältig aus und verpflichten diese, sämtliche
-        Daten ausschließlich entsprechend unserer Weisungen zu verarbeiten, technische und organisatorische Maßnahmen
-        für die Datensicherheit zu setzen sich an die DSGVO zu halten und auch die Mitarbeiter dazu zu verpflichten.</p>
-      <p>Wir setzen Auftragsverarbeiter für folgende Dienste ein: IT-Dienstleister für die Apple-Wallet-Funktion,
-        Web-Hosting (es erfolgt keine Weitergabe von personenbezogenen Daten).</p>
+      <p>{{ 'PRIVACY.THIRDPARTIES.ANSWER1' | translate }}</p>
+      <p>{{ 'PRIVACY.THIRDPARTIES.ANSWER2' | translate }}</p>
+      <p>{{ 'PRIVACY.THIRDPARTIES.ANSWER3' | translate }}</p>
     </div>
   </div>
 
